@@ -1,0 +1,14 @@
+@mixin vertical-align($top) {
+  position: relative;
+  top: $top;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin transition($property) {
+	-webkit-transition: $property 300ms ease-out;
+	-moz-transition: $property 300ms ease-out;
+	-o-transition: $property 300ms ease-out;
+	transition: $property 300ms ease-out;
+}
