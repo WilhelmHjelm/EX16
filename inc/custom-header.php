@@ -12,37 +12,37 @@
  *
  * @link http://codex.wordpress.org/Custom_Headers
  *
- * @package wpstartertheme
+ * @package ex16
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses wpstartertheme_header_style()
- * @uses wpstartertheme_admin_header_style()
- * @uses wpstartertheme_admin_header_image()
+ * @uses ex16_header_style()
+ * @uses ex16_admin_header_style()
+ * @uses ex16_admin_header_image()
  */
-function wpstartertheme_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'wpstartertheme_custom_header_args', array(
+function ex16_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'ex16_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'wpstartertheme_header_style',
-		'admin-head-callback'    => 'wpstartertheme_admin_header_style',
-		'admin-preview-callback' => 'wpstartertheme_admin_header_image',
+		'wp-head-callback'       => 'ex16_header_style',
+		'admin-head-callback'    => 'ex16_admin_header_style',
+		'admin-preview-callback' => 'ex16_admin_header_image',
 	) ) );
 }
-add_action( 'after_setup_theme', 'wpstartertheme_custom_header_setup' );
+add_action( 'after_setup_theme', 'ex16_custom_header_setup' );
 
-if ( ! function_exists( 'wpstartertheme_header_style' ) ) :
+if ( ! function_exists( 'ex16_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see wpstartertheme_custom_header_setup().
+ * @see ex16_custom_header_setup().
  */
-function wpstartertheme_header_style() {
+function ex16_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -75,15 +75,15 @@ function wpstartertheme_header_style() {
 	</style>
 	<?php
 }
-endif; // wpstartertheme_header_style
+endif; // ex16_header_style
 
-if ( ! function_exists( 'wpstartertheme_admin_header_style' ) ) :
+if ( ! function_exists( 'ex16_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see wpstartertheme_custom_header_setup().
+ * @see ex16_custom_header_setup().
  */
-function wpstartertheme_admin_header_style() {
+function ex16_admin_header_style() {
 ?>
 	<style type="text/css">
 		.appearance_page_custom-header #headimg {
@@ -103,15 +103,15 @@ function wpstartertheme_admin_header_style() {
 	</style>
 <?php
 }
-endif; // wpstartertheme_admin_header_style
+endif; // ex16_admin_header_style
 
-if ( ! function_exists( 'wpstartertheme_admin_header_image' ) ) :
+if ( ! function_exists( 'ex16_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see wpstartertheme_custom_header_setup().
+ * @see ex16_custom_header_setup().
  */
-function wpstartertheme_admin_header_image() {
+function ex16_admin_header_image() {
 ?>
 	<div id="headimg">
 		<h1 class="displaying-header-text">
@@ -124,4 +124,4 @@ function wpstartertheme_admin_header_image() {
 	</div>
 <?php
 }
-endif; // wpstartertheme_admin_header_image
+endif; // ex16_admin_header_image

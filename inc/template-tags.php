@@ -4,14 +4,14 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package wpstartertheme
+ * @package ex16
  */
 
-if ( ! function_exists( 'wpstartertheme_posted_on' ) ) :
+if ( ! function_exists( 'ex16_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
-function wpstartertheme_posted_on() {
+function ex16_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -25,12 +25,12 @@ function wpstartertheme_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'wpstartertheme' ),
+		esc_html_x( 'Posted on %s', 'post date', 'ex16' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		esc_html_x( 'by %s', 'post author', 'wpstartertheme' ),
+		esc_html_x( 'by %s', 'post author', 'ex16' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
@@ -39,36 +39,36 @@ function wpstartertheme_posted_on() {
 }
 endif;
 
-if ( ! function_exists( 'wpstartertheme_entry_footer' ) ) :
+if ( ! function_exists( 'ex16_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
-function wpstartertheme_entry_footer() {
+function ex16_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'wpstartertheme' ) );
-		if ( $categories_list && wpstartertheme_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'wpstartertheme' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+		$categories_list = get_the_category_list( esc_html__( ', ', 'ex16' ) );
+		if ( $categories_list && ex16_categorized_blog() ) {
+			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'ex16' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'wpstartertheme' ) );
+		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'ex16' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'wpstartertheme' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'ex16' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Leave a comment', 'wpstartertheme' ), esc_html__( '1 Comment', 'wpstartertheme' ), esc_html__( '% Comments', 'wpstartertheme' ) );
+		comments_popup_link( esc_html__( 'Leave a comment', 'ex16' ), esc_html__( '1 Comment', 'ex16' ), esc_html__( '% Comments', 'ex16' ) );
 		echo '</span>';
 	}
 
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'wpstartertheme' ),
+			esc_html__( 'Edit %s', 'ex16' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
 		'<span class="edit-link">',
@@ -82,8 +82,8 @@ endif;
  *
  * @return bool
  */
-function wpstartertheme_categorized_blog() {
-	if ( false === ( $all_the_cool_cats = get_transient( 'wpstartertheme_categories' ) ) ) {
+function ex16_categorized_blog() {
+	if ( false === ( $all_the_cool_cats = get_transient( 'ex16_categories' ) ) ) {
 		// Create an array of all the categories that are attached to posts.
 		$all_the_cool_cats = get_categories( array(
 			'fields'     => 'ids',
@@ -96,27 +96,27 @@ function wpstartertheme_categorized_blog() {
 		// Count the number of categories that are attached to the posts.
 		$all_the_cool_cats = count( $all_the_cool_cats );
 
-		set_transient( 'wpstartertheme_categories', $all_the_cool_cats );
+		set_transient( 'ex16_categories', $all_the_cool_cats );
 	}
 
 	if ( $all_the_cool_cats > 1 ) {
-		// This blog has more than 1 category so wpstartertheme_categorized_blog should return true.
+		// This blog has more than 1 category so ex16_categorized_blog should return true.
 		return true;
 	} else {
-		// This blog has only 1 category so wpstartertheme_categorized_blog should return false.
+		// This blog has only 1 category so ex16_categorized_blog should return false.
 		return false;
 	}
 }
 
 /**
- * Flush out the transients used in wpstartertheme_categorized_blog.
+ * Flush out the transients used in ex16_categorized_blog.
  */
-function wpstartertheme_category_transient_flusher() {
+function ex16_category_transient_flusher() {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
 	}
 	// Like, beat it. Dig?
-	delete_transient( 'wpstartertheme_categories' );
+	delete_transient( 'ex16_categories' );
 }
-add_action( 'edit_category', 'wpstartertheme_category_transient_flusher' );
-add_action( 'save_post',     'wpstartertheme_category_transient_flusher' );
+add_action( 'edit_category', 'ex16_category_transient_flusher' );
+add_action( 'save_post',     'ex16_category_transient_flusher' );

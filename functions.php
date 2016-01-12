@@ -1,13 +1,13 @@
 <?php
 /**
- * wpstartertheme functions and definitions.
+ * ex16 functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package wpstartertheme
+ * @package ex16
  */
 
-if ( ! function_exists( 'wpstartertheme_setup' ) ) :
+if ( ! function_exists( 'ex16_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'wpstartertheme_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function wpstartertheme_setup() {
+function ex16_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on wpstartertheme, use a find and replace
-	 * to change 'wpstartertheme' to the name of your theme in all the template files.
+	 * If you're building a theme based on ex16, use a find and replace
+	 * to change 'ex16' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'wpstartertheme', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'ex16', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ function wpstartertheme_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'wpstartertheme' ),
+		'primary' => esc_html__( 'Primary Menu', 'ex16' ),
 	) );
 
 	/*
@@ -91,13 +91,13 @@ function wpstartertheme_setup() {
 
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'wpstartertheme_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'ex16_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
-endif; // wpstartertheme_setup
-add_action( 'after_setup_theme', 'wpstartertheme_setup' );
+endif; // ex16_setup
+add_action( 'after_setup_theme', 'ex16_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -106,19 +106,19 @@ add_action( 'after_setup_theme', 'wpstartertheme_setup' );
  *
  * @global int $content_width
  */
-function wpstartertheme_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'wpstartertheme_content_width', 640 );
+function ex16_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'ex16_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'wpstartertheme_content_width', 0 );
+add_action( 'after_setup_theme', 'ex16_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function wpstartertheme_widgets_init() {
+function ex16_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'wpstartertheme' ),
+		'name'          => esc_html__( 'Sidebar', 'ex16' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -127,12 +127,12 @@ function wpstartertheme_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'wpstartertheme_widgets_init' );
+add_action( 'widgets_init', 'ex16_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function wpstartertheme_scripts() {
+function ex16_scripts() {
 	// wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400', array() );
 	
 	wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . '/css/main.css', array(), '1.0' );
@@ -144,15 +144,15 @@ function wpstartertheme_scripts() {
 		wp_enqueue_script('jquery');
 	}
 
-	wp_enqueue_script( 'wpstartertheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'ex16-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'wpstartertheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'ex16-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'wpstartertheme_scripts' );
+add_action( 'wp_enqueue_scripts', 'ex16_scripts' );
 
 /**
  * Implement the Custom Header feature.
