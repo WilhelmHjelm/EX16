@@ -300,6 +300,9 @@ function my_theme_register_required_plugins() {
 ?>
 
 <?php
+
+//CUSTOM POST TYPE
+
 function custom_post_type() {
 	register_post_type( 'sponsorer', array(
 		'labels'        => array('name' => __( 'Sponsorer' ), 'singular_name' => __( 'Sponsor' ) ),
@@ -310,6 +313,16 @@ function custom_post_type() {
 		'has_archive'   => false
 	)
 	);
+	register_post_type( 'examensklassen' array(
+		'labels'        => array('name' => __( 'examensklassen' ), 'singular_name' => __( 'examensklass' ) ),
+		'description'   => 'Holds the information about EX16 graduate students.',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'has_archive'   => false
+	)
+	);
+
 }	
 add_action( 'init', 'custom_post_type');	
 	
