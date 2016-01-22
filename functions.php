@@ -297,3 +297,22 @@ function my_theme_register_required_plugins() {
 
 	tgmpa( $plugins, $config );
 }
+?>
+
+<?php
+function custom_post_type() {
+	register_post_type( 'sponsorer', array(
+		'labels'        => array('name' => __( 'Sponsorer' ), 'singular_name' => __( 'Sponsor' ) ),
+		'description'   => 'Holds the information about EX16s sponors.',
+		'public'        => true,
+		'menu_position' => 4,
+		'supports'      => array( 'title' ),
+		'has_archive'   => false
+	)
+	);
+}	
+add_action( 'init', 'custom_post_type');	
+	
+	
+	
+?>
