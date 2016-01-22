@@ -313,7 +313,7 @@ function custom_post_type() {
 		'has_archive'   => false
 	)
 	);
-	register_post_type( 'examensklassen' array(
+	register_post_type( 'examensklassen', array(
 		'labels'        => array('name' => __( 'examensklassen' ), 'singular_name' => __( 'examensklass' ) ),
 		'description'   => 'Holds the information about EX16 graduate students.',
 		'public'        => true,
