@@ -134,9 +134,9 @@ add_action( 'widgets_init', 'ex16_widgets_init' );
  */
 function ex16_scripts() {
 	// wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400', array() );
-	
+
 	wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . '/css/main.css', array(), '1.0' );
-	
+
 	/* Jquery */
 	if( !is_admin()){
 		wp_deregister_script('jquery');
@@ -301,7 +301,7 @@ function my_theme_register_required_plugins() {
 
 <?php
 
-//CUSTOM POST TYPE
+//CUSTOM POST TYPES
 
 function custom_post_type() {
 	register_post_type( 'sponsorer', array(
@@ -314,7 +314,7 @@ function custom_post_type() {
 	)
 	);
 	register_post_type( 'examensklassen', array(
-		'labels'        => array('name' => __( 'examensklassen' ), 'singular_name' => __( 'examensklass' ) ),
+		'labels'        => array('name' => __( 'Examensklassen' ), 'singular_name' => __( 'Examensklass' ) ),
 		'description'   => 'Holds the information about EX16 graduate students.',
 		'public'        => true,
 		'menu_position' => 5,
@@ -322,10 +322,19 @@ function custom_post_type() {
 		'has_archive'   => false
 	)
 	);
+	register_post_type( 'projektgruppen', array(
+		'labels'        => array('name' => __( 'Projektgruppen' ), 'singular_name' => __( 'Projketgrupp' ) ),
+		'description'   => 'Holds the information about EX16 project groups.',
+		'public'        => true,
+		'menu_position' => 6,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'has_archive'   => false
+	)
+	);
 
-}	
-add_action( 'init', 'custom_post_type');	
-	
-	
-	
+}
+add_action( 'init', 'custom_post_type');
+
+
+
 ?>
