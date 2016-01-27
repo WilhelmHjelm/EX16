@@ -14,6 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ex16' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'ex16' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>

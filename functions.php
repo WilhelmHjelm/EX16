@@ -152,6 +152,41 @@ function ex16_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ex16_scripts' );
 
+//CUSTOM POST TYPES
+
+function custom_post_type() {
+	register_post_type( 'sponsorer', array(
+		'labels'        => array('name' => __( 'Sponsorer' ), 'singular_name' => __( 'Sponsor' ) ),
+		'description'   => 'Holds the information about EX16s sponors.',
+		'public'        => true,
+		'menu_position' => 4,
+		'supports'      => array( 'title' ),
+		'has_archive'   => false
+	)
+	);
+
+	register_post_type( 'examensklassen', array(
+		'labels'        => array('name' => __( 'Examensklassen' ), 'singular_name' => __( 'Examensklass' ) ),
+		'description'   => 'Holds the information about EX16 graduate students.',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'has_archive'   => false
+	)
+	);
+
+	register_post_type( 'projektgruppen', array(
+		'labels'        => array('name' => __( 'Projektgruppen' ), 'singular_name' => __( 'Projektgrupp' ) ),
+		'description'   => 'Holds the information about EX16 project groups.',
+		'public'        => true,
+		'menu_position' => 6,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'has_archive'   => false
+	)
+	);
+
+}
+add_action( 'init', 'custom_post_type');
 
 /**
  * Implement the Custom Header feature.
@@ -297,44 +332,4 @@ function my_theme_register_required_plugins() {
 
 	tgmpa( $plugins, $config );
 }
-?>
-
-<?php
-
-//CUSTOM POST TYPES
-
-function custom_post_type() {
-	register_post_type( 'sponsorer', array(
-		'labels'        => array('name' => __( 'Sponsorer' ), 'singular_name' => __( 'Sponsor' ) ),
-		'description'   => 'Holds the information about EX16s sponors.',
-		'public'        => true,
-		'menu_position' => 4,
-		'supports'      => array( 'title' ),
-		'has_archive'   => false
-	)
-	);
-	register_post_type( 'examensklassen', array(
-		'labels'        => array('name' => __( 'Examensklassen' ), 'singular_name' => __( 'Examensklass' ) ),
-		'description'   => 'Holds the information about EX16 graduate students.',
-		'public'        => true,
-		'menu_position' => 5,
-		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-		'has_archive'   => false
-	)
-	);
-	register_post_type( 'projektgruppen', array(
-		'labels'        => array('name' => __( 'Projektgruppen' ), 'singular_name' => __( 'Projketgrupp' ) ),
-		'description'   => 'Holds the information about EX16 project groups.',
-		'public'        => true,
-		'menu_position' => 6,
-		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-		'has_archive'   => false
-	)
-	);
-
-}
-add_action( 'init', 'custom_post_type');
-
-
-
 ?>
