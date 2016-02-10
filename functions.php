@@ -217,20 +217,11 @@ function custom_post_type() {
 		'has_archive'   => false
 	)
 	);
-	register_post_type( 'nyheter', array(
-		'labels'        => array('name' => __( 'Nyheter' ), 'singular_name' => __( 'Nyheter' ) ),
-		'description'   => 'Holds the information about EX16 news.',
-		'public'        => true,
-		'menu_position' => 8,
-		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-		'has_archive'   => false
-	)
-	);
 	register_post_type( 'portfolio', array(
 		'labels'        => array('name' => __( 'Portfoliomaterial' ), 'singular_name' => __( 'Portfoliomaterial' ) ),
 		'description'   => 'Holds the information about EX16 digital works.',
 		'public'        => true,
-		'menu_position' => 9,
+		'menu_position' => 8,
 		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
 		'has_archive'   => false
 	)
