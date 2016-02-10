@@ -208,6 +208,33 @@ function custom_post_type() {
 		'has_archive'   => false
 	)
 	);
+	register_post_type( 'forelasare', array(
+		'labels'        => array('name' => __( 'Föreläsare' ), 'singular_name' => __( 'Föreläsare' ) ),
+		'description'   => 'Holds the information about EX16 lectures.',
+		'public'        => true,
+		'menu_position' => 7,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'has_archive'   => false
+	)
+	);
+	register_post_type( 'nyheter', array(
+		'labels'        => array('name' => __( 'Nyheter' ), 'singular_name' => __( 'Nyheter' ) ),
+		'description'   => 'Holds the information about EX16 news.',
+		'public'        => true,
+		'menu_position' => 8,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'has_archive'   => false
+	)
+	);
+	register_post_type( 'portfolio', array(
+		'labels'        => array('name' => __( 'Portfoliomaterial' ), 'singular_name' => __( 'Portfoliomaterial' ) ),
+		'description'   => 'Holds the information about EX16 digital works.',
+		'public'        => true,
+		'menu_position' => 9,
+		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'has_archive'   => false
+	)
+	);
 
 }
 add_action( 'init', 'custom_post_type');
