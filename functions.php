@@ -205,7 +205,8 @@ function custom_post_type() {
 		'public'        => true,
 		'menu_position' => 6,
 		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-		'has_archive'   => false
+		'has_archive'   => false,
+		'taxonomies' 		=> array('category')
 	)
 	);
 	register_post_type( 'forelasare', array(
