@@ -1,21 +1,21 @@
 
 // ### TYPOGRAHY ###
 
-$font-stack:	'Helvetica Neue', Helvetica, sans-serif;
-$h-font-stack:	'Helvetica Neue', Helvetica, sans-serif;
-
-
+$font-stack:	'Muli', 'Helvetica Neue', Helvetica, sans-serif;
+$h-font-stack:	'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 
 // ### Colors ###
 
-$primary-color:	#f00;
-$dark-color: 	#000;
-$bright-color: 	#eee;
+$blue:	    #32647f;
+$turquoise: #00b0bf;
+$green: 	  #00b9a2;
+$orange:    #fd9907;
 
-$link-color: #f00;
-$hover-link-color: #000;
-$visited-link-color: #f00;
+$text-color: #444;
 
+$link-color: $blue;
+$hover-link-color: $text-color;
+$visited-link-color: $blue;
 
 // ### Break points ###
 

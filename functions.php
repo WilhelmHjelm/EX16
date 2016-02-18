@@ -157,8 +157,7 @@ add_action( 'widgets_init', 'ex16_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ex16_scripts() {
-	// wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,700,400', array() );
-
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Muli:400,400italic|Open+Sans:700,600', array() );
 	wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . '/css/main.css', array(), '1.0' );
 
 	/* Jquery */
