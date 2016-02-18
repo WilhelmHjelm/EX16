@@ -179,7 +179,7 @@ add_action( 'wp_enqueue_scripts', 'ex16_scripts' );
 
 function custom_post_type() {
 	register_post_type( 'sponsorer', array(
-		'labels'        => array('name' => __( 'Sponsorer' ), 'singular_name' => __( 'Sponsor' ) ),
+		'labels'        => array('name' => __( 'Sponsors' ), 'singular_name' => __( 'Sponsors' ) ),
 		'description'   => 'Holds the information about EX16s sponors.',
 		'public'        => true,
 		'menu_position' => 4,
@@ -189,7 +189,7 @@ function custom_post_type() {
 	);
 
 	register_post_type( 'examensklassen', array(
-		'labels'        => array('name' => __( 'Examensklassen' ), 'singular_name' => __( 'Examensklass' ) ),
+		'labels'        => array('name' => __( 'Graduates' ), 'singular_name' => __( 'Graduates' ) ),
 		'description'   => 'Holds the information about EX16 graduate students.',
 		'public'        => true,
 		'menu_position' => 5,
@@ -199,7 +199,7 @@ function custom_post_type() {
 	);
 
 	register_post_type( 'projektgruppen', array(
-		'labels'        => array('name' => __( 'Projektgruppen' ), 'singular_name' => __( 'Projektgrupp' ) ),
+		'labels'        => array('name' => __( 'Projectgroups' ), 'singular_name' => __( 'Projectgroup' ) ),
 		'description'   => 'Holds the information about EX16 project groups.',
 		'public'        => true,
 		'menu_position' => 6,
@@ -209,7 +209,7 @@ function custom_post_type() {
 	)
 	);
 	register_post_type( 'forelasare', array(
-		'labels'        => array('name' => __( 'Föreläsare' ), 'singular_name' => __( 'Föreläsare' ) ),
+		'labels'        => array('name' => __( 'Lecturers' ), 'singular_name' => __( 'Lecturer' ) ),
 		'description'   => 'Holds the information about EX16 lectures.',
 		'public'        => true,
 		'menu_position' => 7,
@@ -218,7 +218,7 @@ function custom_post_type() {
 	)
 	);
 	register_post_type( 'portfolio', array(
-		'labels'        => array('name' => __( 'Portfoliomaterial' ), 'singular_name' => __( 'Portfoliomaterial' ) ),
+		'labels'        => array('name' => __( 'Portfolio' ), 'singular_name' => __( 'Portfolio' ) ),
 		'description'   => 'Holds the information about EX16 digital works.',
 		'public'        => true,
 		'menu_position' => 8,
