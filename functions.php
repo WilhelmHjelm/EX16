@@ -90,13 +90,14 @@ function ex16_setup() {
 	remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 	/**
-	 * Remove comment support
+	 * Remove comment support (+ "post" link in admin menu)
 	 */
 
 	 // Removes from admin menu
 	 add_action( 'admin_menu', 'my_remove_admin_menus' );
 	 function my_remove_admin_menus() {
 	     remove_menu_page( 'edit-comments.php' );
+			  remove_menu_page( 'edit.php' );
 	 }
 	 // Removes from post and pages
 	 add_action('init', 'remove_comment_support', 100);
