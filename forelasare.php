@@ -18,28 +18,22 @@ get_header(); ?>
 
       $args = array(
         'post_type' => 'forelasare'
-        /*'tax_query' => array(
-          array(
-            'taxonomy' => 'product_category',
-            'field' => 'slug',
-            'terms' => 'boardgames'
-          )
-        )*/
       );
       $forelasare = new WP_Query( $args );
       if( $forelasare->have_posts() ) {
         while( $forelasare->have_posts() ) {
           $forelasare->the_post();
-?>
+          ?>
 
-        <div class="forelasare-list">
+        <a href="#<?php the_title() ?>"<div class="one-forelasare">
             <img src="<?php the_field('image'); ?>" alt="<?php the_title(); ?> Föreläsare på EX16">
-          <div class="details">
+          <div class="forelasare-details">
             <h3><?php the_title() ?></h3>
             <p><?php the_post('text'); ?></p>
-            <p><?php the_post('tid', 'plats'); ?></p>
+            <p><?php the_post('time', 'place'); ?></p>
           </div>
         </div>
+      </a>
 
 
         <?php
