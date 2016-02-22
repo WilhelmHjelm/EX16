@@ -17,23 +17,24 @@ get_header(); ?>
 // Custom post type "Föreläsare" list
 
       $args = array(
-        'post_type' => 'forelasare'
+        'post_type' => 'Lecturers'
       );
-      $forelasare = new WP_Query( $args );
-      if( $forelasare->have_posts() ) {
-        while( $forelasare->have_posts() ) {
-          $forelasare->the_post();
+      $lecturers = new WP_Query( $args );
+      if( $lecturers->have_posts() ) {
+        while( $lecturers->have_posts() ) {
+          $lecturers->the_post();
           ?>
 
-        <a href="#<?php the_title() ?>"<div class="one-forelasare">
+        <a href="#<?php the_title(); ?>">
+          <div class="one-forelasare">
             <img src="<?php the_field('image'); ?>" alt="<?php the_title(); ?> Föreläsare på EX16">
-          <div class="forelasare-details">
-            <h3><?php the_title() ?></h3>
-            <p><?php the_post('text'); ?></p>
-            <p><?php the_post('time', 'place'); ?></p>
+              <div class="forelasare-details">
+                <h3><?php the_title() ?></h3>
+                <p><?php the_post('text'); ?></p>
+                <p><?php the_post('time', 'place'); ?></p>
+              </div>
           </div>
-        </div>
-      </a>
+        </a>
 
 
         <?php
