@@ -1118,6 +1118,23 @@ object {
   background: #eee;
 }
 /* line 8, ../scss/base/_layout.scss */
+#masthead.home #splash-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background: url() no-repeat;
+  /* Lägg till stillbild från videon */
+  background-size: cover;
+}
+/* line 19, ../scss/base/_layout.scss */
 #masthead.home .site-branding {
   position: absolute;
   top: 45%;
@@ -1125,18 +1142,20 @@ object {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 500;
   border: 1px solid #000;
+  color: white;
 }
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 25, ../scss/base/_layout.scss */
+/* line 38, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 30, ../scss/base/_layout.scss */
+/* line 43, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1144,7 +1163,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 40, ../scss/base/_layout.scss */
+/* line 53, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1160,7 +1179,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 50, ../scss/base/_layout.scss */
+/* line 63, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {

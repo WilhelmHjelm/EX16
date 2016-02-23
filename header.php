@@ -41,6 +41,10 @@
 
 	<header id="masthead" class="site-header <?php if ( is_front_page() && is_home() ) : ?>home<?php endif; ?>" role="banner">
 		<?php if ( is_front_page() && is_home() ) : ?>
+			<video autoplay loop id="splash-video">
+				<source src="http://controlfilms.tv/wp-content/uploads/2015/12/nathan-price-honda-dream-run-small-hover.webm" type="video/webm"/>
+				<source src="http://controlfilms.tv/wp-content/uploads/2015/12/nathan-price-honda-dream-run-small-hover.mp4" type="video/mp4" />
+	</video>
 		<div class="site-branding">
 				<h1 class="logotype"><?php bloginfo( 'name' ); ?></h1>
 					<?php // <p class="site-description"><?php bloginfo( 'description' ); </p>
