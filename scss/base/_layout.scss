@@ -30,7 +30,32 @@
 
 }
 
+footer#colophon {
 
+	.site-info {
+		position: relative;
+
+		.logo {
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 1px solid #000;
+			width: 45px;
+			height: 45px;
+		}
+
+		p {
+			margin-left: 60px;
+		}
+
+	}
+
+	.social-media {
+		text-align: right;
+	}
+
+
+}
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

@@ -12,9 +12,6 @@
 ?>
 
 	</main><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-
 		<?php
 				// Custom post type "sponsor" list
 
@@ -30,29 +27,34 @@
 				    );
 				    $sponsors = new WP_Query( $args );
 				    if( $sponsors->have_posts() ) {
+							echo '<div class="sponsors">';
 				      while( $sponsors->have_posts() ) {
 				        $sponsors->the_post();
 				        ?>
-
-		<div class="sponors">
 			<a href="<?php the_field( 'link' ) ?>" target="_blank">
 				<img src="<?php the_field( 'logotype' ) ?>" alt="<?php the_title() ?>">
 			</a>
-		</div>
 
-		<?php
-}
+		<?php }
+		echo '</div>';
 }
 else{
 	echo 'Inga sponsorer.';
 }
 		 ?>
 
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ex16' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'ex16' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ex16' ), 'ex16', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div> <!-- .site-info -->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="container">
+				<div class="six columns site-info">
+					<div class="logo"></div>
+					<p><strong><?php bloginfo( 'name' ); ?></strong><br>
+						<?php bloginfo( 'description' ); ?></p>
+				</div> <!-- .site-info -->
+				<div class="six columns social-media">
+					sociala medier wow
+					<p></p>
+				</div> <!-- .site-info -->
+		</div> <!-- .container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

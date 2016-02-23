@@ -1147,15 +1147,37 @@ object {
   color: white;
 }
 
+/* line 35, ../scss/base/_layout.scss */
+footer#colophon .site-info {
+  position: relative;
+}
+/* line 38, ../scss/base/_layout.scss */
+footer#colophon .site-info .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #000;
+  width: 45px;
+  height: 45px;
+}
+/* line 47, ../scss/base/_layout.scss */
+footer#colophon .site-info p {
+  margin-left: 60px;
+}
+/* line 53, ../scss/base/_layout.scss */
+footer#colophon .social-media {
+  text-align: right;
+}
+
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 38, ../scss/base/_layout.scss */
+/* line 63, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 43, ../scss/base/_layout.scss */
+/* line 68, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1163,7 +1185,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 53, ../scss/base/_layout.scss */
+/* line 78, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1179,7 +1201,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 63, ../scss/base/_layout.scss */
+/* line 88, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
