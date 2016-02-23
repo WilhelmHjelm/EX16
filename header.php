@@ -58,4 +58,4 @@
 
 <a id="small-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 
-	<div id="content" class="site-content">
+	<main id="content" role="main">
