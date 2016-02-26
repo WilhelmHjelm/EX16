@@ -1,0 +1,218 @@
+.og-grid {
+	list-style: none;
+	margin: 0 auto;
+	width: 100%;
+  padding-left: 5px;
+}
+
+.og-grid li {
+	display: inline-block;
+  width: 50%;
+	margin: 0 0 0 -4px;
+	vertical-align: top;
+  padding: 10px;
+  height: auto;
+  box-sizing: border-box;
+
+  @media (min-width: $break-mobile) {
+    width: 33.3333%;
+  }
+
+  @media (min-width: $break-mobile + 200) {
+    width: 25%;
+  }
+  @media (min-width: $break-grid) {
+    width: 16.6666%;
+  }
+
+}
+
+.og-grid li > a {
+  position:relative;
+  width: 100%;
+  padding-top: 150%;
+    background: #444;
+}
+
+.og-grid li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.og-grid li img.static {
+  z-index: 7;
+}
+.og-grid li img.hover {
+  z-index: 8;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.og-grid li a:hover img.hover {
+  opacity: 1;
+}
+
+.og-grid .graduate-name {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  height: 50px;
+  opacity: 0.8;
+
+  span {
+    @include vertical-align(absolute, 50%, 50%);
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}
+
+.og-grid li > a,
+.og-grid li > a img {
+	outline: none;
+	display: block;
+}
+
+.og-expander {
+	position: absolute;
+	top: auto;
+	left: 0;
+	width: 100%;
+	text-align: left;
+	height: 0;
+	overflow: hidden;
+}
+
+.og-expander-inner {
+	padding: 40px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.og-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 40px;
+	right: 40px;
+	cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 3px;
+	background: #444;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.og-close::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+  background: #666;
+}
+
+.og-fullimg,
+.og-details {
+	width: 27%;
+  margin-right: 4%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+.og-details {
+  width: 64%;
+	padding: 20px 0 0 0;
+  margin: 0;
+}
+
+.og-fullimg {
+	text-align: center;
+  padding-top: 150%;
+  overflow: hidden;
+}
+
+.og-fullimg img {
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+
+// Social media, fixa detta plx
+
+.og-details .social {
+  display: block;
+  padding: 20px 0 0 0;
+}
+
+.og-details .social a {
+	display: inline-block;
+	margin: 0 12px 0 0;
+	outline: none;
+  font-size: 26px;
+}
+
+
+
+.og-loading {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ddd;
+	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	-webkit-animation: loader 0.5s infinite ease-in-out both;
+	-moz-animation: loader 0.5s infinite ease-in-out both;
+	animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+
+@media screen and (max-width: $break-grid) {
+
+	.og-fullimg { display: none; }
+	.og-details { float: none; width: 100%; }
+
+}
