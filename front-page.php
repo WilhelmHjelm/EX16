@@ -14,7 +14,11 @@
 get_header(); ?>
 
 <section id="about">
-  OM
+  <div class="row">
+    <div class="two columns">
+      OM EX16
+    </div>
+  </div>
 </section>
 
 <section id="about">
@@ -22,37 +26,39 @@ get_header(); ?>
 </section>
 
 <section id="about">
-  FÖRELÄSARE
+  <h2>FÖRELÄSARE</h2>
+  <div class="container">
   <?php
-  // Custom post type "Föreläsare" list
+  // Custom post type "forelasare" list
 
-        $args = array(
-          'post_type' => 'forelasare'
-        );
-        $lecturers = new WP_Query( $args );
-        if( $lecturers->have_posts() ) {
-          while( $lecturers->have_posts() ) {
-            $lecturers->the_post();
-            ?>
-
-        <div class="forelasare-list">
-          <a href="länkhär#<?php the_title(); ?>">
-              <img src="<?php the_field('image'); ?>" alt="<?php the_title(); ?> Föreläsare på EX16">
-                <div class="forelasare-list-details">
-                  <h3><?php the_title() ?></h3>
-                  <p><?php the_field('time', 'place'); ?></p
-                </div>
+      $args = array(
+        'post_type' => 'forelasare'
+      );
+      $lecturers = new WP_Query( $args );
+      if( $lecturers->have_posts() ) {
+        while( $lecturers->have_posts() ) {
+          $lecturers->the_post();
+          ?>
+          <div class="grid-forelasare">
+            <figure class="hover-lecturer">
+        <a href="<?php the_permalink(); ?>">
+          <?php the_post_thumbnail(); ?>
+          <figcaption>
+            <h3><?php the_title(); ?></h3>
+            <p><i class="fa fa-clock-o"></i><?php the_field('time'); ?><i class="fa fa-map-marker"></i><?php the_field('place'); ?></p>
+          </figcaption>
+        </figrure>
+        </a>
             </div>
-          </a>
-
 
           <?php
         }
       }
       else {
-        echo 'Inga föreläsare?';
+        echo 'Inga föreläsare? Kontakta Andy.';
       }
     ?>
+</div>
 </section>
 
 <section id="about">
