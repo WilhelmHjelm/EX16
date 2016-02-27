@@ -171,8 +171,11 @@ function ex16_scripts() {
 
 	wp_enqueue_script( 'ex16-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	wp_enqueue_script( 'ex16-main', get_template_directory_uri() . '/js/main.js', array(), '20160220', true );
-	wp_enqueue_script( 'ex16-expanding-grid', get_template_directory_uri() . '/js/expanding-grid.js', array(), '20160226', true );
-	wp_enqueue_script( 'ex16-modernizr-custom', get_template_directory_uri() . '/js/modernizr.custom.js', array(), '20160226' );
+
+		if ( is_page( 'examensklassen' ) ) {
+			wp_enqueue_script( 'ex16-expanding-grid', get_template_directory_uri() . '/js/expanding-grid.js', array(), '20160226', true );
+			wp_enqueue_script( 'ex16-modernizr-custom', get_template_directory_uri() . '/js/modernizr.custom.js', array(), '20160226' );
+	   }
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -198,7 +201,7 @@ function custom_post_type() {
 		'description'   => 'Holds the information about EX16 graduate students.',
 		'public'        => true,
 		'menu_position' => 5,
-		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'supports'      => array( 'title', 'editor', 'custom-fields' ),
 		'has_archive'   => false
 	)
 	);

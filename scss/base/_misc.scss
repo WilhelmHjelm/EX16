@@ -2,6 +2,11 @@ main {
   display: block;
 }
 
+.blue-bg { background-color: $blue; }
+.turquoise-bg { background-color: $turquoise; }
+.green-bg { background-color: $green; }
+.orange-bg { background-color: $orange; }
+
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
