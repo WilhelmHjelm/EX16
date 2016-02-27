@@ -1146,12 +1146,29 @@ object {
   border: 1px solid #000;
   color: white;
 }
+/* line 28, ../scss/base/_layout.scss */
+#masthead.home .site-branding svg {
+  width: 450px;
+}
 
-/* line 35, ../scss/base/_layout.scss */
+/* line 36, ../scss/base/_layout.scss */
+.site-description {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 600;
+  border: 1px solid #000;
+  color: white;
+}
+
+/* line 45, ../scss/base/_layout.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 38, ../scss/base/_layout.scss */
+/* line 48, ../scss/base/_layout.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -1160,24 +1177,24 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 47, ../scss/base/_layout.scss */
+/* line 57, ../scss/base/_layout.scss */
 footer#colophon .site-info p {
   margin-left: 60px;
 }
-/* line 53, ../scss/base/_layout.scss */
+/* line 63, ../scss/base/_layout.scss */
 footer#colophon .social-media {
   text-align: right;
 }
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 63, ../scss/base/_layout.scss */
+/* line 73, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 68, ../scss/base/_layout.scss */
+/* line 78, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1185,7 +1202,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 78, ../scss/base/_layout.scss */
+/* line 88, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1201,7 +1218,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 88, ../scss/base/_layout.scss */
+/* line 98, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
@@ -1557,7 +1574,7 @@ label > .label-body {
 /* line 55, ../scss/components/_lecturers.scss */
 .grid-forelasare figure figcaption > a {
   z-index: 1000;
-  text-indent: 200%;
+  text-indent: 100%;
   white-space: nowrap;
   font-size: 0;
   opacity: 0;
