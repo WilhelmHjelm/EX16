@@ -3,6 +3,7 @@
 
 #masthead.home {
 	height: 100vh;
+	width:100vw;
 	background: #eee;
 
 	#splash-video {
@@ -12,7 +13,7 @@
     min-height: 100%;
     width: auto;
     height: auto;
-    background: url() no-repeat; /* Lägg till stillbild från videon */
+    background: url no-repeat; /* Lägg till stillbild från videon */
     background-size: cover;
 	}
 
@@ -26,7 +27,7 @@
 
 		}
 		svg{
-			width:450px;
+			width:400px;
 		}
 
 	}
