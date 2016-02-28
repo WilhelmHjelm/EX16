@@ -2,13 +2,10 @@
 -------------------------------- */
 
 #masthead.home {
-<<<<<<< HEAD
 	height: 100vh;
 	width:100vw;
-=======
 	position: relative;
 	height: 92vh;
->>>>>>> origin/master
 	background: #eee;
 
 	#splash-video {
@@ -18,18 +15,13 @@
     min-height: 100%;
     width: auto;
     height: auto;
-<<<<<<< HEAD
-    background: url no-repeat; /* Lägg till stillbild från videon */
-=======
     background: url(../img/splash-fallback.jpg) no-repeat center center;
->>>>>>> origin/master
     background-size: cover;
 	}
 
 	.site-branding {
 		@include vertical-align(absolute, 47%, 50%);
 		z-index: 500;
-<<<<<<< HEAD
 		border: 1px solid #000;
 		color: white;
 
@@ -40,7 +32,6 @@
 			width:400px;
 		}
 
-=======
 		width: 260px;
 		height: 280px;
 		background: url(../img/logotype-white.svg) no-repeat center center;
@@ -48,7 +39,6 @@
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
->>>>>>> origin/master
 	}
 
 }
