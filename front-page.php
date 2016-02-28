@@ -25,8 +25,40 @@ get_header(); ?>
   </div>
 </section>
 
-<section id="about">
-  SCHEMA
+<section class="schema" id="about">
+  <div class="container">
+    <div class="seven columns">
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1">Torsdag</label>
+
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2">Fredag</label>
+
+    <input id="tab3" type="radio" name="tabs">
+    <label for="tab3">Lördag</label>
+
+    <div class="tab-content" id="content1">
+      <p>
+        HÄR KOMMER KUL SAKER HÄNDA! 1
+      </p>
+    </div>
+
+    <div class="tab-content" id="content2">
+      <p>
+        HÄR KOMMER KUL SAKER HÄNDA! 2
+      </p>
+    </div>
+
+    <div class="tab-content" id="content3">
+      <p>
+        HÄR KOMMER KUL SAKER HÄNDA! 3
+      </p>
+    </div>
+  </div>
+  <div class="five columns fast-schema">
+    HÄR KOMMER JÄTTESTORA SAKER HÄNDA!
+  </div>
+
 </section>
 
 <section id="about">
@@ -66,15 +98,19 @@ get_header(); ?>
 </section>
 
 <section id="about">
-  <div class="row">
-  <h2>FÖRETAGSKVÄLL</h2>
-  <div class="five columns">
-<a href="mailto:foretagskvall@ex16.se">
-  <div class="button">
-    <p>Vill du vara med på företagskvällen?</p>
-  </div>
-</a>
-</div>
+  <div class="container">
+    <div class="seven columns">
+      <iframe src="https://player.vimeo.com/video/152694696?color=64a508" width="738" height="415" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <div class="five columns">
+      <h2>FÖRETAGSKVÄLL</h2>
+      <p>Info om företagskvällen Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="mailto:foretagskvall@ex16.se">
+        <div class="button">
+          <p>Vill du vara med på företagskvällen?</p>
+        </div>
+      </a>
+    </div>
 </section>
 
 

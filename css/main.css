@@ -54,7 +54,7 @@
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0);
   clip: auto !important;
   color: #21759b;
   display: block;
@@ -1996,6 +1996,95 @@ figcaption i {
   .og-details {
     float: none;
     width: 100%;
+  }
+}
+/* line 1, ../scss/components/_schema.scss */
+.schema {
+  background-color: #00b9a2;
+}
+
+/* line 4, ../scss/components/_schema.scss */
+.fast-schema {
+  background-color: #00b0bf;
+}
+
+/* line 7, ../scss/components/_schema.scss */
+.tab-content {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #32647f;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 14, ../scss/components/_schema.scss */
+input {
+  display: none !important;
+}
+
+/* line 18, ../scss/components/_schema.scss */
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #ddd;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 29, ../scss/components/_schema.scss */
+label:before {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+/* line 34, ../scss/components/_schema.scss */
+label:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: #00b0bf;
+  border: 1px solid #00b9a2;
+  border-top: 2px solid #32647f;
+  border-bottom: 1px solid #32647f;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 44, ../scss/components/_schema.scss */
+input:checked + label {
+  color: white;
+  border: 1px solid #00b9a2;
+  border-top: 2px solid #32647f;
+  border-bottom: 1px solid #32647f;
+  background-color: #00b0bf;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 56, ../scss/components/_schema.scss */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 62, ../scss/components/_schema.scss */
+  label {
+    font-size: 0;
+  }
+
+  /* line 65, ../scss/components/_schema.scss */
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 72, ../scss/components/_schema.scss */
+  label {
+    padding: 15px;
   }
 }
 /* @import "vendors/"; */
