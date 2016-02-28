@@ -56,7 +56,9 @@ get_header(); ?>
     </div>
   </div>
   <div class="five columns fast-schema">
-    HÄR KOMMER JÄTTESTORA SAKER HÄNDA!
+    <p>
+      HÄR KOMMER STORA SAKER HÄNDA
+    </p>
   </div>
 
 </section>
