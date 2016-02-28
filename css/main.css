@@ -54,7 +54,7 @@
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   color: #21759b;
   display: block;
@@ -1134,13 +1134,12 @@ object {
 -------------------------------- */
 /* line 4, ../scss/base/_layout.scss */
 #masthead.home {
-  height: 100vh;
   width: 100vw;
   position: relative;
   height: 92vh;
-  background: #eee;
+  overflow: hidden;
 }
-/* line 11, ../scss/base/_layout.scss */
+/* line 10, ../scss/base/_layout.scss */
 #masthead.home #splash-video {
   position: absolute;
   top: 50%;
@@ -1165,22 +1164,16 @@ object {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 500;
-  border: 1px solid #000;
+  width: 250px;
+  height: 285px;
   color: white;
-  width: 260px;
-  height: 280px;
-  background: url(../img/logotype-white.svg) no-repeat center center;
-  background-size: contain;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }
-/* line 31, ../scss/base/_layout.scss */
+/* line 29, ../scss/base/_layout.scss */
 #masthead.home .site-branding svg {
-  width: 400px;
+  width: 100%;
 }
 
-/* line 46, ../scss/base/_layout.scss */
+/* line 37, ../scss/base/_layout.scss */
 .site-description {
   position: absolute;
   top: 90%;
@@ -1193,11 +1186,11 @@ object {
   color: white;
 }
 
-/* line 55, ../scss/base/_layout.scss */
+/* line 46, ../scss/base/_layout.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 58, ../scss/base/_layout.scss */
+/* line 49, ../scss/base/_layout.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -1206,24 +1199,24 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 67, ../scss/base/_layout.scss */
+/* line 58, ../scss/base/_layout.scss */
 footer#colophon .site-info p {
   margin-left: 60px;
 }
-/* line 73, ../scss/base/_layout.scss */
+/* line 64, ../scss/base/_layout.scss */
 footer#colophon .social-media {
   text-align: right;
 }
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 83, ../scss/base/_layout.scss */
+/* line 74, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 88, ../scss/base/_layout.scss */
+/* line 79, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1231,7 +1224,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 98, ../scss/base/_layout.scss */
+/* line 89, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1247,7 +1240,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 108, ../scss/base/_layout.scss */
+/* line 99, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {

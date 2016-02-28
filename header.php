@@ -42,19 +42,12 @@
 	<header id="masthead" class="site-header <?php if ( is_front_page() && is_home() ) : ?>home<?php endif; ?>" role="banner">
 		<?php if ( is_front_page() && is_home() ) : ?>
 			<video autoplay loop id="splash-video">
-				<source src="http://controlfilms.tv/wp-content/uploads/2015/12/nathan-price-honda-dream-run-small-hover.webm" type="video/webm"/>
+			<!--	<source src="http://controlfilms.tv/wp-content/uploads/2015/12/nathan-price-honda-dream-run-small-hover.webm" type="video/webm"/>
 				<source src="http://controlfilms.tv/wp-content/uploads/2015/12/nathan-price-honda-dream-run-small-hover.mp4" type="video/mp4" />
-	</video>
+--></video>
 		<div class="site-branding">
-
-			<svg id="Loggan_RGB" data-name="Loggan RGB" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455.99 513.54"><defs><style>.cls-1{fill:#fff;}</style></defs><path class="cls-1" d="M228,466.68L45.34,361.22V150.31l2.25-1.3L228,44.85,410.65,150.31V361.22l-2.25,1.3ZM54.34,356L228,456.29,401.65,356V155.51L228,55.25,54.34,155.51V356Z"/><path class="cls-1" d="M208.65,227.42V241.3H152.23V141.5h56.42v13.8H168.54v27.15h37.61V196.1H168.54v31.32h40.12Z"/><path class="cls-1" d="M279.16,189.81l33.59,51.49H293.94L269,200.5l-25.18,40.8H226.38l33.06-51.72-31-48.08h18.2l23.05,37.77,23.05-37.77h17.59Z"/><path class="cls-1" d="M192,271.5v99.8H175.93V306.84q0-11.15.61-18.28a58,58,0,0,1-5.16,4.74q-3.57,3-14,11.49l-8-10.24,29.35-23.05H192Z"/><path class="cls-1" d="M279,307.83q13.5,0,21.12,8.3t7.62,23.28q0,15-8.8,24.12t-24.49,9.14q-15.7,0-25.06-11.6T240,328.76q0-58.54,47.7-58.54a59.21,59.21,0,0,1,12.66,1.14v13.42a43.13,43.13,0,0,0-12-1.52q-16.23,0-24.19,8.68t-8.65,27.49h0.83a21.71,21.71,0,0,1,9-8.57A29,29,0,0,1,279,307.83Zm-4.17,51.57q8.19,0,12.66-5.31t4.47-14.64q0-9.33-4.25-14.14t-12.51-4.82a18.45,18.45,0,0,0-13.38,4.82q-5.8,5.12-5.57,11.34a25.74,25.74,0,0,0,5.16,16.23A16.45,16.45,0,0,0,274.8,359.39Z"/></svg>
-
-				<h1 class="logotype"><?php //bloginfo( 'name' ); ?></h1>
-			</video>
-		<div class="site-branding logotype">
-				<h1><?php bloginfo( 'name' ); ?></h1>
-					<?php // <p class="site-description"><?php bloginfo( 'description' ); </p>
-					?>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 456 513.5"><style>.a{fill:#FFF;}</style><path d="M229 510.6L8.3 383.2V128.4l2.7-1.6L229 1l220.7 127.4v254.8l-2.7 1.6L229 510.6zM19.2 376.9L229 498.1 438.8 377V134.7L229 13.5 19.2 134.7V376.9z" class="a"/><polygon points="205.6 221.6 205.6 238.3 137.5 238.3 137.5 117.7 205.6 117.7 205.6 134.4 157.2 134.4 157.2 167.2 202.6 167.2 202.6 183.7 157.2 183.7 157.2 221.6 " class="a"/><polygon points="290.8 176.1 331.4 238.3 308.7 238.3 278.5 189 248.1 238.3 227.1 238.3 267 175.8 229.5 117.7 251.5 117.7 279.4 163.4 307.2 117.7 328.5 117.7 " class="a"/><path d="M185.5 274.8V395.4h-19.4v-77.9c0-9 0.2-16.3 0.7-22.1 -1.3 1.4-3.4 3.3-6.2 5.7 -2.9 2.4-8.5 7-17 13.9l-9.7-12.4 35.5-27.9h16.1V274.8z" class="a"/><path d="M290.6 318.7c10.9 0 19.4 3.3 25.5 10 6.1 6.7 9.2 16.1 9.2 28.1 0 12.1-3.5 21.8-10.6 29.1 -7.1 7.4-16.9 11-29.6 11 -12.6 0-22.7-4.7-30.3-14 -7.5-9.3-11.3-22.4-11.3-39 0-47.2 19.2-70.7 57.6-70.7 6.1 0 11.2 0.5 15.3 1.4v16.2c-4.2-1.2-9-1.8-14.5-1.8 -13.1 0-22.8 3.5-29.2 10.5 -6.4 7-9.9 18.1-10.4 33.2h1c2.6-4.5 6.2-7.9 10.9-10.4C278.9 319.9 284.4 318.7 290.6 318.7M285.6 381c6.6 0 11.7-2.1 15.3-6.4 3.6-4.3 5.4-10.2 5.4-17.7s-1.7-13.2-5.1-17.1c-3.4-3.9-8.5-5.8-15.1-5.8 -6.1-0.2-11.5 1.7-16.2 5.8 -4.7 4.1-6.9 8.7-6.7 13.7 0 7.7 2.1 14.2 6.2 19.6C273.6 378.4 279 381 285.6 381" class="a"/></svg>
+			<h1 class="logotype"><?php //bloginfo( 'name' ); ?></h1>
 		</div><!-- .site-branding -->
 			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 			<?php else : ?>

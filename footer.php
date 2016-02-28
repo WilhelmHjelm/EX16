@@ -44,17 +44,17 @@ else{
 		 ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="container">
-				<div class="six columns site-info">
-					<div class="logo"></div>
-					<p><strong><?php bloginfo( 'name' ); ?></strong><br>
-						<?php bloginfo( 'description' ); ?></p>
-				</div> <!-- .site-info -->
-				<div class="six columns social-media">
-					sociala medier wow
-					<p></p>
-				</div> <!-- .site-info -->
-		</div> <!-- .container -->
+	<div class="container">
+			<div class="six columns site-info">
+				<div class="logo"></div>
+				<p><strong><?php bloginfo( 'name' ); ?></strong><br>
+					<?php bloginfo( 'description' ); ?></p>
+			</div> <!-- .site-info -->
+			<div class="six columns social-media">
+				sociala medier wow
+				<p></p>
+			</div> <!-- .site-info -->
+	</div> <!-- .container -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -2,11 +2,10 @@
 -------------------------------- */
 
 #masthead.home {
-	height: 100vh;
 	width:100vw;
 	position: relative;
 	height: 92vh;
-	background: #eee;
+	overflow: hidden;
 
 	#splash-video {
 		@include vertical-align(absolute, 50%, 50%);
@@ -19,26 +18,18 @@
     background-size: cover;
 	}
 
+
 	.site-branding {
 		@include vertical-align(absolute, 47%, 50%);
 		z-index: 500;
-		border: 1px solid #000;
+		width: 250px;
+		height: 285px;
 		color: white;
 
-		h1 {
-
-		}
 		svg{
-			width:400px;
+			width:100%;
 		}
 
-		width: 260px;
-		height: 280px;
-		background: url(../img/logotype-white.svg) no-repeat center center;
-		background-size: contain;
-		text-indent: 100%;
-		white-space: nowrap;
-		overflow: hidden;
 	}
 
 }
