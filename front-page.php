@@ -14,12 +14,12 @@
 get_header(); ?>
 
 <section id="about">
-  <div class="row">
-    <h2>OM EX16</h2>
-    <div class="six columns">
+  <div class="container">
+    <div class="seven columns">
       <iframe src="https://player.vimeo.com/video/152694696?color=64a508" width="738" height="415" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
-    <div class="four columns">
+    <div class="five columns">
+      <h2><?php bloginfo( 'name' ); ?></h2>
       <p> Info om Ex16 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
