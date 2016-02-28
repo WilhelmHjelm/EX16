@@ -55,6 +55,7 @@
 			<?php endif; ?>
 	</header><!-- #masthead -->
 
-<a id="small-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 
+<!-- <a id="small-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+-->
 	<main id="content" role="main">

@@ -54,7 +54,7 @@
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   color: #21759b;
   display: block;
@@ -1154,8 +1154,9 @@ object {
   height: auto;
   background: url(../img/splash-fallback.jpg) no-repeat center center;
   background-size: cover;
+  border: 1px solid #000;
 }
-/* line 22, ../scss/base/_layout.scss */
+/* line 23, ../scss/base/_layout.scss */
 #masthead.home .site-branding {
   position: absolute;
   top: 47%;
@@ -1168,12 +1169,12 @@ object {
   height: 285px;
   color: white;
 }
-/* line 29, ../scss/base/_layout.scss */
+/* line 30, ../scss/base/_layout.scss */
 #masthead.home .site-branding svg {
   width: 100%;
 }
 
-/* line 37, ../scss/base/_layout.scss */
+/* line 38, ../scss/base/_layout.scss */
 .site-description {
   position: absolute;
   top: 90%;
@@ -1188,10 +1189,22 @@ object {
 }
 
 /* line 47, ../scss/base/_layout.scss */
+section {
+  /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
+  padding: 150px 0;
+}
+
+/* line 51, ../scss/base/_layout.scss */
+#about {
+  background: #32647f;
+  color: white;
+}
+
+/* line 59, ../scss/base/_layout.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 50, ../scss/base/_layout.scss */
+/* line 62, ../scss/base/_layout.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -1200,29 +1213,29 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 59, ../scss/base/_layout.scss */
+/* line 71, ../scss/base/_layout.scss */
 footer#colophon .site-info p {
   margin-left: 60px;
 }
-/* line 65, ../scss/base/_layout.scss */
+/* line 77, ../scss/base/_layout.scss */
 footer#colophon .social-media {
   text-align: right;
 }
 
-/* line 71, ../scss/base/_layout.scss */
+/* line 83, ../scss/base/_layout.scss */
 #footer-logo {
   width: 100%;
 }
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 78, ../scss/base/_layout.scss */
+/* line 90, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 83, ../scss/base/_layout.scss */
+/* line 95, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1230,7 +1243,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 93, ../scss/base/_layout.scss */
+/* line 105, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1246,7 +1259,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 103, ../scss/base/_layout.scss */
+/* line 115, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {

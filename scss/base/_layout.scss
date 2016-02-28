@@ -16,6 +16,7 @@
     height: auto;
     background: url(../img/splash-fallback.jpg) no-repeat center center;
     background-size: cover;
+		border: 1px solid #000;
 	}
 
 
@@ -41,6 +42,17 @@
 	color: white;
 	font-weight: 600;
 }
+
+
+section { /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
+	padding: 150px 0;
+}
+
+#about {
+	background: $blue;
+	color: white;
+}
+
 
 footer#colophon {
 

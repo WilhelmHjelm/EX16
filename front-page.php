@@ -15,17 +15,17 @@ get_header(); ?>
 
 <section id="about">
   <div class="container">
-    <div class="seven columns">
+    <div class="six columns">
+      <h1>Examensdagarna för Grafisk design och kommunikation</h1>
+      <h2>12 - 14 maj i Färgeriet, Kåkenhus</h1>
+    </div><!-- .six -->
+    <div class="six columns">
       <iframe src="https://player.vimeo.com/video/152694696?color=64a508" width="738" height="415" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-    <div class="five columns">
-      <h2><?php bloginfo( 'name' ); ?></h2>
-      <p> Info om Ex16 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-  </div>
+    </div> <!-- .six -->
+  </div> <!-- .container -->
 </section>
 
-<section class="schema" id="about">
+<section id="schema">
   <div class="container">
     <div class="seven columns">
     <input id="tab1" type="radio" name="tabs" checked>
@@ -63,7 +63,7 @@ get_header(); ?>
 
 </section>
 
-<section id="about">
+<section id="lecturers">
   <h2>FÖRELÄSARE</h2>
   <div class="container">
   <?php
@@ -99,7 +99,7 @@ get_header(); ?>
 </div>
 </section>
 
-<section id="about">
+<section id="company-evening">
   <div class="container">
     <div class="seven columns">
       <iframe src="https://player.vimeo.com/video/152694696?color=64a508" width="738" height="415" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
