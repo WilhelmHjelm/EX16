@@ -52,6 +52,18 @@ section { /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte 
 	background: $blue;
 	color: white;
 }
+#company-evening{
+	background: $green;
+	color:white;
+}
+.company-button{
+	border-color: white !important;
+	border-radius: 0 !important;
+	p{
+		color:white;
+	}
+}
+
 
 
 footer#colophon {

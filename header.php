@@ -29,6 +29,7 @@
 	<div class="overlay">
 		<div class="container">
 			<div class="six columns">
+				<img src="img/logotypex16.png" alt="<?php bloginfo('name')?>">
 				<h2>EX16</h2>
 				<p>lorem ipsum lol</p>
 			</div>

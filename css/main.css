@@ -54,7 +54,7 @@
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0);
   clip: auto !important;
   color: #21759b;
   display: block;
@@ -1200,11 +1200,27 @@ section {
   color: white;
 }
 
+/* line 55, ../scss/base/_layout.scss */
+#company-evening {
+  background: #00b9a2;
+  color: white;
+}
+
 /* line 59, ../scss/base/_layout.scss */
+.company-button {
+  border-color: white !important;
+  border-radius: 0 !important;
+}
+/* line 62, ../scss/base/_layout.scss */
+.company-button p {
+  color: white;
+}
+
+/* line 71, ../scss/base/_layout.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 62, ../scss/base/_layout.scss */
+/* line 74, ../scss/base/_layout.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -1213,29 +1229,29 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 71, ../scss/base/_layout.scss */
+/* line 83, ../scss/base/_layout.scss */
 footer#colophon .site-info p {
   margin-left: 60px;
 }
-/* line 77, ../scss/base/_layout.scss */
+/* line 89, ../scss/base/_layout.scss */
 footer#colophon .social-media {
   text-align: right;
 }
 
-/* line 83, ../scss/base/_layout.scss */
+/* line 95, ../scss/base/_layout.scss */
 #footer-logo {
   width: 100%;
 }
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 90, ../scss/base/_layout.scss */
+/* line 102, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 95, ../scss/base/_layout.scss */
+/* line 107, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1243,7 +1259,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 105, ../scss/base/_layout.scss */
+/* line 117, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1259,7 +1275,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 115, ../scss/base/_layout.scss */
+/* line 127, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
@@ -2034,8 +2050,13 @@ figcaption i {
 .fast-schema {
   background-color: #00b0bf;
 }
+/* line 6, ../scss/components/_schema.scss */
+.fast-schema p {
+  padding: 13px;
+  color: white;
+}
 
-/* line 7, ../scss/components/_schema.scss */
+/* line 11, ../scss/components/_schema.scss */
 .tab-content {
   display: none;
   padding: 20px 0 0;
@@ -2043,12 +2064,18 @@ figcaption i {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 14, ../scss/components/_schema.scss */
+/* line 17, ../scss/components/_schema.scss */
+.tab-content p {
+  padding: 13px;
+  color: white;
+}
+
+/* line 22, ../scss/components/_schema.scss */
 input {
   display: none !important;
 }
 
-/* line 18, ../scss/components/_schema.scss */
+/* line 26, ../scss/components/_schema.scss */
 label {
   display: inline-block;
   margin: 0 0 -1px;
@@ -2060,13 +2087,13 @@ label {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 29, ../scss/components/_schema.scss */
+/* line 37, ../scss/components/_schema.scss */
 label:before {
   font-weight: normal;
   margin-right: 10px;
 }
 
-/* line 34, ../scss/components/_schema.scss */
+/* line 42, ../scss/components/_schema.scss */
 label:hover {
   color: #fff;
   cursor: pointer;
@@ -2077,39 +2104,40 @@ label:hover {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 44, ../scss/components/_schema.scss */
+/* line 52, ../scss/components/_schema.scss */
 input:checked + label {
   color: white;
   border: 1px solid #00b9a2;
   border-top: 2px solid #32647f;
   border-bottom: 1px solid #32647f;
-  background-color: #00b0bf;
+  background-color: #32647f;
   transition: all 0.3s ease-in-out;
 }
 
-/* line 56, ../scss/components/_schema.scss */
+/* line 64, ../scss/components/_schema.scss */
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
 #tab4:checked ~ #content4 {
   display: block;
   transition: all 0.3s ease-in-out;
+  background-color: #32647f;
 }
 
 @media screen and (max-width: 650px) {
-  /* line 62, ../scss/components/_schema.scss */
+  /* line 71, ../scss/components/_schema.scss */
   label {
     font-size: 0;
   }
 
-  /* line 65, ../scss/components/_schema.scss */
+  /* line 74, ../scss/components/_schema.scss */
   label:before {
     margin: 0;
     font-size: 18px;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 72, ../scss/components/_schema.scss */
+  /* line 81, ../scss/components/_schema.scss */
   label {
     padding: 15px;
   }

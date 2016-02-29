@@ -3,12 +3,20 @@
 }
 .fast-schema{
   background-color: $turquoise;
+  p{
+    padding:13px;
+    color: white;
+  }
 }
 .tab-content {
   display: none;
   padding: 20px 0 0;
   border-top: 1px solid $blue;
   transition: all 0.3s ease-in-out;
+}
+.tab-content p{
+  padding:13px;
+  color:white;
 }
 
 input {
@@ -46,7 +54,7 @@ input:checked + label {
   border: 1px solid $green;
   border-top: 2px solid $blue;
   border-bottom: 1px solid $blue;
-  background-color: $turquoise;
+  background-color: $blue;
   transition: all 0.3s ease-in-out;
 }
 
@@ -56,6 +64,7 @@ input:checked + label {
 #tab4:checked ~ #content4 {
   display: block;
   transition: all 0.3s ease-in-out;
+  background-color: $blue;
 }
 
 @media screen and (max-width: 650px) {

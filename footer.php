@@ -12,6 +12,7 @@
 ?>
 
 	</main><!-- #content -->
+<h2>Sponsorer</h2>
 		<?php
 				// Custom post type "sponsor" list
 
