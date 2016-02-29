@@ -35,14 +35,6 @@
 
 }
 
-.site-description{
-	@include vertical-align(absolute, 90%, 50%);
-	z-index: 600;
-	border: 1px solid #000;
-	color: white;
-	font-weight: 600;
-}
-
 
 section { /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
 	padding: 150px 0;
