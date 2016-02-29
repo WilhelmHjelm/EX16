@@ -34,30 +34,34 @@
 /* HAMBURRGER - OPEN NAVIGATION ICON */
 
 #hamburger {
+  position: fixed;
+  top: 25px;
+  right: 25px;
 	z-index: 1000;
-	width: 35px;
-	  height: 28px;
-	  position: fixed;
-	  top: 40px;
-	  right: 40px;
-	  -webkit-transform: rotate(0deg);
-	  -moz-transform: rotate(0deg);
-	  -o-transform: rotate(0deg);
-	  transform: rotate(0deg);
-	  -webkit-transition: .5s ease-in-out;
-	  -moz-transition: .5s ease-in-out;
-	  -o-transition: .5s ease-in-out;
-	  transition: .5s ease-in-out;
-	  cursor: pointer;
+	width: 24px;
+  height: 17px;
+  padding: 20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 0;
+  background: $turquoise;
 
 	  span {
 		  display: block;
 		    position: absolute;
-		    height: 5px;
-		    width: 100%;
-		    background: $text-color;
-		    opacity: 1;
-		    left: 0;
+		    height: 3px;
+		    width: 24px;
+		    background: white;
+		    left: 50%;
+        margin-left: -12px;
 		    -webkit-transform: rotate(0deg);
 		    -moz-transform: rotate(0deg);
 		    -o-transform: rotate(0deg);
@@ -70,14 +74,14 @@
 }
 
 #hamburger span:nth-child(1) {
-  top: 0px;
+  top: 20px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
   transform-origin: left center;
 }
 #hamburger span:nth-child(2) {
-  top: 11px;
+  top: 27px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -85,7 +89,7 @@
 }
 
 #hamburger span:nth-child(3) {
-  top: 22px;
+  top: 34px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -96,8 +100,10 @@
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: 0px;
-  left: 4px;
+  top: 17px;
+  left: 50%;
+  margin-left: -10px;
+  width: 30px;
 }
 #hamburger.open span:nth-child(2) {
   width: 0%;
@@ -108,6 +114,8 @@
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 25px;
-  left: 4px;
+  top: 38px;
+  left: 50%;
+  margin-left: -10px;
+  width: 30px;
 }
