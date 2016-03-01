@@ -1174,53 +1174,39 @@ object {
   width: 100%;
 }
 
-/* line 38, ../scss/base/_layout.scss */
-.site-description {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 600;
-  border: 1px solid #000;
-  color: white;
-  font-weight: 600;
-}
-
-/* line 47, ../scss/base/_layout.scss */
+/* line 39, ../scss/base/_layout.scss */
 section {
   /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
   padding: 150px 0;
 }
 
-/* line 51, ../scss/base/_layout.scss */
+/* line 43, ../scss/base/_layout.scss */
 #about {
   background: #32647f;
   color: white;
 }
 
-/* line 55, ../scss/base/_layout.scss */
+/* line 47, ../scss/base/_layout.scss */
 #company-evening {
   background: #00b9a2;
   color: white;
 }
 
-/* line 59, ../scss/base/_layout.scss */
+/* line 51, ../scss/base/_layout.scss */
 .company-button {
   border-color: white !important;
   border-radius: 0 !important;
 }
-/* line 62, ../scss/base/_layout.scss */
+/* line 54, ../scss/base/_layout.scss */
 .company-button p {
   color: white;
 }
 
-/* line 71, ../scss/base/_layout.scss */
+/* line 63, ../scss/base/_layout.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 74, ../scss/base/_layout.scss */
+/* line 66, ../scss/base/_layout.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -1229,29 +1215,29 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 83, ../scss/base/_layout.scss */
+/* line 75, ../scss/base/_layout.scss */
 footer#colophon .site-info p {
   margin-left: 60px;
 }
-/* line 89, ../scss/base/_layout.scss */
+/* line 81, ../scss/base/_layout.scss */
 footer#colophon .social-media {
   text-align: right;
 }
 
-/* line 95, ../scss/base/_layout.scss */
+/* line 87, ../scss/base/_layout.scss */
 #footer-logo {
   width: 100%;
 }
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 102, ../scss/base/_layout.scss */
+/* line 94, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 107, ../scss/base/_layout.scss */
+/* line 99, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1259,7 +1245,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 117, ../scss/base/_layout.scss */
+/* line 109, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1275,7 +1261,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 127, ../scss/base/_layout.scss */
+/* line 119, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
