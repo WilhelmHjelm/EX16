@@ -35,6 +35,9 @@
 
 }
 
+#masthead{
+	height:150px;
+}
 
 section { /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
 	padding: 150px 0;
@@ -68,7 +71,6 @@ footer#colophon {
 			position: absolute;
 			top: 0;
 			left: 0;
-			border: 1px solid #000;
 			width: 45px;
 			height: 45px;
 		}

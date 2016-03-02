@@ -29,9 +29,11 @@
 	<div class="overlay">
 		<div class="container">
 			<div class="five columns">
-				<img src="img/logotypex16.png" alt="<?php bloginfo('name')?>">
 				<h2>EX16</h2>
 				<h5>Examensdagarna för Grafisk design och kommunikation på Linköpings universitet. 12-14 maj i Färgeriet, Kåkenhus på Campus Norrköping.</h5>
+				<div class="social-media">
+
+				</div>
 			</div>
 		<nav id="site-navigation" class="main-navigation offset-by-one six columns" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
@@ -51,8 +53,10 @@
 			<h1 class="logotype"><?php //bloginfo( 'name' ); ?></h1>
 		</div><!-- .site-branding -->
 			<?php else : ?>
-				<a href="<?php home_url() ?>"
+				<a href="<?php echo get_home_url(); ?>">
 					<div class="back-button">
+						<img id="back-button" src="<?php echo get_template_directory_uri(); ?>/img/logotypex16.png">
+					</div>
 				</a>
 			<?php endif; ?>
 	</header><!-- #masthead -->
