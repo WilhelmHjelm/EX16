@@ -527,99 +527,120 @@ body {
 
 /* line 10, ../scss/base/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
+  display: inline-block;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
-/* line 17, ../scss/base/_typography.scss */
+/* line 18, ../scss/base/_typography.scss */
 h1 {
   font-size: 40px;
   line-height: 1.1;
   font-weight: 700;
 }
 
-/* line 18, ../scss/base/_typography.scss */
+/* line 19, ../scss/base/_typography.scss */
 h2 {
   font-size: 36px;
   line-height: 1.25;
   font-weight: 700;
 }
 
-/* line 19, ../scss/base/_typography.scss */
+/* line 20, ../scss/base/_typography.scss */
 h3 {
   font-size: 30px;
   line-height: 1.3;
 }
 
-/* line 20, ../scss/base/_typography.scss */
+/* line 21, ../scss/base/_typography.scss */
 h4 {
   font-size: 24px;
   line-height: 1.35;
 }
 
-/* line 21, ../scss/base/_typography.scss */
+/* line 22, ../scss/base/_typography.scss */
 h5 {
   font-size: 18px;
   line-height: 1.5;
 }
 
-/* line 22, ../scss/base/_typography.scss */
+/* line 23, ../scss/base/_typography.scss */
 h6 {
   font-size: 15px;
   line-height: 1.6;
 }
 
 @media (min-width: 480px) {
-  /* line 25, ../scss/base/_typography.scss */
+  /* line 26, ../scss/base/_typography.scss */
   h1 {
     font-size: 67.33963px;
   }
 
-  /* line 26, ../scss/base/_typography.scss */
+  /* line 27, ../scss/base/_typography.scss */
   h2 {
     font-size: 50.51735px;
   }
 
-  /* line 27, ../scss/base/_typography.scss */
+  /* line 28, ../scss/base/_typography.scss */
   h3 {
     font-size: 37.89749px;
   }
 
-  /* line 28, ../scss/base/_typography.scss */
+  /* line 29, ../scss/base/_typography.scss */
   h4 {
     font-size: 28.43022px;
   }
 
-  /* line 29, ../scss/base/_typography.scss */
+  /* line 30, ../scss/base/_typography.scss */
   h5 {
     font-size: 21.328px;
   }
 
-  /* line 30, ../scss/base/_typography.scss */
+  /* line 31, ../scss/base/_typography.scss */
   h6 {
     font-size: 16px;
   }
 }
-/* line 33, ../scss/base/_typography.scss */
+/* line 34, ../scss/base/_typography.scss */
 p {
   margin-top: 0;
 }
 
-/* line 37, ../scss/base/_typography.scss */
+/* line 38, ../scss/base/_typography.scss */
 a {
   color: #32647f;
 }
 
-/* line 40, ../scss/base/_typography.scss */
+/* line 41, ../scss/base/_typography.scss */
 a:visited {
   color: #32647f;
 }
 
-/* line 43, ../scss/base/_typography.scss */
+/* line 44, ../scss/base/_typography.scss */
 a:hover {
   color: #444444;
+}
+
+/* line 48, ../scss/base/_typography.scss */
+.blue-text {
+  color: #32647f;
+}
+
+/* line 49, ../scss/base/_typography.scss */
+.turquoise-text {
+  color: #00b0bf;
+}
+
+/* line 50, ../scss/base/_typography.scss */
+.green-text {
+  color: #00b9a2;
+}
+
+/* line 51, ../scss/base/_typography.scss */
+.orange-text {
+  color: #fd9907;
 }
 
 /* line 1, ../scss/base/_misc.scss */
@@ -1182,31 +1203,32 @@ section {
 
 /* line 43, ../scss/base/_layout.scss */
 #about {
-  background: #32647f;
+  background: #00b0bf;
   color: white;
+  text-align: center;
 }
 
-/* line 47, ../scss/base/_layout.scss */
+/* line 48, ../scss/base/_layout.scss */
 #company-evening {
   background: #00b9a2;
   color: white;
 }
 
-/* line 51, ../scss/base/_layout.scss */
+/* line 52, ../scss/base/_layout.scss */
 .company-button {
   border-color: white !important;
   border-radius: 0 !important;
 }
-/* line 54, ../scss/base/_layout.scss */
+/* line 55, ../scss/base/_layout.scss */
 .company-button p {
   color: white;
 }
 
-/* line 63, ../scss/base/_layout.scss */
+/* line 64, ../scss/base/_layout.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 66, ../scss/base/_layout.scss */
+/* line 67, ../scss/base/_layout.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -1215,29 +1237,29 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 75, ../scss/base/_layout.scss */
+/* line 76, ../scss/base/_layout.scss */
 footer#colophon .site-info p {
   margin-left: 60px;
 }
-/* line 81, ../scss/base/_layout.scss */
+/* line 82, ../scss/base/_layout.scss */
 footer#colophon .social-media {
   text-align: right;
 }
 
-/* line 87, ../scss/base/_layout.scss */
+/* line 88, ../scss/base/_layout.scss */
 #footer-logo {
   width: 100%;
 }
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 94, ../scss/base/_layout.scss */
+/* line 95, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 99, ../scss/base/_layout.scss */
+/* line 100, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1245,7 +1267,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 109, ../scss/base/_layout.scss */
+/* line 110, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1261,7 +1283,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 119, ../scss/base/_layout.scss */
+/* line 120, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {

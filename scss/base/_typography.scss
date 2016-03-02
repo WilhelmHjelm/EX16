@@ -8,9 +8,10 @@ body {
   color: #222; }
 
 h1, h2, h3, h4, h5, h6 {
+  display: inline-block;
 	font-family: $h-font-stack;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
@@ -43,3 +44,8 @@ a:visited {
 a:hover {
   color: $hover-link-color;
 }
+
+.blue-text { color: $blue; }
+.turquoise-text { color: $turquoise; }
+.green-text { color: $green; }
+.orange-text { color: $orange; }

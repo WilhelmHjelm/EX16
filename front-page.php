@@ -15,13 +15,11 @@ get_header(); ?>
 
 <section id="about">
   <div class="container">
-    <div class="six columns">
+    <div class="ten columns offset-by-one">
       <h1>Examensdagarna för Grafisk design och kommunikation</h1>
-      <h2>12 - 14 maj i Färgeriet, Kåkenhus</h1>
-    </div><!-- .six -->
-    <div class="six columns">
-      <iframe src="https://player.vimeo.com/video/152694696?color=64a508" width="738" height="415" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div> <!-- .six -->
+      <h2 class="blue-text">12-14 maj i Färgeriet, Kåkenhus</h2>
+      <a href="#schema" class="button">Läs mer om EX16</a>
+    </div><!-- .ten -->
   </div> <!-- .container -->
 </section>
 
