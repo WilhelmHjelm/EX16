@@ -51,7 +51,7 @@
 			<h1 class="logotype"><?php //bloginfo( 'name' ); ?></h1>
 		</div><!-- .site-branding -->
 			<?php else : ?>
-				sidtitel här
+				sidtitel här, logga?
 			<?php endif; ?>
 	</header><!-- #masthead -->
 

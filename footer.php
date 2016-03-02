@@ -18,13 +18,6 @@
 
 				    $args = array(
 				      'post_type' => 'sponsorer'
-				      /*'tax_query' => array(
-				        array(
-				          'taxonomy' => 'product_category',
-				          'field' => 'slug',
-				          'terms' => 'boardgames'
-				        )
-				      )*/
 				    );
 				    $sponsors = new WP_Query( $args );
 				    if( $sponsors->have_posts() ) {

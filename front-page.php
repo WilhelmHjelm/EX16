@@ -20,6 +20,7 @@ get_header(); ?>
       <h2 class="blue-text">12-14 maj i Färgeriet, Kåkenhus</h2>
       <a href="#schema" class="button">Läs mer om EX16</a>
     </div><!-- .ten -->
+    </div><!-- .six -->
   </div> <!-- .container -->
 </section>
 
@@ -37,19 +38,29 @@ get_header(); ?>
 
     <div class="tab-content" id="content1">
       <p>
-        HÄR KOMMER KUL SAKER HÄNDA! 1
+        xx:xx <strong>Invigning</strong>
+        xx:xx <strong>Invigning</strong>
+        xx:xx <strong>Invigning</strong>
+        xx:xx <strong>Invigning</strong>
+        xx:xx <strong>Invigning</strong>
       </p>
     </div>
 
     <div class="tab-content" id="content2">
       <p>
-        HÄR KOMMER KUL SAKER HÄNDA! 2
+        18:00 <strong>Företagskväll</strong>
+        18:00 <strong>Företagskväll</strong>
+        18:00 <strong>Företagskväll</strong>
       </p>
     </div>
 
     <div class="tab-content" id="content3">
       <p>
-        HÄR KOMMER KUL SAKER HÄNDA! 3
+        18:00 <strong>Examenssittning</strong>
+        18:00 <strong>Examenssittning</strong>
+        18:00 <strong>Examenssittning</strong>
+        18:00 <strong>Examenssittning</strong>
+
       </p>
     </div>
   </div>
