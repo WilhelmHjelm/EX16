@@ -40,7 +40,7 @@ else{
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="container">
 			<div class="six columns site-info">
-				<div class="logo"><img id="footer-logo" src="img/ex16-logo.jpg" alt="<?php bloginfo('name')?>"></div>
+				<div class="logo"><img id="footer-logo" src="<?php echo get_template_directory_uri(); ?>/img/ex16-logo.jpg" alt="<?php bloginfo('name')?>"></div>
 				<p><strong><?php bloginfo( 'name' ); ?></strong><br>
 					<?php bloginfo( 'description' ); ?></p>
 			</div> <!-- .site-info -->

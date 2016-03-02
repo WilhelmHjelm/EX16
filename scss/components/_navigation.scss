@@ -135,3 +135,17 @@
   margin-left: -10px;
   width: 30px;
 }
+
+/* LOGOTYPE / BACK BUTTON*/
+
+.back-button{
+  position: fixed;
+  top: 25px;
+  left: 25px;
+	z-index: 1000;
+	width: 17px;
+  height: 17px;
+  padding: 20px;
+  background-image: url();
+  border: 1px solid #000;
+}

@@ -54,7 +54,7 @@
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0);
   clip: auto !important;
   color: #21759b;
   display: block;
@@ -1591,6 +1591,20 @@ label > .label-body {
   left: 50%;
   margin-left: -10px;
   width: 30px;
+}
+
+/* LOGOTYPE / BACK BUTTON*/
+/* line 141, ../scss/components/_navigation.scss */
+.back-button {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 1000;
+  width: 17px;
+  height: 17px;
+  padding: 20px;
+  background-image: url();
+  border: 1px solid #000;
 }
 
 /* line 1, ../scss/components/_lecturers.scss */

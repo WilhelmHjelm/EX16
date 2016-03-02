@@ -51,7 +51,9 @@
 			<h1 class="logotype"><?php //bloginfo( 'name' ); ?></h1>
 		</div><!-- .site-branding -->
 			<?php else : ?>
-				sidtitel här, logga?
+				<a href="<?php home_url() ?>"
+					<div class="back-button">
+				</a>
 			<?php endif; ?>
 	</header><!-- #masthead -->
 
