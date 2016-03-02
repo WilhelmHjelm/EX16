@@ -38,11 +38,8 @@ p {
 a {
   color: $link-color;
 }
-a:visited {
-  color: $visited-link-color;
-}
 a:hover {
-  color: $hover-link-color;
+  opacity: 0.8;
 }
 
 .blue-text { color: $blue; }

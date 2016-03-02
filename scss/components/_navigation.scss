@@ -21,13 +21,29 @@
   .overlay {
     width: 100%;
     height: 100%;
-    background: $turquoise;
+    background: $green;
   }
 
   .container {
     @include vertical-align(absolute, 50%, 50%);
   }
 
+}
+
+#site-navigation {
+  ul {
+    list-style: none;
+    margin: 0;
+
+    a {
+      font-size: modular-scale($typo-scale-base, 3, $typo-scale-ratio);
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+  }
 }
 
 
@@ -52,7 +68,7 @@
   border-radius: 100%;
   cursor: pointer;
   border: 0;
-  background: $turquoise;
+  background: $green;
 
 	  span {
 		  display: block;

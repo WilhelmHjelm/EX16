@@ -28,12 +28,12 @@
 <div id="fixed-nav">
 	<div class="overlay">
 		<div class="container">
-			<div class="six columns">
+			<div class="five columns">
 				<img src="img/logotypex16.png" alt="<?php bloginfo('name')?>">
 				<h2>EX16</h2>
-				<p>lorem ipsum lol</p>
+				<h5>Examensdagarna för Grafisk design och kommunikation på Linköpings universitet. 12-14 maj i Färgeriet, Kåkenhus på Campus Norrköping.</h5>
 			</div>
-		<nav id="site-navigation" class="main-navigation six columns" role="navigation">
+		<nav id="site-navigation" class="main-navigation offset-by-one six columns" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation .six-columns -->
 		</div> <!-- .container -->
