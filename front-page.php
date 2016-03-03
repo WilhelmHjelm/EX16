@@ -87,15 +87,15 @@ get_header(); ?>
           ?>
           <div class="grid-forelasare">
             <figure class="hover-lecturer">
-        <a href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail(); ?>
-          <figcaption>
-            <h3><?php the_title(); ?></h3>
-            <p><i class="fa fa-clock-o"></i><?php the_field('time'); ?><i class="fa fa-map-marker"></i><?php the_field('place'); ?></p>
-          </figcaption>
-        </figrure>
-        </a>
-            </div>
+              <a href="<?php the_permalink(); ?>#<?php the_title(); ?>">
+                <?php the_post_thumbnail(); ?>
+                <figcaption>
+                  <h3><?php the_title(); ?></h3>
+                  <p><i class="fa fa-clock-o"></i><?php the_field('time'); ?><i class="fa fa-map-marker"></i><?php the_field('place'); ?></p>
+                </figcaption>
+            </figrure>
+          </a>
+        </div>
 
           <?php
         }

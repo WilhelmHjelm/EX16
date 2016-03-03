@@ -2179,4 +2179,24 @@ input:checked + label {
     padding: 15px;
   }
 }
+/* line 1, ../scss/components/_sponsors.scss */
+.big-sponsors {
+  border: 1px solid #000;
+}
+/* line 3, ../scss/components/_sponsors.scss */
+.big-sponsors img {
+  width: 350px;
+  height: 100%;
+  text-align: center;
+}
+
+/* line 10, ../scss/components/_sponsors.scss */
+.small-sponsors {
+  border: 1px solid #000;
+}
+/* line 12, ../scss/components/_sponsors.scss */
+.small-sponsors img {
+  width: 350px;
+}
+
 /* @import "vendors/"; */
