@@ -16,7 +16,7 @@ get_header(); ?>
     <h2>Föreläsare</h2>
   </div>
 <?php
-// Custom post type "sponsorer" list
+// Custom post type "Föreläsare" list
 
     $args = array(
       'post_type' => 'forelasare'

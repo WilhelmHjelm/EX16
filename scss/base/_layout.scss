@@ -81,14 +81,40 @@ footer#colophon {
 
 	}
 
-	.social-media {
-		text-align: right;
-	}
-
 
 }
 #footer-logo{
 	width:100%;
+}
+.social-media, .social-media-head {
+	text-align: right;
+	i{
+		padding: 10px;
+		border: 2px solid $blue;
+		transition: all 0.3s ease-in-out;
+	}
+	i:hover{
+		border: 2px solid $blue;
+		color:#fff;
+		background-color: $blue;
+		transition: all 0.3s ease-in-out;
+	}
+	#facebook{
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+.social-media-head{
+	text-align: left;
+	i{
+		border-color: #000 !important;
+		color: #000 !important;
+	}
+	i:hover{
+		background-color: $green !important;
+		border-color: #fff !important;
+		color: #fff !important;
+	}
 }
 
 /* Spacing

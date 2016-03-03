@@ -63,8 +63,10 @@
 					<?php bloginfo( 'description' ); ?></p>
 			</div> <!-- .site-info -->
 			<div class="six columns social-media">
-				sociala medier wow
-				<p></p>
+				<a href="länk till facebook här då" target="_blank"><i id="facebook" class="fa fa-facebook"></i></a>
+				<a href="länk till twitter här då" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="länk till instagram här då" target="_blank"><i class="fa fa-instagram"></i></a>
+				<a href="länk till instagram här då" target="_blank"><i class="fa fa-linkedin"></i></a>
 			</div> <!-- .site-info -->
 	</div> <!-- .container -->
 	</footer><!-- #colophon -->
