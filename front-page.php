@@ -18,7 +18,7 @@ get_header(); ?>
     <div class="ten columns offset-by-one">
       <h1>Examensdagarna för Grafisk design och kommunikation</h1>
       <h2 class="blue-text">12-14 maj i Färgeriet, Kåkenhus</h2>
-      <a href="#schema" class="button">Läs mer om EX16</a>
+      <span><a href="#schema" class="button read-more-home">Läs mer om EX16</a></span>
     </div><!-- .ten -->
     </div><!-- .six -->
   </div> <!-- .container -->
@@ -115,11 +115,7 @@ get_header(); ?>
     <div class="five columns">
       <h2>FÖRETAGSKVÄLL</h2>
       <p>Info om företagskvällen Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <a href="mailto:foretagskvall@ex16.se">
-        <div class="button company-button">
-          <p>Vill du vara med på företagskvällen?</p>
-        </div>
-      </a>
+      <a href="mailto:foretagskvall@ex16.se" class="button">Vill du vara med på företagskvällen?</a>
     </div>
 </section>
 
