@@ -26,18 +26,17 @@
 				while( $sponsorer->have_posts() ) {
 					$sponsorer->the_post();
 					?>
-
+					<div class="container">
 				<?php $big = get_field('highlight'); ?>
 					<?php if (in_array('yes', $big)) { ?>
-						<div class="container">
 							<div class="big-sponsors six columns">
 								<a href="<?php the_field('link'); ?>">
 									<img src="<?php the_field( 'logotype' ); ?>">
 								</a>
 							</div>
 						</div>
-					<?php } else { ?>
 						<div class="container">
+					<?php } else { ?>
 							<div class="small-sponsors four columns">
 								<a href="<?php the_field('link'); ?>">
 									<img src="<?php the_field( 'logotype' ); ?>">
