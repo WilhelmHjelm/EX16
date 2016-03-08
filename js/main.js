@@ -2,8 +2,11 @@
 $(document).ready(function(){
  $('#hamburger').click(function(){
    $(this).toggleClass('open');
- $('#fixed-nav').toggleClass('open');
-
+   $('#fixed-nav').toggleClass('open');
+ });
+ $('.anchorlink a').click(function(){
+   $('#hamburger').toggleClass('open');
+   $('#fixed-nav').toggleClass('open');
  });
 });
 
