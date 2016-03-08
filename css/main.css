@@ -1275,15 +1275,29 @@ footer#colophon .site-info p {
   color: #fff !important;
 }
 
+/* line 114, ../scss/base/_layout.scss */
+.entry-content.about-text {
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 25px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 25px;
+  /* Firefox */
+  column-gap: 25px;
+}
+
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 116, ../scss/base/_layout.scss */
+/* line 128, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 121, ../scss/base/_layout.scss */
+/* line 133, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1291,7 +1305,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 131, ../scss/base/_layout.scss */
+/* line 143, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1307,7 +1321,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 141, ../scss/base/_layout.scss */
+/* line 153, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
@@ -1882,12 +1896,13 @@ figcaption i {
   transition: opacity 0.2s ease;
 }
 
-/* line 54, ../scss/components/_expanding-grid.scss */
+/* line 55, ../scss/components/_expanding-grid.scss */
+.og-grid li a:hover,
 .og-grid li a:hover img.hover {
   opacity: 1;
 }
 
-/* line 58, ../scss/components/_expanding-grid.scss */
+/* line 59, ../scss/components/_expanding-grid.scss */
 .og-grid .graduate-name {
   box-sizing: border-box;
   position: absolute;
@@ -1898,7 +1913,7 @@ figcaption i {
   height: 50px;
   opacity: 0.8;
 }
-/* line 68, ../scss/components/_expanding-grid.scss */
+/* line 69, ../scss/components/_expanding-grid.scss */
 .og-grid .graduate-name span {
   position: absolute;
   top: 50%;
@@ -1915,14 +1930,14 @@ figcaption i {
   box-sizing: border-box;
 }
 
-/* line 81, ../scss/components/_expanding-grid.scss */
+/* line 82, ../scss/components/_expanding-grid.scss */
 .og-grid li > a,
 .og-grid li > a img {
   outline: none;
   display: block;
 }
 
-/* line 86, ../scss/components/_expanding-grid.scss */
+/* line 87, ../scss/components/_expanding-grid.scss */
 .og-expander {
   position: absolute;
   top: auto;
@@ -1933,14 +1948,14 @@ figcaption i {
   overflow: hidden;
 }
 
-/* line 96, ../scss/components/_expanding-grid.scss */
+/* line 97, ../scss/components/_expanding-grid.scss */
 .og-expander-inner {
   padding: 40px;
   height: 100%;
   box-sizing: border-box;
 }
 
-/* line 102, ../scss/components/_expanding-grid.scss */
+/* line 103, ../scss/components/_expanding-grid.scss */
 .og-close {
   position: absolute;
   width: 40px;
@@ -1950,7 +1965,7 @@ figcaption i {
   cursor: pointer;
 }
 
-/* line 112, ../scss/components/_expanding-grid.scss */
+/* line 113, ../scss/components/_expanding-grid.scss */
 .og-close::before,
 .og-close::after {
   content: '';
@@ -1964,20 +1979,20 @@ figcaption i {
   transform: rotate(45deg);
 }
 
-/* line 124, ../scss/components/_expanding-grid.scss */
+/* line 125, ../scss/components/_expanding-grid.scss */
 .og-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-/* line 131, ../scss/components/_expanding-grid.scss */
+/* line 132, ../scss/components/_expanding-grid.scss */
 .og-close:hover::before,
 .og-close:hover::after {
   background: #666;
 }
 
-/* line 136, ../scss/components/_expanding-grid.scss */
+/* line 137, ../scss/components/_expanding-grid.scss */
 .og-fullimg,
 .og-details {
   width: 27%;
@@ -1987,42 +2002,37 @@ figcaption i {
   position: relative;
 }
 
-/* line 144, ../scss/components/_expanding-grid.scss */
+/* line 145, ../scss/components/_expanding-grid.scss */
 .og-details {
   width: 64%;
   padding: 20px 0 0 0;
   margin: 0;
 }
 
-/* line 150, ../scss/components/_expanding-grid.scss */
+/* line 151, ../scss/components/_expanding-grid.scss */
 .og-fullimg {
   text-align: center;
   padding-top: 150%;
   overflow: hidden;
 }
 
-/* line 156, ../scss/components/_expanding-grid.scss */
+/* line 157, ../scss/components/_expanding-grid.scss */
 .og-fullimg img {
   display: inline-block;
   max-height: 100%;
   max-width: 100%;
 }
 
-/* line 165, ../scss/components/_expanding-grid.scss */
-.og-details .social {
-  display: block;
-  padding: 20px 0 0 0;
-}
-
-/* line 170, ../scss/components/_expanding-grid.scss */
-.og-details .social a {
+/* line 166, ../scss/components/_expanding-grid.scss */
+.og-details a.fa {
   display: inline-block;
-  margin: 0 12px 0 0;
+  margin: 12px 12px 0 0;
   outline: none;
-  font-size: 26px;
+  font-size: 28px;
+  text-decoration: none;
 }
 
-/* line 179, ../scss/components/_expanding-grid.scss */
+/* line 176, ../scss/components/_expanding-grid.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -2039,18 +2049,18 @@ figcaption i {
 }
 
 @-webkit-keyframes loader {
-  /* line 195, ../scss/components/_expanding-grid.scss */
+  /* line 192, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 196, ../scss/components/_expanding-grid.scss */
+  /* line 193, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 197, ../scss/components/_expanding-grid.scss */
+  /* line 194, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2058,18 +2068,18 @@ figcaption i {
 }
 
 @-moz-keyframes loader {
-  /* line 201, ../scss/components/_expanding-grid.scss */
+  /* line 198, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 202, ../scss/components/_expanding-grid.scss */
+  /* line 199, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 203, ../scss/components/_expanding-grid.scss */
+  /* line 200, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2077,18 +2087,18 @@ figcaption i {
 }
 
 @keyframes loader {
-  /* line 207, ../scss/components/_expanding-grid.scss */
+  /* line 204, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 208, ../scss/components/_expanding-grid.scss */
+  /* line 205, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 209, ../scss/components/_expanding-grid.scss */
+  /* line 206, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2096,12 +2106,12 @@ figcaption i {
 }
 
 @media screen and (max-width: 960px) {
-  /* line 215, ../scss/components/_expanding-grid.scss */
+  /* line 212, ../scss/components/_expanding-grid.scss */
   .og-fullimg {
     display: none;
   }
 
-  /* line 216, ../scss/components/_expanding-grid.scss */
+  /* line 213, ../scss/components/_expanding-grid.scss */
   .og-details {
     float: none;
     width: 100%;
