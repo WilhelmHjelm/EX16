@@ -51,6 +51,7 @@
   opacity: 0;
   transition: opacity 0.2s ease;
 }
+.og-grid li a:hover,
 .og-grid li a:hover img.hover {
   opacity: 1;
 }
@@ -162,16 +163,12 @@
 
 // Social media, fixa detta plx
 
-.og-details .social {
-  display: block;
-  padding: 20px 0 0 0;
-}
-
-.og-details .social a {
+.og-details a.fa {
 	display: inline-block;
-	margin: 0 12px 0 0;
+	margin: 12px 12px 0 0;
 	outline: none;
-  font-size: 26px;
+  font-size: 28px;
+	text-decoration: none;
 }
 
 

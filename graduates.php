@@ -13,6 +13,9 @@ get_header(); ?>
 
 <?php endwhile; // end of the loop. ?>
 <div class="container">
+  <div class="twelve columns">
+  <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+  </div>
 <?php
 // Custom post type "Examensklassen" list
 
@@ -42,7 +45,7 @@ get_header(); ?>
           $hover_thumb_image = wp_get_attachment_image_src( $hover_attachment_id, $hover_thumb );
           ?>
           <li>
-            <a href="" data-largesrc="<?php echo $full_image[0]; ?>" data-title="<?php the_title() ?>" data-description="<?php the_content() ?>">
+            <a href="" data-largesrc="<?php echo $full_image[0]; ?>" data-title="<?php the_title() ?>" data-description='<?php the_content() ?>'>
               <img src="<?php echo $thumb_image[0]; ?>" class="static" alt="<?php the_title() ?>">
               <img src="<?php echo $hover_thumb_image[0]; ?>" class="hover" alt="<?php the_title() ?>">
               <div class="graduate-name <?php echo $graduateColor; ?>-bg"><span><?php the_title() ?></span></div>
