@@ -37,6 +37,8 @@ p {
 
 a {
   color: $link-color;
+  opacity: 1;
+  transition: all 100ms linear;
 }
 a:hover {
   opacity: 0.8;
