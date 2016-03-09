@@ -54,7 +54,7 @@
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0);
   clip: auto !important;
   color: #21759b;
   display: block;
@@ -611,29 +611,31 @@ p {
 /* line 38, ../scss/base/_typography.scss */
 a {
   color: #32647f;
+  opacity: 1;
+  transition: all 100ms linear;
 }
 
-/* line 41, ../scss/base/_typography.scss */
+/* line 43, ../scss/base/_typography.scss */
 a:hover {
   opacity: 0.8;
 }
 
-/* line 45, ../scss/base/_typography.scss */
+/* line 47, ../scss/base/_typography.scss */
 .blue-text {
   color: #32647f;
 }
 
-/* line 46, ../scss/base/_typography.scss */
+/* line 48, ../scss/base/_typography.scss */
 .turquoise-text {
   color: #00b0bf;
 }
 
-/* line 47, ../scss/base/_typography.scss */
+/* line 49, ../scss/base/_typography.scss */
 .green-text {
   color: #00b9a2;
 }
 
-/* line 48, ../scss/base/_typography.scss */
+/* line 50, ../scss/base/_typography.scss */
 .orange-text {
   color: #fd9907;
 }
@@ -1276,7 +1278,7 @@ footer#colophon .site-info p {
 }
 
 @media (min-width: 780px) {
-  /* line 115, ../scss/base/_layout.scss */
+  /* line 114, ../scss/base/_layout.scss */
   .entry-content.about-text {
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
@@ -1292,13 +1294,13 @@ footer#colophon .site-info p {
 }
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 129, ../scss/base/_layout.scss */
+/* line 128, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 134, ../scss/base/_layout.scss */
+/* line 133, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1306,7 +1308,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 144, ../scss/base/_layout.scss */
+/* line 143, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1322,7 +1324,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 154, ../scss/base/_layout.scss */
+/* line 153, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
@@ -1831,6 +1833,12 @@ figcaption i {
 }
 
 /*----Föreläsare-page -------*/
+/* line 154, ../scss/components/_lecturers.scss */
+i {
+  padding-left: 5px;
+  padding-right: 2px;
+}
+
 /* line 1, ../scss/components/_expanding-grid.scss */
 .og-grid {
   list-style: none;
@@ -2229,24 +2237,11 @@ input:checked + label {
     padding: 15px;
   }
 }
-/* line 1, ../scss/components/_sponsors.scss */
-.big-sponsors {
-  border: 1px solid #000;
-}
-/* line 3, ../scss/components/_sponsors.scss */
-.big-sponsors img {
-  width: 350px;
-  height: 100%;
-  text-align: center;
-}
-
-/* line 10, ../scss/components/_sponsors.scss */
-.small-sponsors {
-  border: 1px solid #000;
-}
-/* line 12, ../scss/components/_sponsors.scss */
-.small-sponsors img {
-  width: 350px;
+/* line 1, ../scss/components/_footer.scss */
+.one-sponsor {
+  width: 20%;
+  vertical-align: middle;
+  padding: 22px;
 }
 
 /* @import "vendors/"; */

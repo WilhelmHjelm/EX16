@@ -15,9 +15,9 @@
 
 
 
-	<div class="container">
+	<section class="container sponsorer">
 		<h2>Sponsorer</h2>
-		<div class="four-columns sponsorer">
+		<div class="four-columns">
   <?php
   // Custom post type "sponsorer" list
 
@@ -30,7 +30,7 @@
           $sponsorer->the_post();
           ?>
               <a href="<?php the_field('link'); ?>" target="_blank">
-                <img id="one-sponsor" src="<?php the_field('logotype'); ?>" alt="<?php the_title(); ?>" width="250px">
+                <img class="one-sponsor" src="<?php the_field('logotype'); ?>" alt="<?php the_title(); ?>">
           		</a>
 
           <?php
@@ -41,17 +41,7 @@
       }
     ?>
 		</div>
-</div>
-
-<style>
-#one-sponsor{
-	padding:22px;
-	width:20%;
-	vertical-align: middle;
-}
-
-
-</style>
+</section>
 
 
 	<footer id="colophon" class="site-footer" role="contentinfo">

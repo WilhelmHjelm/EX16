@@ -87,7 +87,7 @@ get_header(); ?>
           ?>
           <div class="grid-forelasare">
             <figure class="hover-lecturer">
-              <a href="<?php the_permalink(); ?>#<?php the_title(); ?>">
+              <a href="<?php echo get_page_link(45); ?>#<?php the_title(); ?>">
                 <?php the_post_thumbnail(); ?>
                 <figcaption>
                   <h3><?php the_title(); ?></h3>
