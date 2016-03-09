@@ -1238,47 +1238,8 @@ footer#colophon .site-info p {
   width: 100%;
 }
 
-/* line 82, ../scss/base/_layout.scss */
-.social-media, .social-media-head {
-  text-align: right;
-}
-/* line 84, ../scss/base/_layout.scss */
-.social-media i, .social-media-head i {
-  padding: 10px;
-  border: 2px solid #32647f;
-  transition: all 0.3s ease-in-out;
-}
-/* line 89, ../scss/base/_layout.scss */
-.social-media i:hover, .social-media-head i:hover {
-  border: 2px solid #32647f;
-  color: #fff;
-  background-color: #32647f;
-  transition: all 0.3s ease-in-out;
-}
-/* line 95, ../scss/base/_layout.scss */
-.social-media #facebook, .social-media-head #facebook {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-/* line 100, ../scss/base/_layout.scss */
-.social-media-head {
-  text-align: left;
-}
-/* line 102, ../scss/base/_layout.scss */
-.social-media-head i {
-  border-color: #000 !important;
-  color: #000 !important;
-}
-/* line 106, ../scss/base/_layout.scss */
-.social-media-head i:hover {
-  background-color: #00b9a2 !important;
-  border-color: #fff !important;
-  color: #fff !important;
-}
-
 @media (min-width: 780px) {
-  /* line 114, ../scss/base/_layout.scss */
+  /* line 85, ../scss/base/_layout.scss */
   .entry-content.about-text {
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
@@ -1294,13 +1255,13 @@ footer#colophon .site-info p {
 }
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 128, ../scss/base/_layout.scss */
+/* line 99, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 133, ../scss/base/_layout.scss */
+/* line 104, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1308,7 +1269,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 143, ../scss/base/_layout.scss */
+/* line 114, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1324,7 +1285,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 153, ../scss/base/_layout.scss */
+/* line 124, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
@@ -1403,6 +1364,45 @@ input[type="button"].button-primary:focus {
 /* line 59, ../scss/components/_buttons.scss */
 .read-more-home {
   margin-top: 50px;
+}
+
+/* line 63, ../scss/components/_buttons.scss */
+.social-media, .social-media-head {
+  text-align: right;
+}
+/* line 65, ../scss/components/_buttons.scss */
+.social-media i, .social-media-head i {
+  padding: 10px;
+  border: 2px solid #32647f;
+  transition: all 0.3s ease-in-out;
+}
+/* line 70, ../scss/components/_buttons.scss */
+.social-media i:hover, .social-media-head i:hover {
+  border: 2px solid #32647f;
+  color: #fff;
+  background-color: #32647f;
+  transition: all 0.3s ease-in-out;
+}
+/* line 76, ../scss/components/_buttons.scss */
+.social-media #facebook, .social-media-head #facebook {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* line 81, ../scss/components/_buttons.scss */
+.social-media-head {
+  text-align: left;
+}
+/* line 83, ../scss/components/_buttons.scss */
+.social-media-head i {
+  border-color: #000 !important;
+  color: #000 !important;
+}
+/* line 87, ../scss/components/_buttons.scss */
+.social-media-head i:hover {
+  background-color: #00b9a2 !important;
+  border-color: #fff !important;
+  color: #fff !important;
 }
 
 /* Forms
@@ -2242,6 +2242,11 @@ input:checked + label {
   width: 20%;
   vertical-align: middle;
   padding: 22px;
+}
+
+/* line 6, ../scss/components/_footer.scss */
+#big-sponsor {
+  width: 40%;
 }
 
 /* @import "vendors/"; */
