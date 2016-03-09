@@ -111,6 +111,7 @@ footer#colophon {
 }
 
 
+@media (min-width: $break-mobile + 300) {
 .entry-content.about-text {
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
@@ -118,7 +119,7 @@ footer#colophon {
 		-webkit-column-gap: 25px; /* Chrome, Safari, Opera */
     -moz-column-gap: 25px; /* Firefox */
     column-gap: 25px;
-
+}
 }
 
 

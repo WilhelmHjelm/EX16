@@ -77,11 +77,11 @@ get_header(); ?>
           ?>
 
           <li>
-            <a href="">
+            <div class="wrap">
               <img src="<?php echo $thumb_image[0]; ?>" class="static" alt="<?php the_title() ?>">
               <img src="<?php echo $hover_thumb_image[0]; ?>" class="hover" alt="<?php the_title() ?>">
               <div class="graduate-name <?php echo $graduateColor; ?>-bg"><span><?php the_title() ?></span></div>
-            </a>
+            </div>
           </li>
 
         <?php }

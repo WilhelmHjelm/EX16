@@ -27,7 +27,14 @@
 
 }
 
-.og-grid li > a {
+.og-grid.project-groups li {
+  @media (min-width: $break-grid) {
+    width: 20%;
+  }
+}
+
+.og-grid li > a,
+.og-grid.project-groups li .wrap {
   position:relative;
   width: 100%;
   padding-top: 150%;
@@ -52,7 +59,9 @@
   transition: opacity 0.2s ease;
 }
 .og-grid li a:hover,
-.og-grid li a:hover img.hover {
+.og-grid.project-groups li .wrap:hover,
+.og-grid li a:hover img.hover,
+.og-grid.project-groups li .wrap:hover img.hover {
   opacity: 1;
 }
 
