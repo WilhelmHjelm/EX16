@@ -13,46 +13,46 @@
 
 	</main><!-- #content -->
 
-	<h2>Sponsorer</h2>
 
-	<?php
-	// Custom post type "sponsorer" list
 
-			$args = array(
-				'post_type' => 'sponsorer'
-			);
-			$sponsorer = new WP_Query( $args );
-			if( $sponsorer->have_posts() ) {
-				while( $sponsorer->have_posts() ) {
-					$sponsorer->the_post();
-					?>
-					<div class="container">
-				<?php $big = get_field('highlight'); ?>
-					<?php if (in_array('yes', $big)) { ?>
-							<div class="big-sponsors six columns">
-								<a href="<?php the_field('link'); ?>">
-									<img src="<?php the_field( 'logotype' ); ?>">
-								</a>
-							</div>
-						</div>
-						<div class="container">
-					<?php } else { ?>
-							<div class="small-sponsors four columns">
-								<a href="<?php the_field('link'); ?>">
-									<img src="<?php the_field( 'logotype' ); ?>">
-								</a>
-							</div>
-						</div>
-					<?php } ?>
+	<div class="container">
+		<h2>Sponsorer</h2>
+		<div class="four-columns sponsorer">
+  <?php
+  // Custom post type "sponsorer" list
 
-					<?php
-				}
-			}
-			else {
-				echo 'Inga sponsorer?';
-			}
-		?>
-	</div>
+      $args = array(
+        'post_type' => 'sponsorer'
+      );
+      $sponsorer = new WP_Query( $args );
+      if( $sponsorer->have_posts() ) {
+        while( $sponsorer->have_posts() ) {
+          $sponsorer->the_post();
+          ?>
+              <a href="<?php the_field('link'); ?>" target="_blank">
+                <img id="one-sponsor" src="<?php the_field('logotype'); ?>" alt="<?php the_title(); ?>" width="250px">
+          		</a>
+
+          <?php
+        }
+      }
+      else {
+        echo 'Inga sponsorer?';
+      }
+    ?>
+		</div>
+</div>
+
+<style>
+#one-sponsor{
+	padding:22px;
+	width:20%;
+	vertical-align: middle;
+}
+
+
+</style>
+
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="container">
