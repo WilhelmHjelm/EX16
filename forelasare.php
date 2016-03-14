@@ -12,6 +12,8 @@ get_header(); ?>
   <?php get_template_part( 'content', 'page' ); ?>
 
 <?php endwhile; // end of the loop. ?>
+  <img id="splash-lecturers" src="<?php echo get_template_directory_uri(); ?>/img/splash-05.svg" alt="splash">
+  <img id="splash-lecturers2" src="<?php echo get_template_directory_uri(); ?>/img/splash-01.svg" alt="splash">
   <div class="container">
     <h2>Föreläsare</h2>
   </div>

@@ -1239,7 +1239,7 @@ footer#colophon .site-info p {
 }
 
 @media (min-width: 780px) {
-  /* line 85, ../scss/base/_layout.scss */
+  /* line 84, ../scss/base/_layout.scss */
   .entry-content.about-text {
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
@@ -1255,13 +1255,13 @@ footer#colophon .site-info p {
 }
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 99, ../scss/base/_layout.scss */
+/* line 98, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 104, ../scss/base/_layout.scss */
+/* line 103, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1269,7 +1269,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 114, ../scss/base/_layout.scss */
+/* line 113, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1285,7 +1285,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 124, ../scss/base/_layout.scss */
+/* line 123, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
@@ -1656,7 +1656,6 @@ label > .label-body {
 /* line 147, ../scss/components/_navigation.scss */
 #back-button {
   width: 100%;
-  transition: all 0.3s ease-in-out;
 }
 
 /* line 1, ../scss/components/_lecturers.scss */
@@ -1837,6 +1836,28 @@ figcaption i {
 i {
   padding-left: 5px;
   padding-right: 2px;
+}
+
+/* line 159, ../scss/components/_lecturers.scss */
+#splash-lecturers {
+  width: 25%;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 163, ../scss/components/_lecturers.scss */
+#splash-lecturers2 {
+  width: 25%;
+  position: absolute;
+  top: 99%;
+  left: 99%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* line 1, ../scss/components/_expanding-grid.scss */
