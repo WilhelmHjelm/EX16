@@ -14,7 +14,7 @@ get_header(); ?>
 <?php endwhile; // end of the loop. ?>
 <div class="container">
   <div class="twelve columns">
-  <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+  <?php the_title( '<h1 class="entry-title blue-text">', '</h1>' ); ?>
   </div>
 <?php
 // Custom post type "Examensklassen" list

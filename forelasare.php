@@ -15,7 +15,7 @@ get_header(); ?>
   <img id="splash-lecturers" src="<?php echo get_template_directory_uri(); ?>/img/splash-05.svg" alt="splash">
   <img id="splash-lecturers2" src="<?php echo get_template_directory_uri(); ?>/img/splash-01.svg" alt="splash">
   <div class="container">
-    <h2>Föreläsare</h2>
+    <h1 class="turquoise-text">Föreläsare</h1>
   </div>
 <?php
 // Custom post type "Föreläsare" list

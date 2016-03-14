@@ -14,7 +14,7 @@ get_header(); ?>
 <?php endwhile; // end of the loop. ?>
 <div class="container">
   <div class="three columns">
-    <h1>Katalog</h1>
+    <h1 class="green-text">Katalog</h1>
     <p>Kika i katalogen för EX16 i digital form här lol</p>
   </div>
   <div class="nine columns">
