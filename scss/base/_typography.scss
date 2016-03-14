@@ -13,14 +13,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
-h1 { font-size: 40px; line-height: 1.1;  font-weight: 700; }
+h1 { font-size: 40px; line-height: 1.1; letter-spacing: 1px;  font-weight: 700; }
 h2 { font-size: 36px; line-height: 1.25; font-weight: 700; }
 h3 { font-size: 30px; line-height: 1.3; }
 h4 { font-size: 24px; line-height: 1.35;}
 h5 { font-size: 18px; line-height: 1.5; }
 h6 { font-size: 15px; line-height: 1.6; }
+
+.entry-title {
+  margin-bottom: 20px;
+}
 
 @media (min-width: $break-mobile) {
   h1 { font-size: modular-scale($typo-scale-base, 5, $typo-scale-ratio); }
