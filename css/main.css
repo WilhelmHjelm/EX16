@@ -1518,9 +1518,11 @@ label > .label-body {
 #fixed-nav .overlay {
   width: 100%;
   height: 100%;
-  background: #00b9a2;
+  background: white;
+  box-sizing: border-box;
+  border: 10px solid #00b9a2;
 }
-/* line 27, ../scss/components/_navigation.scss */
+/* line 29, ../scss/components/_navigation.scss */
 #fixed-nav .container {
   position: absolute;
   top: 50%;
@@ -1530,22 +1532,22 @@ label > .label-body {
   transform: translate(-50%, -50%);
 }
 
-/* line 34, ../scss/components/_navigation.scss */
+/* line 36, ../scss/components/_navigation.scss */
 #site-navigation ul {
   list-style: none;
   margin: 0;
 }
-/* line 38, ../scss/components/_navigation.scss */
+/* line 40, ../scss/components/_navigation.scss */
 #site-navigation ul a {
   font-size: 37.89749px;
   text-decoration: none;
-  color: white;
+  color: #00b0bf;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 /* HAMBURRGER - OPEN NAVIGATION ICON */
-/* line 52, ../scss/components/_navigation.scss */
+/* line 54, ../scss/components/_navigation.scss */
 #hamburger {
   position: fixed;
   top: 25px;
@@ -1567,7 +1569,7 @@ label > .label-body {
   border: 0;
   background: #00b9a2;
 }
-/* line 73, ../scss/components/_navigation.scss */
+/* line 75, ../scss/components/_navigation.scss */
 #hamburger span {
   display: block;
   position: absolute;
@@ -1586,7 +1588,7 @@ label > .label-body {
   transition: .25s ease-in-out;
 }
 
-/* line 92, ../scss/components/_navigation.scss */
+/* line 94, ../scss/components/_navigation.scss */
 #hamburger span:nth-child(1) {
   top: 20px;
   -webkit-transform-origin: left center;
@@ -1595,7 +1597,7 @@ label > .label-body {
   transform-origin: left center;
 }
 
-/* line 99, ../scss/components/_navigation.scss */
+/* line 101, ../scss/components/_navigation.scss */
 #hamburger span:nth-child(2) {
   top: 27px;
   -webkit-transform-origin: left center;
@@ -1604,7 +1606,7 @@ label > .label-body {
   transform-origin: left center;
 }
 
-/* line 107, ../scss/components/_navigation.scss */
+/* line 109, ../scss/components/_navigation.scss */
 #hamburger span:nth-child(3) {
   top: 34px;
   -webkit-transform-origin: left center;
@@ -1613,7 +1615,7 @@ label > .label-body {
   transform-origin: left center;
 }
 
-/* line 114, ../scss/components/_navigation.scss */
+/* line 116, ../scss/components/_navigation.scss */
 #hamburger.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1625,13 +1627,13 @@ label > .label-body {
   width: 30px;
 }
 
-/* line 124, ../scss/components/_navigation.scss */
+/* line 126, ../scss/components/_navigation.scss */
 #hamburger.open span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
 
-/* line 128, ../scss/components/_navigation.scss */
+/* line 130, ../scss/components/_navigation.scss */
 #hamburger.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1643,7 +1645,7 @@ label > .label-body {
   width: 30px;
 }
 
-/* line 139, ../scss/components/_navigation.scss */
+/* line 141, ../scss/components/_navigation.scss */
 .back-button {
   position: fixed;
   top: 25px;
@@ -1653,7 +1655,7 @@ label > .label-body {
   height: 60px;
 }
 
-/* line 147, ../scss/components/_navigation.scss */
+/* line 149, ../scss/components/_navigation.scss */
 #back-button {
   width: 100%;
 }
