@@ -1151,6 +1151,11 @@ object {
 /* Layout (header, footer, sidebar etc)
 -------------------------------- */
 /* line 4, ../scss/base/_layout.scss */
+#masthead {
+  height: 150px;
+}
+
+/* line 8, ../scss/base/_layout.scss */
 #masthead.home {
   position: relative;
   width: 100vw;
@@ -1158,15 +1163,16 @@ object {
   max-height: 100vh;
   overflow: hidden;
 }
-/* line 11, ../scss/base/_layout.scss */
+/* line 15, ../scss/base/_layout.scss */
 #masthead.home #splash-video {
   z-index: 100;
   width: 100%;
   height: auto;
+  margin-bottom: -8px;
   background: url(../img/splash-fallback.jpg) no-repeat center center;
   background-size: cover;
 }
-/* line 20, ../scss/base/_layout.scss */
+/* line 25, ../scss/base/_layout.scss */
 #masthead.home .site-branding {
   position: absolute;
   top: 47%;
@@ -1179,40 +1185,36 @@ object {
   height: 285px;
   color: white;
 }
-/* line 27, ../scss/base/_layout.scss */
+/* line 32, ../scss/base/_layout.scss */
 #masthead.home .site-branding svg {
   width: 100%;
 }
 
-/* line 35, ../scss/base/_layout.scss */
-#masthead {
-  height: 150px;
-}
-
-/* line 39, ../scss/base/_layout.scss */
+/* masthead */
+/* line 40, ../scss/base/_layout.scss */
 section {
   /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
   padding: 150px 0;
 }
 
-/* line 43, ../scss/base/_layout.scss */
+/* line 44, ../scss/base/_layout.scss */
 #about {
   background: #00b0bf;
   color: white;
   text-align: center;
 }
 
-/* line 48, ../scss/base/_layout.scss */
+/* line 49, ../scss/base/_layout.scss */
 #company-evening {
   background: #00b9a2;
   color: white;
 }
 
-/* line 57, ../scss/base/_layout.scss */
+/* line 58, ../scss/base/_layout.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 60, ../scss/base/_layout.scss */
+/* line 61, ../scss/base/_layout.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -1220,18 +1222,18 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 68, ../scss/base/_layout.scss */
+/* line 69, ../scss/base/_layout.scss */
 footer#colophon .site-info p {
   margin-left: 60px;
 }
 
-/* line 76, ../scss/base/_layout.scss */
+/* line 77, ../scss/base/_layout.scss */
 #footer-logo {
   width: 100%;
 }
 
 @media (min-width: 780px) {
-  /* line 81, ../scss/base/_layout.scss */
+  /* line 82, ../scss/base/_layout.scss */
   .entry-content.about-text {
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
@@ -1247,13 +1249,13 @@ footer#colophon .site-info p {
 }
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 95, ../scss/base/_layout.scss */
+/* line 96, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 100, ../scss/base/_layout.scss */
+/* line 101, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1261,7 +1263,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 110, ../scss/base/_layout.scss */
+/* line 111, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1277,7 +1279,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 120, ../scss/base/_layout.scss */
+/* line 121, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {

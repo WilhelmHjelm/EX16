@@ -1,6 +1,10 @@
 /* Layout (header, footer, sidebar etc)
 -------------------------------- */
 
+#masthead{
+	height:150px;
+}
+
 #masthead.home {
 	position: relative;
 	width:100vw;
@@ -12,6 +16,7 @@
 		z-index: 100;
     width: 100%;
     height: auto;
+		margin-bottom: -8px;
     background: url(../img/splash-fallback.jpg) no-repeat center center;
     background-size: cover;
 	}
@@ -27,14 +32,10 @@
 		svg{
 			width:100%;
 		}
-
 	}
 
-}
+} /* masthead */
 
-#masthead{
-	height:150px;
-}
 
 section { /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
 	padding: 150px 0;
