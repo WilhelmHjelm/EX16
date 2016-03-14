@@ -15,12 +15,11 @@ get_header(); ?>
 
 <section id="about">
   <div class="container">
-    <div class="ten columns offset-by-one">
-      <h1>Examensdagarna för Grafisk design och kommunikation</h1>
-      <h2 class="blue-text">12-14 maj i Färgeriet, Kåkenhus</h2>
-      <span><a href="#schema" class="button read-more-home">Läs mer om EX16</a></span>
-    </div><!-- .ten -->
-    </div><!-- .six -->
+    <div class="twelve columns">
+      <h1 class="blue-text">Examensdagarna för Grafisk design och kommunikation</h1>
+      <h2 class="turquoise-text">12-14 maj i Färgeriet, Kåkenhus</h2>
+      <div><a href="#schema" class="button read-more-home">Läs mer om EX16</a></div>
+    </div><!-- .twelve -->
   </div> <!-- .container -->
 </section>
 

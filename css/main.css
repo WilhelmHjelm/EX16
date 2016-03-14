@@ -1206,22 +1206,14 @@ section {
 
 /* line 44, ../scss/base/_layout.scss */
 #about {
-  background: #00b0bf;
-  color: white;
   text-align: center;
 }
 
-/* line 49, ../scss/base/_layout.scss */
-#company-evening {
-  background: #00b9a2;
-  color: white;
-}
-
-/* line 58, ../scss/base/_layout.scss */
+/* line 55, ../scss/base/_layout.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 61, ../scss/base/_layout.scss */
+/* line 58, ../scss/base/_layout.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -1229,18 +1221,18 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 69, ../scss/base/_layout.scss */
+/* line 66, ../scss/base/_layout.scss */
 footer#colophon .site-info p {
   margin-left: 60px;
 }
 
-/* line 77, ../scss/base/_layout.scss */
+/* line 74, ../scss/base/_layout.scss */
 #footer-logo {
   width: 100%;
 }
 
 @media (min-width: 780px) {
-  /* line 82, ../scss/base/_layout.scss */
+  /* line 79, ../scss/base/_layout.scss */
   .entry-content.about-text {
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
@@ -1256,13 +1248,13 @@ footer#colophon .site-info p {
 }
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 96, ../scss/base/_layout.scss */
+/* line 93, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 101, ../scss/base/_layout.scss */
+/* line 98, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1270,7 +1262,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 111, ../scss/base/_layout.scss */
+/* line 108, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1286,7 +1278,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 121, ../scss/base/_layout.scss */
+/* line 118, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
@@ -1304,7 +1296,7 @@ input[type="button"] {
   display: inline-block;
   height: 60px;
   padding: 0 40px;
-  color: white;
+  color: #32647f;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -1315,7 +1307,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 45px;
-  border: 3px solid white;
+  border: 3px solid #32647f;
   cursor: pointer;
 }
 
@@ -1330,8 +1322,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #32647f;
-  border-color: #32647f;
+  color: #fd9907;
+  border-color: #fd9907;
   outline: 0;
 }
 

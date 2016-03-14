@@ -6,7 +6,7 @@ input[type="button"] {
   display: inline-block;
   height: 60px;
   padding: 0 40px;
-  color: white;
+  color: $blue;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -17,7 +17,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 45px;
-  border: 3px solid white;
+  border: 3px solid $blue;
   cursor: pointer;
   }
 .button:hover,
@@ -30,8 +30,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: $blue;
-  border-color: $blue;
+  color: $orange;
+  border-color: $orange;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
