@@ -54,7 +54,7 @@
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   color: #21759b;
   display: block;
@@ -1152,29 +1152,21 @@ object {
 -------------------------------- */
 /* line 4, ../scss/base/_layout.scss */
 #masthead.home {
-  width: 100vw;
   position: relative;
-  height: 92vh;
+  width: 100vw;
+  height: auto;
+  max-height: 100vh;
   overflow: hidden;
 }
-/* line 10, ../scss/base/_layout.scss */
+/* line 11, ../scss/base/_layout.scss */
 #masthead.home #splash-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   z-index: 100;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
   background: url(../img/splash-fallback.jpg) no-repeat center center;
   background-size: cover;
-  border: 1px solid #000;
 }
-/* line 23, ../scss/base/_layout.scss */
+/* line 20, ../scss/base/_layout.scss */
 #masthead.home .site-branding {
   position: absolute;
   top: 47%;
@@ -1187,40 +1179,40 @@ object {
   height: 285px;
   color: white;
 }
-/* line 30, ../scss/base/_layout.scss */
+/* line 27, ../scss/base/_layout.scss */
 #masthead.home .site-branding svg {
   width: 100%;
 }
 
-/* line 38, ../scss/base/_layout.scss */
+/* line 35, ../scss/base/_layout.scss */
 #masthead {
   height: 150px;
 }
 
-/* line 42, ../scss/base/_layout.scss */
+/* line 39, ../scss/base/_layout.scss */
 section {
   /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
   padding: 150px 0;
 }
 
-/* line 46, ../scss/base/_layout.scss */
+/* line 43, ../scss/base/_layout.scss */
 #about {
   background: #00b0bf;
   color: white;
   text-align: center;
 }
 
-/* line 51, ../scss/base/_layout.scss */
+/* line 48, ../scss/base/_layout.scss */
 #company-evening {
   background: #00b9a2;
   color: white;
 }
 
-/* line 60, ../scss/base/_layout.scss */
+/* line 57, ../scss/base/_layout.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 63, ../scss/base/_layout.scss */
+/* line 60, ../scss/base/_layout.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -1228,18 +1220,18 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 71, ../scss/base/_layout.scss */
+/* line 68, ../scss/base/_layout.scss */
 footer#colophon .site-info p {
   margin-left: 60px;
 }
 
-/* line 79, ../scss/base/_layout.scss */
+/* line 76, ../scss/base/_layout.scss */
 #footer-logo {
   width: 100%;
 }
 
 @media (min-width: 780px) {
-  /* line 84, ../scss/base/_layout.scss */
+  /* line 81, ../scss/base/_layout.scss */
   .entry-content.about-text {
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
@@ -1255,13 +1247,13 @@ footer#colophon .site-info p {
 }
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 98, ../scss/base/_layout.scss */
+/* line 95, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 103, ../scss/base/_layout.scss */
+/* line 100, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1269,7 +1261,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 113, ../scss/base/_layout.scss */
+/* line 110, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1285,7 +1277,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 123, ../scss/base/_layout.scss */
+/* line 120, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {

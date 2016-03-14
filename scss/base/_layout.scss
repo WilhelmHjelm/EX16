@@ -2,21 +2,18 @@
 -------------------------------- */
 
 #masthead.home {
-	width:100vw;
 	position: relative;
-	height: 92vh;
+	width:100vw;
+	height: auto;
+	max-height: 100vh;
 	overflow: hidden;
 
 	#splash-video {
-		@include vertical-align(absolute, 50%, 50%);
 		z-index: 100;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
+    width: 100%;
     height: auto;
     background: url(../img/splash-fallback.jpg) no-repeat center center;
     background-size: cover;
-		border: 1px solid #000;
 	}
 
 
