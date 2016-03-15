@@ -1374,6 +1374,12 @@ input[type="button"].button-primary:focus {
   text-align: left;
   margin-top: 20px;
 }
+/* line 97, ../scss/components/_buttons.scss */
+.social-media-head a:hover {
+  color: white;
+  border: 1px solid white;
+  opacity: 1;
+}
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1488,9 +1494,8 @@ label > .label-body {
 #fixed-nav .overlay {
   width: 100%;
   height: 100%;
-  background: white;
+  background: #00b0bf;
   box-sizing: border-box;
-  border: 10px solid #00b9a2;
 }
 /* line 29, ../scss/components/_navigation.scss */
 #fixed-nav .container {
@@ -1501,23 +1506,48 @@ label > .label-body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+/* line 32, ../scss/components/_navigation.scss */
+#fixed-nav .container .nav-info p {
+  font-size: 18px;
+}
+/* line 35, ../scss/components/_navigation.scss */
+#fixed-nav .container .nav-info p.contact-info {
+  font-size: 14px;
+  margin-top: 20px;
+}
+/* line 39, ../scss/components/_navigation.scss */
+#fixed-nav .container .nav-info p.contact-info a {
+  text-decoration: none;
+  font-weight: bold;
+}
 
-/* line 36, ../scss/components/_navigation.scss */
+@media (max-width: 960px) {
+  /* line 48, ../scss/components/_navigation.scss */
+  .nav-info {
+    display: none;
+  }
+
+  /* line 51, ../scss/components/_navigation.scss */
+  #site-navigation {
+    text-align: center;
+  }
+}
+/* line 57, ../scss/components/_navigation.scss */
 #site-navigation ul {
   list-style: none;
   margin: 0;
 }
-/* line 40, ../scss/components/_navigation.scss */
+/* line 61, ../scss/components/_navigation.scss */
 #site-navigation ul a {
   font-size: 37.89749px;
   text-decoration: none;
-  color: #00b0bf;
+  color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 /* HAMBURRGER - OPEN NAVIGATION ICON */
-/* line 54, ../scss/components/_navigation.scss */
+/* line 75, ../scss/components/_navigation.scss */
 #hamburger {
   position: fixed;
   top: 25px;
@@ -1537,9 +1567,9 @@ label > .label-body {
   border-radius: 100%;
   cursor: pointer;
   border: 0;
-  background: #00b9a2;
+  background: #00b0bf;
 }
-/* line 75, ../scss/components/_navigation.scss */
+/* line 96, ../scss/components/_navigation.scss */
 #hamburger span {
   display: block;
   position: absolute;
@@ -1558,7 +1588,7 @@ label > .label-body {
   transition: .25s ease-in-out;
 }
 
-/* line 94, ../scss/components/_navigation.scss */
+/* line 115, ../scss/components/_navigation.scss */
 #hamburger span:nth-child(1) {
   top: 20px;
   -webkit-transform-origin: left center;
@@ -1567,7 +1597,7 @@ label > .label-body {
   transform-origin: left center;
 }
 
-/* line 101, ../scss/components/_navigation.scss */
+/* line 122, ../scss/components/_navigation.scss */
 #hamburger span:nth-child(2) {
   top: 27px;
   -webkit-transform-origin: left center;
@@ -1576,7 +1606,7 @@ label > .label-body {
   transform-origin: left center;
 }
 
-/* line 109, ../scss/components/_navigation.scss */
+/* line 130, ../scss/components/_navigation.scss */
 #hamburger span:nth-child(3) {
   top: 34px;
   -webkit-transform-origin: left center;
@@ -1585,12 +1615,7 @@ label > .label-body {
   transform-origin: left center;
 }
 
-/* line 116, ../scss/components/_navigation.scss */
-#hamburger.open {
-  background: none;
-}
-
-/* line 119, ../scss/components/_navigation.scss */
+/* line 137, ../scss/components/_navigation.scss */
 #hamburger.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1600,16 +1625,16 @@ label > .label-body {
   left: 50%;
   margin-left: -10px;
   width: 30px;
-  background: #00b9a2;
+  background: white;
 }
 
-/* line 130, ../scss/components/_navigation.scss */
+/* line 148, ../scss/components/_navigation.scss */
 #hamburger.open span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
 
-/* line 134, ../scss/components/_navigation.scss */
+/* line 152, ../scss/components/_navigation.scss */
 #hamburger.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1619,10 +1644,10 @@ label > .label-body {
   left: 50%;
   margin-left: -10px;
   width: 30px;
-  background: #00b9a2;
+  background: white;
 }
 
-/* line 146, ../scss/components/_navigation.scss */
+/* line 164, ../scss/components/_navigation.scss */
 .back-button {
   position: fixed;
   top: 25px;
@@ -1632,7 +1657,7 @@ label > .label-body {
   height: 60px;
 }
 
-/* line 154, ../scss/components/_navigation.scss */
+/* line 172, ../scss/components/_navigation.scss */
 #back-button {
   width: 100%;
 }

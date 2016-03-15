@@ -30,13 +30,14 @@
 		<div class="container">
 			<div class="five columns nav-info">
 				<h2>EX16</h2>
-				<h5>Examensdagarna för Grafisk design och kommunikation på Linköpings universitet. 12-14 maj i Färgeriet, Kåkenhus på Campus Norrköping.</h5>
+				<p>Examensdagarna för Grafisk design och kommunikation på Linköpings universitet. 12-14 maj i Kåkenhus på Campus Norrköping.</p>
 					<div class="social-media-head">
 						<a href="länk till facebook här då" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
 						<a href="länk till twitter här då" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
 						<a href="länk till instagram här då" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>
 						<a href="länk till instagram här då" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
 				</div>
+				<p class="contact-info">Kontakt:<br><a href="mailto:info@ex16.se">info@ex16.se</a></p>
 			</div>
 		<nav id="site-navigation" class="main-navigation offset-by-one six columns" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
@@ -45,7 +46,7 @@
 	</div> <!-- .overlay -->
 </div> <!-- #fixed-nav -->
 
-	<header id="masthead" class="site-header <?php if ( is_front_page() && is_home() ) : ?>home<?php endif; ?>" role="banner">
+	<header id="masthead" class="site-header <?php if ( is_front_page() && is_home() ) : ?>home<?php else : ?>splash<?php endif; ?>" role="banner">
 		<?php if ( is_front_page() && is_home() ) : ?>
 			<video autoplay loop id="splash-video">
 				<source src="<?php echo get_template_directory_uri(); ?>/videos/banner.webm" type="video/webm"/>

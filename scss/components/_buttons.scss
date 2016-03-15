@@ -94,4 +94,9 @@ input[type="button"].button-primary:focus {
 .social-media-head{
 	text-align: left;
   margin-top: 20px;
+  a:hover {
+    color: white;
+    border: 1px solid white;
+    opacity: 1;
+  }
 }
