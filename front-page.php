@@ -91,6 +91,7 @@ get_header(); ?>
 
 <section id="lecturers">
   <div class="container">
+    <!--- <h1 class="turquoise-text">Föreläsare</h1> -->
   <?php
   // Custom post type "forelasare" list
 
