@@ -28,14 +28,14 @@
 <div id="fixed-nav">
 	<div class="overlay">
 		<div class="container">
-			<div class="five columns">
+			<div class="five columns nav-info">
 				<h2>EX16</h2>
 				<h5>Examensdagarna för Grafisk design och kommunikation på Linköpings universitet. 12-14 maj i Färgeriet, Kåkenhus på Campus Norrköping.</h5>
 					<div class="social-media-head">
-						<a href="länk till facebook här då" target="_blank"><i id="facebook" class="fa fa-facebook"></i></a>
-						<a href="länk till twitter här då" target="_blank"><i class="fa fa-twitter"></i></a>
-						<a href="länk till instagram här då" target="_blank"><i class="fa fa-instagram"></i></a>
-						<a href="länk till instagram här då" target="_blank"><i class="fa fa-linkedin"></i></a>
+						<a href="länk till facebook här då" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
+						<a href="länk till twitter här då" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+						<a href="länk till instagram här då" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>
+						<a href="länk till instagram här då" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
 				</div>
 			</div>
 		<nav id="site-navigation" class="main-navigation offset-by-one six columns" role="navigation">

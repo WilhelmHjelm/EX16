@@ -1363,39 +1363,38 @@ input[type="button"].button-primary:focus {
 .social-media, .social-media-head {
   text-align: right;
 }
-/* line 65, ../scss/components/_buttons.scss */
-.social-media i, .social-media-head i {
-  padding: 10px;
-  border: 2px solid #32647f;
-  transition: all 0.3s ease-in-out;
+/* line 66, ../scss/components/_buttons.scss */
+.social-media a, .social-media-head a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin: 0 2px;
+  color: #32647f;
+  text-align: center;
+  font-weight: 600;
+  line-height: 45px;
+  white-space: nowrap;
+  border-radius: 100%;
+  border: 1px solid #32647f;
 }
-/* line 70, ../scss/components/_buttons.scss */
-.social-media i:hover, .social-media-head i:hover {
-  border: 2px solid #32647f;
-  color: #fff;
-  background-color: #32647f;
-  transition: all 0.3s ease-in-out;
+/* line 79, ../scss/components/_buttons.scss */
+.social-media a:first-child, .social-media-head a:first-child {
+  margin-left: 0;
 }
-/* line 76, ../scss/components/_buttons.scss */
-.social-media #facebook, .social-media-head #facebook {
-  padding-left: 12px;
-  padding-right: 12px;
+/* line 82, ../scss/components/_buttons.scss */
+.social-media a:last-child, .social-media-head a:last-child {
+  margin-right: 0;
+}
+/* line 86, ../scss/components/_buttons.scss */
+.social-media a:hover, .social-media-head a:hover {
+  color: #fd9907;
+  border: 1px solid #fd9907;
 }
 
-/* line 81, ../scss/components/_buttons.scss */
+/* line 94, ../scss/components/_buttons.scss */
 .social-media-head {
   text-align: left;
-}
-/* line 83, ../scss/components/_buttons.scss */
-.social-media-head i {
-  border-color: #000 !important;
-  color: #000 !important;
-}
-/* line 87, ../scss/components/_buttons.scss */
-.social-media-head i:hover {
-  background-color: #00b9a2 !important;
-  border-color: #fff !important;
-  color: #fff !important;
+  margin-top: 20px;
 }
 
 /* Forms
