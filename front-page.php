@@ -17,7 +17,7 @@ get_header(); ?>
   <div class="container">
     <div class="twelve columns">
       <h1 class="blue-text">Examensdagarna för Grafisk design och kommunikation</h1>
-      <h2 class="turquoise-text">12-14 maj i Färgeriet, Kåkenhus</h2>
+      <h2 class="turquoise-text">12-14 maj i Kåkenhus, Campus Norrköping</h2>
       <div><a href="#schema" class="button read-more-home">Läs mer om EX16</a></div>
     </div><!-- .twelve -->
   </div> <!-- .container -->
@@ -25,6 +25,11 @@ get_header(); ?>
 
 <section id="schedule">
   <div class="container">
+    <div class="ten columns offset-by-one">
+      <h2 class="green-text">Schema och föreläsare presenteras inom kort</h2>
+    </div>
+    <?php
+    /*
     <div class="row">
     <div class="twelve columns">
       <h2>Schema</h2>
@@ -79,6 +84,7 @@ get_header(); ?>
       </ul>
     </div> <!-- .columns -->
     </div> <!-- .row -->
+    */ ?>
   </div> <!-- .container -->
 
 </section>
