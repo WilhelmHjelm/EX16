@@ -16,7 +16,7 @@
 	max-width: 340px;
 	max-height: 260px;
 	width: 48%;
-	background: $blue;
+	/*background: $blue;*/
 	text-align: center;
 	cursor: pointer;
 }
@@ -37,6 +37,11 @@
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
+.grid-forelasare figcaption h3{
+	background-color: transparentize($turquoise, .1);
+	padding:2px;
+}
+
 
 .grid-forelasare figure figcaption::before,
 .grid-forelasare figure figcaption::after {
@@ -60,16 +65,16 @@
 	opacity: 0;
 }
 
-.grid-forelasare figure h2 {
+.grid-forelasare figure h3 {
 	word-spacing: -0.15em;
-	font-weight: 300;
+	font-weight: 700;
 }
 
-.grid-forelasare figure h2 span {
+.grid-forelasare figure h3 span {
 	font-weight: 800;
 }
 
-.grid-forelasare figure h2,
+.grid-forelasare figure h3,
 .grid-forelasare figure p {
 	margin: 0;
 }
@@ -80,7 +85,7 @@
 }
 
 figure.hover-lecturer {
-	background: $turquoise;
+	/*background: $turquoise;*/
 }
 
 figure.hover-lecturer img {
@@ -96,7 +101,6 @@ figure.hover-lecturer img {
 }
 
 figure.hover-lecturer:hover img {
-	opacity: 0.4;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
@@ -105,13 +109,13 @@ figure.hover-lecturer figcaption {
 	text-align: left;
 }
 
-figure.hover-lecturer h2 {
+figure.hover-lecturer h3 {
 	position: relative;
 	overflow: hidden;
 	padding: 0.5em 0;
 }
 
-figure.hover-lecturer h2::after {
+figure.hover-lecturer h3::after {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -125,7 +129,7 @@ figure.hover-lecturer h2::after {
 	transform: translate3d(-100%,0,0);
 }
 
-figure.hover-lecturer:hover h2::after {
+figure.hover-lecturer:hover h3::after {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }

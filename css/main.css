@@ -1682,7 +1682,7 @@ label > .label-body {
   max-width: 340px;
   max-height: 260px;
   width: 48%;
-  background: #32647f;
+  /*background: $blue;*/
   text-align: center;
   cursor: pointer;
 }
@@ -1706,13 +1706,19 @@ label > .label-body {
   backface-visibility: hidden;
 }
 
-/* line 42, ../scss/components/_lecturers.scss */
+/* line 40, ../scss/components/_lecturers.scss */
+.grid-forelasare figcaption h3 {
+  background-color: rgba(0, 176, 191, 0.9);
+  padding: 2px;
+}
+
+/* line 47, ../scss/components/_lecturers.scss */
 .grid-forelasare figure figcaption::before,
 .grid-forelasare figure figcaption::after {
   pointer-events: none;
 }
 
-/* line 47, ../scss/components/_lecturers.scss */
+/* line 52, ../scss/components/_lecturers.scss */
 .grid-forelasare figure figcaption,
 .grid-forelasare figure figcaption > a {
   position: absolute;
@@ -1722,7 +1728,7 @@ label > .label-body {
   height: 100%;
 }
 
-/* line 55, ../scss/components/_lecturers.scss */
+/* line 60, ../scss/components/_lecturers.scss */
 .grid-forelasare figure figcaption > a {
   z-index: 1000;
   text-indent: 100%;
@@ -1731,35 +1737,35 @@ label > .label-body {
   opacity: 0;
 }
 
-/* line 63, ../scss/components/_lecturers.scss */
-.grid-forelasare figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-}
-
 /* line 68, ../scss/components/_lecturers.scss */
-.grid-forelasare figure h2 span {
-  font-weight: 800;
+.grid-forelasare figure h3 {
+  word-spacing: -0.15em;
+  font-weight: 700;
 }
 
 /* line 73, ../scss/components/_lecturers.scss */
-.grid-forelasare figure h2,
+.grid-forelasare figure h3 span {
+  font-weight: 800;
+}
+
+/* line 78, ../scss/components/_lecturers.scss */
+.grid-forelasare figure h3,
 .grid-forelasare figure p {
   margin: 0;
 }
 
-/* line 77, ../scss/components/_lecturers.scss */
+/* line 82, ../scss/components/_lecturers.scss */
 .grid-forelasare figure p {
   letter-spacing: 1px;
   font-size: 18px;
 }
 
-/* line 82, ../scss/components/_lecturers.scss */
+/* line 87, ../scss/components/_lecturers.scss */
 figure.hover-lecturer {
-  background: #00b0bf;
+  /*background: $turquoise;*/
 }
 
-/* line 86, ../scss/components/_lecturers.scss */
+/* line 91, ../scss/components/_lecturers.scss */
 figure.hover-lecturer img {
   max-width: none;
   width: -webkit-calc(100% + 20px);
@@ -1772,27 +1778,26 @@ figure.hover-lecturer img {
   backface-visibility: hidden;
 }
 
-/* line 98, ../scss/components/_lecturers.scss */
+/* line 103, ../scss/components/_lecturers.scss */
 figure.hover-lecturer:hover img {
-  opacity: 0.4;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 104, ../scss/components/_lecturers.scss */
+/* line 108, ../scss/components/_lecturers.scss */
 figure.hover-lecturer figcaption {
   text-align: left;
 }
 
-/* line 108, ../scss/components/_lecturers.scss */
-figure.hover-lecturer h2 {
+/* line 112, ../scss/components/_lecturers.scss */
+figure.hover-lecturer h3 {
   position: relative;
   overflow: hidden;
   padding: 0.5em 0;
 }
 
-/* line 114, ../scss/components/_lecturers.scss */
-figure.hover-lecturer h2::after {
+/* line 118, ../scss/components/_lecturers.scss */
+figure.hover-lecturer h3::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1806,13 +1811,13 @@ figure.hover-lecturer h2::after {
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 128, ../scss/components/_lecturers.scss */
-figure.hover-lecturer:hover h2::after {
+/* line 132, ../scss/components/_lecturers.scss */
+figure.hover-lecturer:hover h3::after {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 133, ../scss/components/_lecturers.scss */
+/* line 137, ../scss/components/_lecturers.scss */
 figure.hover-lecturer p {
   padding: 1em 0;
   opacity: 0;
@@ -1822,27 +1827,27 @@ figure.hover-lecturer p {
   transform: translate3d(100%, 0, 0);
 }
 
-/* line 142, ../scss/components/_lecturers.scss */
+/* line 146, ../scss/components/_lecturers.scss */
 figure.hover-lecturer:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 147, ../scss/components/_lecturers.scss */
+/* line 151, ../scss/components/_lecturers.scss */
 figcaption i {
   padding-left: 5px;
   padding-right: 2px;
 }
 
 /*----Föreläsare-page -------*/
-/* line 154, ../scss/components/_lecturers.scss */
+/* line 158, ../scss/components/_lecturers.scss */
 i {
   padding-left: 5px;
   padding-right: 2px;
 }
 
-/* line 159, ../scss/components/_lecturers.scss */
+/* line 163, ../scss/components/_lecturers.scss */
 #splash-lecturers {
   width: 25%;
   position: absolute;
@@ -1853,7 +1858,7 @@ i {
   transform: translate(-50%, -50%);
 }
 
-/* line 163, ../scss/components/_lecturers.scss */
+/* line 167, ../scss/components/_lecturers.scss */
 #splash-lecturers2 {
   width: 25%;
   position: absolute;
