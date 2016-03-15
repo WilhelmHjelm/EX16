@@ -1209,30 +1209,8 @@ section {
   text-align: center;
 }
 
-/* line 55, ../scss/base/_layout.scss */
-footer#colophon .site-info {
-  position: relative;
-}
-/* line 58, ../scss/base/_layout.scss */
-footer#colophon .site-info .logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 45px;
-  height: 45px;
-}
-/* line 66, ../scss/base/_layout.scss */
-footer#colophon .site-info p {
-  margin-left: 60px;
-}
-
-/* line 74, ../scss/base/_layout.scss */
-#footer-logo {
-  width: 100%;
-}
-
 @media (min-width: 780px) {
-  /* line 79, ../scss/base/_layout.scss */
+  /* line 54, ../scss/base/_layout.scss */
   .entry-content.about-text {
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
@@ -1248,13 +1226,13 @@ footer#colophon .site-info p {
 }
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 93, ../scss/base/_layout.scss */
+/* line 68, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 98, ../scss/base/_layout.scss */
+/* line 73, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1262,7 +1240,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 108, ../scss/base/_layout.scss */
+/* line 83, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1278,7 +1256,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 118, ../scss/base/_layout.scss */
+/* line 93, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
@@ -2260,15 +2238,66 @@ input:checked + label {
   }
 }
 /* line 1, ../scss/components/_footer.scss */
-.one-sponsor {
-  width: 20%;
-  vertical-align: middle;
-  padding: 22px;
+#sponsorer {
+  margin-top: 100px;
 }
 
 /* line 6, ../scss/components/_footer.scss */
-#big-sponsor {
-  width: 40%;
+.sponsors {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+/* line 13, ../scss/components/_footer.scss */
+.sponsors .sponsor {
+  flex-basis: 33.3333%;
+}
+@media (min-width: 480px) {
+  /* line 13, ../scss/components/_footer.scss */
+  .sponsors .sponsor {
+    flex-basis: 25%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 13, ../scss/components/_footer.scss */
+  .sponsors .sponsor {
+    flex-basis: 20%;
+  }
+}
+/* line 22, ../scss/components/_footer.scss */
+.sponsors .sponsor img {
+  max-width: 100%;
+}
+
+/* line 31, ../scss/components/_footer.scss */
+footer#colophon {
+  margin-top: 50px;
+  padding: 30px 0 35px 0;
+  border-top: 1px solid #ddd;
+}
+/* line 36, ../scss/components/_footer.scss */
+footer#colophon .site-info {
+  position: relative;
+}
+/* line 39, ../scss/components/_footer.scss */
+footer#colophon .site-info .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+}
+/* line 47, ../scss/components/_footer.scss */
+footer#colophon .site-info p {
+  margin: 5px 0 0 60px;
+  font-size: 14px;
+}
+
+/* line 56, ../scss/components/_footer.scss */
+#footer-logo {
+  width: 100%;
 }
 
 /* @import "vendors/"; */

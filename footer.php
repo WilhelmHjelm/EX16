@@ -15,9 +15,11 @@
 
 
 
-	<section class="container sponsorer">
-		<h2>Sponsorer</h2>
-		<div class="four-columns">
+	<section id="sponsorer" class="container">
+		<div class="twelve columns">
+			<h5>Samarbetspartners</h5>
+		</div> <!-- .twelve -->
+		<div class="sponsors">
   <?php
   // Custom post type "sponsorer" list
 
@@ -29,33 +31,35 @@
         while( $sponsorer->have_posts() ) {
           $sponsorer->the_post();
           ?>
+					<div class="sponsor">
               <a href="<?php the_field('link'); ?>" target="_blank">
-                <img class="one-sponsor" src="<?php the_field('logotype'); ?>" alt="<?php the_title(); ?>">
+                <img src="<?php the_field('logotype'); ?>" alt="<?php the_title(); ?>">
           		</a>
-
+					</div>
           <?php
         }
       }
       else {
-        echo 'Inga sponsorer?';
+        echo 'Inga sponsorer';
       }
     ?>
-		</div>
-</section>
+		</div> <!-- .sponsors -->
+	</section>
 
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="container">
 			<div class="six columns site-info">
 				<div class="logo"><img id="footer-logo" src="<?php echo get_template_directory_uri(); ?>/img/ex16-logo.jpg" alt="<?php bloginfo('name')?>"></div>
-				<p><strong><?php bloginfo( 'name' ); ?></strong><br>
-					<?php bloginfo( 'description' ); ?></p>
+				<p><strong>Examensdagarna för GDK</strong><br>
+					12-14 maj i Kåkenhus, Campus Norrköping</p>
 			</div> <!-- .site-info -->
 			<div class="six columns social-media">
-				<a href="länk till facebook här då" target="_blank"><i id="facebook" class="fa fa-facebook"></i></a>
-				<a href="länk till twitter här då" target="_blank"><i class="fa fa-twitter"></i></a>
-				<a href="länk till instagram här då" target="_blank"><i class="fa fa-instagram"></i></a>
-				<a href="länk till instagram här då" target="_blank"><i class="fa fa-linkedin"></i></a>
+				<a href="mailto:info@ex16.se"><i class="fa fa-envelope fa-fw"></i></a>
+				<a href="länk till facebook här då" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
+				<a href="länk till twitter här då" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+				<a href="länk till instagram här då" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>
+				<a href="länk till instagram här då" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
 			</div> <!-- .site-info -->
 	</div> <!-- .container -->
 	</footer><!-- #colophon -->

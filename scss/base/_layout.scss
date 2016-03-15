@@ -50,31 +50,6 @@ section { /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte 
 
 
 
-footer#colophon {
-
-	.site-info {
-		position: relative;
-
-		.logo {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 45px;
-			height: 45px;
-		}
-
-		p {
-			margin-left: 60px;
-		}
-
-	}
-
-
-}
-#footer-logo{
-	width:100%;
-}
-
 @media (min-width: $break-mobile + 300) {
 .entry-content.about-text {
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
