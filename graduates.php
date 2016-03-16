@@ -20,7 +20,9 @@ get_header(); ?>
 // Custom post type "Examensklassen" list
 
       $args = array(
-        'post_type' => 'examensklassen'
+        'post_type' => 'examensklassen',
+        'orderby' => 'title',
+	      'order'   => 'ASC'
       );
       $examensklassen = new WP_Query( $args );
       if( $examensklassen->have_posts() ) {
