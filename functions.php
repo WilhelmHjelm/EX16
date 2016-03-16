@@ -308,7 +308,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'      => 'Advanced Custom Fields',
 			'slug'      => 'advanced-custom-fields',
-			'required'  => false,
+			'required'  => true,
 		),
 		array(
 			'name'      => 'WP Retina 2x',
@@ -318,6 +318,16 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'      => 'Google Analytics by Yoast',
 			'slug'      => 'google-analytics-for-wordpress',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'RealFaviconGenerator',
+			'slug'      => 'favicon-by-realfavicongenerator',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'W3 Total Cache',
+			'slug'      => 'w3-total-cache',
 			'required'  => false,
 		),
 
