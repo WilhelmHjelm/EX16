@@ -1800,7 +1800,7 @@ label > .label-body {
 
 /* line 39, ../scss/components/_lecturers.scss */
 .grid-forelasare figcaption h3 {
-  background-color: #00b0bf;
+  background-color: rgba(0, 176, 191, 0.9);
 }
 
 /* line 44, ../scss/components/_lecturers.scss */
@@ -1853,7 +1853,7 @@ label > .label-body {
 
 /* line 84, ../scss/components/_lecturers.scss */
 figure.hover-lecturer {
-  /*background: $turquoise;*/
+  background-color: rgba(0, 176, 191, 0.9);
 }
 
 /* line 88, ../scss/components/_lecturers.scss */
@@ -1898,7 +1898,7 @@ figure.hover-lecturer h3 {
 
 /* line 123, ../scss/components/_lecturers.scss */
 figure.hover-lecturer p {
-  color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.8);
   opacity: 0;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
   transition: opacity 0.2s, transform 0.35s;
@@ -2408,8 +2408,12 @@ footer#colophon .site-info p {
 }
 
 /* line 1, ../scss/components/_splash.scss */
-#splash-lecturers {
+.splash {
   width: 25%;
+}
+
+/* line 5, ../scss/components/_splash.scss */
+#splash-lecturers {
   position: absolute;
   top: 20%;
   left: 3%;
@@ -2418,9 +2422,8 @@ footer#colophon .site-info p {
   transform: translate(-50%, -50%);
 }
 
-/* line 5, ../scss/components/_splash.scss */
+/* line 8, ../scss/components/_splash.scss */
 #splash-lecturers2 {
-  width: 25%;
   position: absolute;
   top: 99%;
   left: 99%;
@@ -2429,9 +2432,8 @@ footer#colophon .site-info p {
   transform: translate(-50%, -50%);
 }
 
-/* line 9, ../scss/components/_splash.scss */
+/* line 11, ../scss/components/_splash.scss */
 #splash-catalogue {
-  width: 25%;
   position: absolute;
   top: 10%;
   left: 60%;

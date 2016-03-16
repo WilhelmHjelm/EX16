@@ -82,7 +82,7 @@
 }
 
 figure.hover-lecturer {
-	/*background: $turquoise;*/
+	background-color: transparentize($turquoise, .1);
 }
 
 figure.hover-lecturer img {
