@@ -710,7 +710,7 @@ a:hover {
   content: "Vänta, sidan laddar...";
   text-align: center;
   font-size: 12px;
-  color: #00b9a2;
+  color: rgba(50, 100, 127, 0.8);
   opacity: 0;
   background-image: url(../img/loading.gif);
   background-position: center center;
@@ -1785,7 +1785,7 @@ label > .label-body {
 
 /* line 39, ../scss/components/_lecturers.scss */
 .grid-forelasare figcaption h3 {
-  background-color: #00b0bf;
+  background-color: rgba(0, 176, 191, 0.9);
   padding: 2px;
 }
 
@@ -1884,7 +1884,7 @@ figure.hover-lecturer h3 {
 
 /* line 124, ../scss/components/_lecturers.scss */
 figure.hover-lecturer p {
-  color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.8);
   opacity: 0;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
   transition: opacity 0.2s, transform 0.35s;
