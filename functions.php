@@ -164,7 +164,7 @@ function ex16_scripts() {
 	/* Jquery */
 	if( !is_admin()){
 		wp_deregister_script('jquery');
-		wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"), false, '2.1.4', true);
+		wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"), false, '2.1.4', false);
 		wp_enqueue_script('jquery');
 	}
 

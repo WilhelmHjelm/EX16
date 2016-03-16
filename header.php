@@ -18,9 +18,11 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<script>$(window).load(function() {$(".loading").fadeOut(500);})</script>
 </head>
 
 <body <?php body_class(); ?>>
+	<div class="loading"></div>
 <div id="page" class="hfeed site">
 
 <div id="hamburger"><span></span><span></span><span></span></div>

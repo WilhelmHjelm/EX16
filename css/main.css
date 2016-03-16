@@ -647,50 +647,96 @@ a:hover {
   color: #fd9907;
 }
 
-/* line 1, ../scss/base/_misc.scss */
+/* Loading icon */
+@keyframes loadingFadeIn {
+  /* line 4, ../scss/base/_misc.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 5, ../scss/base/_misc.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 9, ../scss/base/_misc.scss */
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999999;
+  background-color: white;
+}
+
+/* line 16, ../scss/base/_misc.scss */
+.loading:after {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  display: table-cell;
+  width: 175px;
+  height: 175px;
+  content: "Vänta, sidan laddar...";
+  text-align: center;
+  font-size: 12px;
+  color: #00b9a2;
+  opacity: 0;
+  background-image: url(../img/loading.gif);
+  background-position: center center;
+  background-size: 125px 125px;
+  background-repeat: no-repeat;
+  animation: loadingFadeIn 0.5s 0.6s linear forwards;
+}
+
+/* line 34, ../scss/base/_misc.scss */
 main {
   display: block;
 }
 
-/* line 5, ../scss/base/_misc.scss */
+/* line 38, ../scss/base/_misc.scss */
 .blue-bg {
   background-color: #32647f;
 }
 
-/* line 6, ../scss/base/_misc.scss */
+/* line 39, ../scss/base/_misc.scss */
 .turquoise-bg {
   background-color: #00b0bf;
 }
 
-/* line 7, ../scss/base/_misc.scss */
+/* line 40, ../scss/base/_misc.scss */
 .green-bg {
   background-color: #00b9a2;
 }
 
-/* line 8, ../scss/base/_misc.scss */
+/* line 41, ../scss/base/_misc.scss */
 .orange-bg {
   background-color: #fd9907;
 }
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 12, ../scss/base/_misc.scss */
+/* line 45, ../scss/base/_misc.scss */
 ul {
   list-style: circle inside;
 }
 
-/* line 14, ../scss/base/_misc.scss */
+/* line 47, ../scss/base/_misc.scss */
 ol {
   list-style: decimal inside;
 }
 
-/* line 16, ../scss/base/_misc.scss */
+/* line 49, ../scss/base/_misc.scss */
 ol, ul {
   padding-left: 0;
   margin-top: 0;
 }
 
-/* line 22, ../scss/base/_misc.scss */
+/* line 55, ../scss/base/_misc.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -699,14 +745,14 @@ ol ul {
   font-size: 90%;
 }
 
-/* line 25, ../scss/base/_misc.scss */
+/* line 58, ../scss/base/_misc.scss */
 li {
   margin-bottom: 1rem;
 }
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 31, ../scss/base/_misc.scss */
+/* line 64, ../scss/base/_misc.scss */
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -717,7 +763,7 @@ code {
   border-radius: 4px;
 }
 
-/* line 39, ../scss/base/_misc.scss */
+/* line 72, ../scss/base/_misc.scss */
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
@@ -726,7 +772,7 @@ pre > code {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 48, ../scss/base/_misc.scss */
+/* line 81, ../scss/base/_misc.scss */
 th,
 td {
   padding: 12px 15px;
@@ -734,13 +780,13 @@ td {
   border-bottom: 1px solid #E1E1E1;
 }
 
-/* line 53, ../scss/base/_misc.scss */
+/* line 86, ../scss/base/_misc.scss */
 th:first-child,
 td:first-child {
   padding-left: 0;
 }
 
-/* line 56, ../scss/base/_misc.scss */
+/* line 89, ../scss/base/_misc.scss */
 th:last-child,
 td:last-child {
   padding-right: 0;
@@ -748,7 +794,7 @@ td:last-child {
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 61, ../scss/base/_misc.scss */
+/* line 94, ../scss/base/_misc.scss */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
