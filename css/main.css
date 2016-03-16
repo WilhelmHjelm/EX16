@@ -1759,7 +1759,7 @@ label > .label-body {
 
 /* line 39, ../scss/components/_lecturers.scss */
 .grid-forelasare figcaption h3 {
-  background-color: rgba(0, 176, 191, 0.9);
+  background-color: #00b0bf;
   padding: 2px;
 }
 
@@ -1858,7 +1858,7 @@ figure.hover-lecturer h3 {
 
 /* line 124, ../scss/components/_lecturers.scss */
 figure.hover-lecturer p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0);
   opacity: 0;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
   transition: opacity 0.2s, transform 0.35s;
