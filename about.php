@@ -7,6 +7,8 @@
 
 get_header(); ?>
 
+<img class="splash" id="splash-about" src="<?php echo get_template_directory_uri(); ?>/img/splash-02.svg" alt="splash">
+<img class="splash" id="splash-about2" src="<?php echo get_template_directory_uri(); ?>/img/splash-03.svg" alt="splash">
 <div class="container">
   <div class="ten columns offset-by-one">
     <header class="entry-header">

@@ -1,5 +1,6 @@
 .splash{
   width: 25%;
+  z-index: -1;
 }
 
 #splash-lecturers{
@@ -10,4 +11,13 @@
 }
 #splash-catalogue{
   @include vertical-align(absolute, 10%, 60%);
+}
+#splash-about{
+  @include vertical-align(absolute, 10%, 90%);
+}
+#splash-about2{
+  @include vertical-align(absolute, 90%, 10%);
+}
+#splash-graduates{
+  @include vertical-align(absolute, 90%, 90%);
 }
