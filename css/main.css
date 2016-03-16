@@ -1080,10 +1080,25 @@ hr {
   clear: both;
 }
 
+/* line 40, ../scss/base/_wp-classes.scss */
+.alignright {
+  text-align: right;
+}
+
+/* line 43, ../scss/base/_wp-classes.scss */
+.alignleft {
+  text-align: left;
+}
+
+/* line 46, ../scss/base/_wp-classes.scss */
+.aligncenter {
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
-/* line 44, ../scss/base/_wp-classes.scss */
+/* line 54, ../scss/base/_wp-classes.scss */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
@@ -1092,12 +1107,12 @@ hr {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
-/* line 51, ../scss/base/_wp-classes.scss */
+/* line 61, ../scss/base/_wp-classes.scss */
 .comment-content a {
   word-wrap: break-word;
 }
 
-/* line 55, ../scss/base/_wp-classes.scss */
+/* line 65, ../scss/base/_wp-classes.scss */
 .bypostauthor {
   display: block;
 }
@@ -1106,7 +1121,7 @@ hr {
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-/* line 64, ../scss/base/_wp-classes.scss */
+/* line 74, ../scss/base/_wp-classes.scss */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
@@ -1114,7 +1129,7 @@ hr {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-/* line 69, ../scss/base/_wp-classes.scss */
+/* line 79, ../scss/base/_wp-classes.scss */
 .infinity-end.neverending .site-footer {
   display: block;
 }
@@ -1122,7 +1137,7 @@ hr {
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-/* line 78, ../scss/base/_wp-classes.scss */
+/* line 88, ../scss/base/_wp-classes.scss */
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -1133,7 +1148,7 @@ hr {
 }
 
 /* Make sure embeds and iframes fit their containers. */
-/* line 88, ../scss/base/_wp-classes.scss */
+/* line 98, ../scss/base/_wp-classes.scss */
 embed,
 iframe,
 object {
@@ -1143,25 +1158,25 @@ object {
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
-/* line 95, ../scss/base/_wp-classes.scss */
+/* line 105, ../scss/base/_wp-classes.scss */
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
 
-/* line 100, ../scss/base/_wp-classes.scss */
+/* line 110, ../scss/base/_wp-classes.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 106, ../scss/base/_wp-classes.scss */
+/* line 116, ../scss/base/_wp-classes.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
-/* line 110, ../scss/base/_wp-classes.scss */
+/* line 120, ../scss/base/_wp-classes.scss */
 .wp-caption-text {
   text-align: center;
 }
@@ -1169,12 +1184,12 @@ object {
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
-/* line 117, ../scss/base/_wp-classes.scss */
+/* line 127, ../scss/base/_wp-classes.scss */
 .gallery {
   margin-bottom: 1.5em;
 }
 
-/* line 121, ../scss/base/_wp-classes.scss */
+/* line 131, ../scss/base/_wp-classes.scss */
 .gallery-item {
   display: inline-block;
   text-align: center;
@@ -1182,47 +1197,47 @@ object {
   width: 100%;
 }
 
-/* line 128, ../scss/base/_wp-classes.scss */
+/* line 138, ../scss/base/_wp-classes.scss */
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
 
-/* line 132, ../scss/base/_wp-classes.scss */
+/* line 142, ../scss/base/_wp-classes.scss */
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
 
-/* line 136, ../scss/base/_wp-classes.scss */
+/* line 146, ../scss/base/_wp-classes.scss */
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
 
-/* line 140, ../scss/base/_wp-classes.scss */
+/* line 150, ../scss/base/_wp-classes.scss */
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
 
-/* line 144, ../scss/base/_wp-classes.scss */
+/* line 154, ../scss/base/_wp-classes.scss */
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
 
-/* line 148, ../scss/base/_wp-classes.scss */
+/* line 158, ../scss/base/_wp-classes.scss */
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
 
-/* line 152, ../scss/base/_wp-classes.scss */
+/* line 162, ../scss/base/_wp-classes.scss */
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
 
-/* line 156, ../scss/base/_wp-classes.scss */
+/* line 166, ../scss/base/_wp-classes.scss */
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
 
-/* line 160, ../scss/base/_wp-classes.scss */
+/* line 170, ../scss/base/_wp-classes.scss */
 .gallery-caption {
   display: block;
 }

@@ -213,7 +213,7 @@ add_action( 'wp_enqueue_scripts', 'ex16_scripts' );
 
 function custom_post_type() {
 	register_post_type( 'sponsorer', array(
-		'labels'        => array('name' => __( 'Sponsors' ), 'singular_name' => __( 'Sponsors' ) ),
+		'labels'        => array('name' => __( 'Sponsors', 'ex16' ), 'singular_name' => __( 'Sponsor', 'ex16' ) ),
 		'description'   => 'Holds the information about EX16s sponors.',
 		'public'        => true,
 		'menu_position' => 4,
@@ -223,7 +223,7 @@ function custom_post_type() {
 	);
 
 	register_post_type( 'examensklassen', array(
-		'labels'        => array('name' => __( 'Graduates' ), 'singular_name' => __( 'Graduates' ) ),
+		'labels'        => array('name' => __( 'Graduates', 'ex16'  ), 'singular_name' => __( 'Graduates', 'ex16'  ) ),
 		'description'   => 'Holds the information about EX16 graduate students.',
 		'public'        => true,
 		'menu_position' => 5,
@@ -233,7 +233,7 @@ function custom_post_type() {
 	);
 
 	register_post_type( 'projektgruppen', array(
-		'labels'        => array('name' => __( 'Projectgroups' ), 'singular_name' => __( 'Projectgroup' ) ),
+		'labels'        => array('name' => __( 'Projectgroups', 'ex16'  ), 'singular_name' => __( 'Projectgroup', 'ex16'  ) ),
 		'description'   => 'Holds the information about EX16 project groups.',
 		'public'        => true,
 		'menu_position' => 6,
@@ -243,7 +243,7 @@ function custom_post_type() {
 	)
 	);
 	register_post_type( 'forelasare', array(
-		'labels'        => array('name' => __( 'Lecturers' ), 'singular_name' => __( 'Lecturer' ) ),
+		'labels'        => array('name' => __( 'Lecturers', 'ex16'  ), 'singular_name' => __( 'Lecturer', 'ex16'  ) ),
 		'description'   => 'Holds the information about EX16 lectures.',
 		'public'        => true,
 		'menu_position' => 7,
@@ -252,7 +252,7 @@ function custom_post_type() {
 	)
 	);
 	register_post_type( 'portfolio', array(
-		'labels'        => array('name' => __( 'Portfolio' ), 'singular_name' => __( 'Portfolio' ) ),
+		'labels'        => array('name' => __( 'Portfolio', 'ex16'  ), 'singular_name' => __( 'Portfolio', 'ex16'  ) ),
 		'description'   => 'Holds the information about EX16 digital works.',
 		'public'        => true,
 		'menu_position' => 8,
