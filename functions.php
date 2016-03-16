@@ -155,6 +155,30 @@ function ex16_widgets_init() {
 add_action( 'widgets_init', 'ex16_widgets_init' );
 
 /**
+ * Change login logotype
+ */
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/logotyp.png);
+            padding-bottom: 30px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'ex16.se';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+
+/**
  * Enqueue scripts and styles.
  */
 function ex16_scripts() {
@@ -182,7 +206,10 @@ function ex16_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ex16_scripts' );
 
-//CUSTOM POST TYPES
+
+/**
+ * Custom Post Types
+ */
 
 function custom_post_type() {
 	register_post_type( 'sponsorer', array(
