@@ -14,6 +14,14 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta description="Examensdagarna för Grafisk design och kommunikation på Linköpings universitet. 12-14 maj i Kåkenhus på Campus Norrköping.">
+<meta property="og:site_name" content="EX16">
+<?php $current_url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
+<meta property="og:url" content="<?php echo $current_url; ?>">
+<meta property="og:title" content="<?php if ( is_front_page() && is_home() ) : ?>Startsida<?php else : echo the_title(); endif; ?>">
+<meta property="og:description" content="Examensdagarna för Grafisk design och kommunikation på Linköpings universitet. 12-14 maj i Kåkenhus på Campus Norrköping.">
+<meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_social_1200x630.png">
+
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -24,7 +32,6 @@
 <body <?php body_class(); ?>>
 	<div class="loading"></div>
 <div id="page" class="hfeed site">
-
 <div id="hamburger"><span></span><span></span><span></span></div>
 
 <div id="fixed-nav">
