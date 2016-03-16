@@ -32,7 +32,7 @@ get_header(); ?>
             <a class="google-map-code" href="http://www.themecircle.net" id="get-map-data">wordpress themes</a>
           </div>
         </div>
-          <script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(58.58997548356858,16.177714915667707),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(58.58997548356858, 16.177714915667707)});infowindow = new google.maps.InfoWindow({content:"<b>EX16</b><br/>F&auml;rgeriet<br/> K&aring;kenhus" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map); </script>
+          <script type="text/javascript"> function init_map(){var myOptions = {zoom:15,scrollwheel:false,center:new google.maps.LatLng(58.58997548356858,16.177714915667707),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(58.58997548356858, 16.177714915667707)});infowindow = new google.maps.InfoWindow({content:"<b>EX16</b><br/>F&auml;rgeriet<br/> K&aring;kenhus" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map); </script>
     </div> <!-- .ten .columns -->
   </div> <!-- .row -->
   <?php endwhile; // End of the loop. ?>
