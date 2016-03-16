@@ -14,15 +14,26 @@ get_header(); ?>
   	</header><!-- .entry-header -->
   </div>
   <?php while ( have_posts() ) : the_post(); ?>
-
-    <div class="ten columns offset-by-one">
+    <div class="row">
+      <div class="ten columns offset-by-one">
         	<div class="entry-content about-text">
         		<?php the_content(); ?>
         	</div><!-- .entry-content -->
-          <div class="map">
-            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:300px;width:1000px;"><div id="gmap_canvas" style="height:300px;width:1000px;"><a class="google-map-code" href="http://www.map-embed.com" id="get-map-data"></a><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.themecircle.net" id="get-map-data">wordpress themes</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(58.58997548356858,16.177714915667707),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(58.58997548356858, 16.177714915667707)});infowindow = new google.maps.InfoWindow({content:"<b>EX16</b><br/>F&auml;rgeriet<br/> K&aring;kenhus" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map); </script>
+        </div> <!-- .ten .columns -->
+      </div> <!-- .row -->
+    <div class="row">
+    <div class="ten columns offset-by-one map section-padding">
+      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <div style="overflow:hidden;height:300px;width:100%;">
+          <div id="gmap_canvas" style="height:300px;width:100%;">
+            <a class="google-map-code" href="http://www.map-embed.com" id="get-map-data"></a>
+            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+            <a class="google-map-code" href="http://www.themecircle.net" id="get-map-data">wordpress themes</a>
           </div>
-    </div>
+        </div>
+          <script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(58.58997548356858,16.177714915667707),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(58.58997548356858, 16.177714915667707)});infowindow = new google.maps.InfoWindow({content:"<b>EX16</b><br/>F&auml;rgeriet<br/> K&aring;kenhus" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map); </script>
+    </div> <!-- .ten .columns -->
+  </div> <!-- .row -->
   <?php endwhile; // End of the loop. ?>
 </div> <!-- .container -->
 

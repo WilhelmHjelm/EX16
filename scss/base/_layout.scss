@@ -37,8 +37,12 @@
 } /* masthead */
 
 
-section { /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
+section,
+.section-padding-x2 { /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
 	padding: 150px 0;
+}
+.section-padding {
+	padding: 75px 0;
 }
 
 #about {
