@@ -12,6 +12,7 @@ get_header(); ?>
   <?php get_template_part( 'content', 'page' ); ?>
 
 <?php endwhile; // end of the loop. ?>
+<img id="splash-catalogue" src="<?php echo get_template_directory_uri(); ?>/img/splash-06.svg" alt="splash">
 <div class="container">
   <div class="three columns">
     <h1 class="green-text">Katalog</h1>

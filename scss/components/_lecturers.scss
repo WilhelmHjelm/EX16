@@ -38,7 +38,6 @@
 }
 .grid-forelasare figcaption h3{
 	background-color: transparentize($turquoise, .1);
-	padding:2px;
 }
 
 .grid-forelasare figure figcaption::before,
@@ -156,13 +155,4 @@ figcaption i{
 i{
 	padding-left:5px;
 	padding-right:2px;
-}
-
-#splash-lecturers{
-	width:25%;
-	@include vertical-align(absolute, 20%, 3%);
-}
-#splash-lecturers2{
-	width:25%;
-	@include vertical-align(absolute, 99%, 99%);
 }

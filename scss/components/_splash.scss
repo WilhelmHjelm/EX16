@@ -1,0 +1,12 @@
+#splash-lecturers{
+	width:25%;
+	@include vertical-align(absolute, 20%, 3%);
+}
+#splash-lecturers2{
+	width:25%;
+	@include vertical-align(absolute, 99%, 99%);
+}
+#splash-catalogue{
+  width:25%;
+  @include vertical-align(absolute, 10%, 60%);
+}
