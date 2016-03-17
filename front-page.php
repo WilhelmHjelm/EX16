@@ -18,7 +18,7 @@ get_header(); ?>
     <div class="twelve columns">
       <h1 class="blue-text">Examensdagarna för Grafisk design och kommunikation</h1>
       <h2 class="turquoise-text">12-14 maj i Kåkenhus, Campus Norrköping</h2>
-      <div><a href="#schema" class="button read-more-home">Läs mer om EX16</a></div>
+      <div><a href="<?php echo get_bloginfo ('url'); ?>/om-ex16/" class="button read-more-home">Läs mer om EX16</a></div>
     </div><!-- .twelve -->
   </div> <!-- .container -->
 </section>
@@ -119,7 +119,7 @@ get_header(); ?>
         }
       }
       else {
-        
+
       }
     ?>
 </div>
