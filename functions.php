@@ -237,7 +237,7 @@ function custom_post_type() {
 		'description'   => 'Holds the information about EX16 project groups.',
 		'public'        => true,
 		'menu_position' => 6,
-		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'supports'      => array( 'title', 'thumbnail', 'custom-fields' ),
 		'has_archive'   => false,
 		'taxonomies' 		=> array('category')
 	)
