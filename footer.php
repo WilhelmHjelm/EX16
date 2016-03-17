@@ -56,10 +56,12 @@
 			</div> <!-- .site-info -->
 			<div class="six columns social-media">
 				<a href="mailto:info@ex16.se"><i class="fa fa-envelope fa-fw"></i></a>
-				<a href="länk till facebook här då" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
-				<a href="länk till twitter här då" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
-				<a href="länk till instagram här då" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>
-				<a href="länk till instagram här då" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
+				<a href="https://www.facebook.com/gdkex16" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
+				<a href="https://twitter.com/gdkEX16" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+				<?php
+				/* <a href="länk till instagram här då" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>*/
+				?>
+				<a href="https://www.linkedin.com/company/ex16" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
 			</div> <!-- .site-info -->
 	</div> <!-- .container -->
 	</footer><!-- #colophon -->

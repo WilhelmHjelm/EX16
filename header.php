@@ -41,10 +41,12 @@
 				<h2>EX16</h2>
 				<p>Examensdagarna för Grafisk design och kommunikation på Linköpings universitet. 12-14 maj i Kåkenhus på Campus Norrköping.</p>
 					<div class="social-media-head">
-						<a href="länk till facebook här då" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
-						<a href="länk till twitter här då" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
-						<a href="länk till instagram här då" target="_blank"><i class="fa fa-instagram fa-fw"></i></a>
-						<a href="länk till instagram här då" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
+						<a href="https://www.facebook.com/gdkex16" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
+						<a href="https://twitter.com/gdkEX16" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+						<?php
+						/* <a href="länk till instagram här då" target="_blank"><i class="fa fa-instagram fa-fw"></i></a> */
+						?>
+						<a href="https://www.linkedin.com/company/ex16" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a>
 				</div>
 				<p class="contact-info">Kontakt:<br><a href="mailto:info@ex16.se">info@ex16.se</a></p>
 			</div>
