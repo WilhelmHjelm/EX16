@@ -330,8 +330,11 @@ function my_theme_register_required_plugins() {
 			'slug'      => 'w3-total-cache',
 			'required'  => false,
 		),
-
-
+		array(
+			'name'      => 'Post Types Order',
+			'slug'      => 'post-types-order',
+			'required'  => false,
+		),
 	);
 
 	/*
