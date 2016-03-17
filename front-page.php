@@ -119,7 +119,7 @@ get_header(); ?>
         }
       }
       else {
-        echo 'Inga föreläsare? Kontakta Andy.';
+        
       }
     ?>
 </div>
