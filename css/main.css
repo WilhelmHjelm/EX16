@@ -54,7 +54,7 @@
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   color: #21759b;
   display: block;
@@ -710,7 +710,7 @@ a:hover {
   content: "Vänta, sidan laddar...";
   text-align: center;
   font-size: 12px;
-  color: rgba(50, 100, 127, 0);
+  color: rgba(50, 100, 127, 0.8);
   opacity: 0;
   background-image: url(../img/loading.gif);
   background-position: center center;
@@ -1800,7 +1800,7 @@ label > .label-body {
 
 /* line 39, ../scss/components/_lecturers.scss */
 .grid-forelasare figcaption h3 {
-  background-color: #00b0bf;
+  background-color: rgba(0, 176, 191, 0.9);
 }
 
 /* line 44, ../scss/components/_lecturers.scss */
@@ -1853,7 +1853,7 @@ label > .label-body {
 
 /* line 84, ../scss/components/_lecturers.scss */
 figure.hover-lecturer {
-  background-color: #00b0bf;
+  background-color: rgba(0, 176, 191, 0.9);
 }
 
 /* line 88, ../scss/components/_lecturers.scss */
@@ -1898,7 +1898,7 @@ figure.hover-lecturer h3 {
 
 /* line 123, ../scss/components/_lecturers.scss */
 figure.hover-lecturer p {
-  color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.8);
   opacity: 0;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
   transition: opacity 0.2s, transform 0.35s;
@@ -2362,6 +2362,7 @@ input:checked + label {
   flex-basis: 33.3333%;
   vertical-align: bottom;
   padding: 10px;
+  box-sizing: border-box;
 }
 @media (min-width: 480px) {
   /* line 13, ../scss/components/_footer.scss */
@@ -2375,22 +2376,22 @@ input:checked + label {
     flex-basis: 20%;
   }
 }
-/* line 24, ../scss/components/_footer.scss */
+/* line 25, ../scss/components/_footer.scss */
 .sponsors .sponsor img {
   max-width: 100%;
 }
 
-/* line 33, ../scss/components/_footer.scss */
+/* line 34, ../scss/components/_footer.scss */
 footer#colophon {
   margin-top: 50px;
   padding: 30px 0 35px 0;
   border-top: 1px solid #ddd;
 }
-/* line 38, ../scss/components/_footer.scss */
+/* line 39, ../scss/components/_footer.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 41, ../scss/components/_footer.scss */
+/* line 42, ../scss/components/_footer.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -2398,13 +2399,13 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 49, ../scss/components/_footer.scss */
+/* line 50, ../scss/components/_footer.scss */
 footer#colophon .site-info p {
   margin: 5px 0 0 60px;
   font-size: 14px;
 }
 
-/* line 58, ../scss/components/_footer.scss */
+/* line 59, ../scss/components/_footer.scss */
 #footer-logo {
   width: 100%;
 }
