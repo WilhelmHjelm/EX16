@@ -2360,6 +2360,8 @@ input:checked + label {
 /* line 13, ../scss/components/_footer.scss */
 .sponsors .sponsor {
   flex-basis: 33.3333%;
+  vertical-align: bottom;
+  padding: 10px;
 }
 @media (min-width: 480px) {
   /* line 13, ../scss/components/_footer.scss */
@@ -2373,22 +2375,22 @@ input:checked + label {
     flex-basis: 20%;
   }
 }
-/* line 22, ../scss/components/_footer.scss */
+/* line 24, ../scss/components/_footer.scss */
 .sponsors .sponsor img {
   max-width: 100%;
 }
 
-/* line 31, ../scss/components/_footer.scss */
+/* line 33, ../scss/components/_footer.scss */
 footer#colophon {
   margin-top: 50px;
   padding: 30px 0 35px 0;
   border-top: 1px solid #ddd;
 }
-/* line 36, ../scss/components/_footer.scss */
+/* line 38, ../scss/components/_footer.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 39, ../scss/components/_footer.scss */
+/* line 41, ../scss/components/_footer.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -2396,13 +2398,13 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 47, ../scss/components/_footer.scss */
+/* line 49, ../scss/components/_footer.scss */
 footer#colophon .site-info p {
   margin: 5px 0 0 60px;
   font-size: 14px;
 }
 
-/* line 56, ../scss/components/_footer.scss */
+/* line 58, ../scss/components/_footer.scss */
 #footer-logo {
   width: 100%;
 }

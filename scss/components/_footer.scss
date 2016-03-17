@@ -12,6 +12,8 @@
 
   .sponsor{
     flex-basis: 33.3333%;
+    vertical-align: bottom;
+    padding:10px;
     @media (min-width: $break-mobile) {
     flex-basis: 25%;
     }
