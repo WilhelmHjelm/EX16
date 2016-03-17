@@ -182,7 +182,7 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
  * Enqueue scripts and styles.
  */
 function ex16_scripts() {
-	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,600', array() );
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic,600', array() );
 	wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . '/css/main.css', array(), '1.0' );
 
 	/* Jquery */
