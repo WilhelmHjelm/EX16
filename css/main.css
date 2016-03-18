@@ -1944,14 +1944,14 @@ i {
   list-style: none;
   margin: 0 auto;
   width: 100%;
-  padding-left: 5px;
+  padding-left: 0px;
 }
 
 /* line 8, ../scss/components/_expanding-grid.scss */
 .og-grid li {
   display: inline-block;
   width: 50%;
-  margin: 0 0 0 -4px;
+  margin: 0 0 0 -5px;
   vertical-align: top;
   padding: 10px;
   height: auto;
@@ -1972,7 +1972,7 @@ i {
 @media (min-width: 960px) {
   /* line 8, ../scss/components/_expanding-grid.scss */
   .og-grid li {
-    width: 16.6666%;
+    width: 16.7%;
   }
 }
 
