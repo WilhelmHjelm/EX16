@@ -335,6 +335,11 @@ function my_theme_register_required_plugins() {
 			'slug'      => 'post-types-order',
 			'required'  => false,
 		),
+		array(
+			'name'      => 'wordpress-importer',
+			'slug'      => 'WordPress Importer',
+			'required'  => false,
+		),
 	);
 
 	/*
