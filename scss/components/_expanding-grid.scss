@@ -73,7 +73,11 @@
   left: 10px;
   right: 10px;
   height: 50px;
-  opacity: 0.8;
+
+	&.blue-bg { background: rgba($blue, 7/10); }
+	&.turquoise-bg { background-color: rgba($turquoise, 7/10); }
+	&.green-bg { background-color: rgba($green, 7/10); }
+	&.orange-bg { background-color: rgba($orange, 7/10); }
 
   span {
     @include vertical-align(absolute, 50%, 50%);
