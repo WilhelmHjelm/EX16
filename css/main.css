@@ -54,7 +54,7 @@
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   color: #21759b;
   display: block;
@@ -711,7 +711,7 @@ a:hover {
   content: "Vänta, sidan laddar...";
   text-align: center;
   font-size: 12px;
-  color: rgba(50, 100, 127, 0);
+  color: rgba(50, 100, 127, 0.8);
   opacity: 0;
   background-image: url(../img/loading.gif);
   background-position: center center;
@@ -1893,7 +1893,7 @@ label > .label-body {
 
 /* line 39, ../scss/components/_lecturers.scss */
 .grid-forelasare figcaption h3 {
-  background-color: #00b0bf;
+  background-color: rgba(0, 176, 191, 0.9);
 }
 
 /* line 44, ../scss/components/_lecturers.scss */
@@ -1946,7 +1946,7 @@ label > .label-body {
 
 /* line 84, ../scss/components/_lecturers.scss */
 figure.hover-lecturer {
-  background-color: #00b0bf;
+  background-color: rgba(0, 176, 191, 0.9);
 }
 
 /* line 88, ../scss/components/_lecturers.scss */
@@ -1991,7 +1991,7 @@ figure.hover-lecturer h3 {
 
 /* line 123, ../scss/components/_lecturers.scss */
 figure.hover-lecturer p {
-  color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.8);
   opacity: 0;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
   transition: opacity 0.2s, transform 0.35s;
@@ -2069,14 +2069,19 @@ i {
   }
 }
 
+/* line 30, ../scss/components/_expanding-grid.scss */
+.og-grid.project-groups {
+  margin: -5px 0 30px;
+}
+
 @media (min-width: 960px) {
-  /* line 30, ../scss/components/_expanding-grid.scss */
+  /* line 34, ../scss/components/_expanding-grid.scss */
   .og-grid.project-groups li {
     width: 20%;
   }
 }
 
-/* line 37, ../scss/components/_expanding-grid.scss */
+/* line 41, ../scss/components/_expanding-grid.scss */
 .og-grid li > a,
 .og-grid.project-groups li .wrap {
   position: relative;
@@ -2085,7 +2090,7 @@ i {
   background: #444;
 }
 
-/* line 44, ../scss/components/_expanding-grid.scss */
+/* line 48, ../scss/components/_expanding-grid.scss */
 .og-grid li img {
   position: absolute;
   top: 0;
@@ -2095,19 +2100,19 @@ i {
   border: 1px solid #32647f;
 }
 
-/* line 53, ../scss/components/_expanding-grid.scss */
+/* line 57, ../scss/components/_expanding-grid.scss */
 .og-grid li img.static {
   z-index: 7;
 }
 
-/* line 56, ../scss/components/_expanding-grid.scss */
+/* line 60, ../scss/components/_expanding-grid.scss */
 .og-grid li img.hover {
   z-index: 8;
   opacity: 0;
   transition: opacity 0.2s ease;
 }
 
-/* line 64, ../scss/components/_expanding-grid.scss */
+/* line 68, ../scss/components/_expanding-grid.scss */
 .og-grid li a:hover,
 .og-grid.project-groups li .wrap:hover,
 .og-grid li a:hover img.hover,
@@ -2115,7 +2120,7 @@ i {
   opacity: 1;
 }
 
-/* line 68, ../scss/components/_expanding-grid.scss */
+/* line 72, ../scss/components/_expanding-grid.scss */
 .og-grid .graduate-name {
   box-sizing: border-box;
   position: absolute;
@@ -2125,23 +2130,23 @@ i {
   right: 10px;
   height: 50px;
 }
-/* line 77, ../scss/components/_expanding-grid.scss */
+/* line 81, ../scss/components/_expanding-grid.scss */
 .og-grid .graduate-name.blue-bg {
   background: rgba(50, 100, 127, 0.7);
 }
-/* line 78, ../scss/components/_expanding-grid.scss */
+/* line 82, ../scss/components/_expanding-grid.scss */
 .og-grid .graduate-name.turquoise-bg {
   background-color: rgba(0, 176, 191, 0.7);
 }
-/* line 79, ../scss/components/_expanding-grid.scss */
+/* line 83, ../scss/components/_expanding-grid.scss */
 .og-grid .graduate-name.green-bg {
   background-color: rgba(0, 185, 162, 0.7);
 }
-/* line 80, ../scss/components/_expanding-grid.scss */
+/* line 84, ../scss/components/_expanding-grid.scss */
 .og-grid .graduate-name.orange-bg {
   background-color: rgba(253, 153, 7, 0.7);
 }
-/* line 82, ../scss/components/_expanding-grid.scss */
+/* line 86, ../scss/components/_expanding-grid.scss */
 .og-grid .graduate-name span {
   position: absolute;
   top: 50%;
@@ -2158,14 +2163,14 @@ i {
   box-sizing: border-box;
 }
 
-/* line 95, ../scss/components/_expanding-grid.scss */
+/* line 99, ../scss/components/_expanding-grid.scss */
 .og-grid li > a,
 .og-grid li > a img {
   outline: none;
   display: block;
 }
 
-/* line 100, ../scss/components/_expanding-grid.scss */
+/* line 104, ../scss/components/_expanding-grid.scss */
 .og-expander {
   position: absolute;
   top: auto;
@@ -2176,14 +2181,14 @@ i {
   overflow: hidden;
 }
 
-/* line 110, ../scss/components/_expanding-grid.scss */
+/* line 114, ../scss/components/_expanding-grid.scss */
 .og-expander-inner {
   padding: 40px;
   height: 100%;
   box-sizing: border-box;
 }
 
-/* line 116, ../scss/components/_expanding-grid.scss */
+/* line 120, ../scss/components/_expanding-grid.scss */
 .og-close {
   position: absolute;
   width: 40px;
@@ -2193,7 +2198,7 @@ i {
   cursor: pointer;
 }
 
-/* line 126, ../scss/components/_expanding-grid.scss */
+/* line 130, ../scss/components/_expanding-grid.scss */
 .og-close::before,
 .og-close::after {
   content: '';
@@ -2207,20 +2212,20 @@ i {
   transform: rotate(45deg);
 }
 
-/* line 138, ../scss/components/_expanding-grid.scss */
+/* line 142, ../scss/components/_expanding-grid.scss */
 .og-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-/* line 145, ../scss/components/_expanding-grid.scss */
+/* line 149, ../scss/components/_expanding-grid.scss */
 .og-close:hover::before,
 .og-close:hover::after {
   background: #666;
 }
 
-/* line 150, ../scss/components/_expanding-grid.scss */
+/* line 154, ../scss/components/_expanding-grid.scss */
 .og-fullimg,
 .og-details {
   width: 27%;
@@ -2230,28 +2235,28 @@ i {
   position: relative;
 }
 
-/* line 158, ../scss/components/_expanding-grid.scss */
+/* line 162, ../scss/components/_expanding-grid.scss */
 .og-details {
   width: 64%;
   padding: 20px 0 0 0;
   margin: 0;
 }
 
-/* line 164, ../scss/components/_expanding-grid.scss */
+/* line 168, ../scss/components/_expanding-grid.scss */
 .og-fullimg {
   text-align: center;
   padding-top: 150%;
   overflow: hidden;
 }
 
-/* line 170, ../scss/components/_expanding-grid.scss */
+/* line 174, ../scss/components/_expanding-grid.scss */
 .og-fullimg img {
   display: inline-block;
   max-height: 100%;
   max-width: 100%;
 }
 
-/* line 178, ../scss/components/_expanding-grid.scss */
+/* line 182, ../scss/components/_expanding-grid.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -2268,18 +2273,18 @@ i {
 }
 
 @-webkit-keyframes loader {
-  /* line 194, ../scss/components/_expanding-grid.scss */
+  /* line 198, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 195, ../scss/components/_expanding-grid.scss */
+  /* line 199, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 196, ../scss/components/_expanding-grid.scss */
+  /* line 200, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2287,18 +2292,18 @@ i {
 }
 
 @-moz-keyframes loader {
-  /* line 200, ../scss/components/_expanding-grid.scss */
+  /* line 204, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 201, ../scss/components/_expanding-grid.scss */
+  /* line 205, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 202, ../scss/components/_expanding-grid.scss */
+  /* line 206, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2306,18 +2311,18 @@ i {
 }
 
 @keyframes loader {
-  /* line 206, ../scss/components/_expanding-grid.scss */
+  /* line 210, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 207, ../scss/components/_expanding-grid.scss */
+  /* line 211, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 208, ../scss/components/_expanding-grid.scss */
+  /* line 212, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2325,12 +2330,12 @@ i {
 }
 
 @media screen and (max-width: 960px) {
-  /* line 214, ../scss/components/_expanding-grid.scss */
+  /* line 218, ../scss/components/_expanding-grid.scss */
   .og-fullimg {
     display: none;
   }
 
-  /* line 215, ../scss/components/_expanding-grid.scss */
+  /* line 219, ../scss/components/_expanding-grid.scss */
   .og-details {
     float: none;
     width: 100%;
