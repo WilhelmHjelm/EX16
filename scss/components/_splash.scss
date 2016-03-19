@@ -4,20 +4,32 @@
 }
 
 #splash-lecturers{
-	@include vertical-align(absolute, 20%, 3%);
+	position: absolute;
+  top: 10;
+  left: 0;
 }
 #splash-lecturers2{
-	@include vertical-align(absolute, 99%, 99%);
+	position: absolute;
+  bottom: 50;
+  right:0;
 }
 #splash-catalogue{
-  @include vertical-align(absolute, 10%, 60%);
+  position: absolute;
+  right:0;
+  top:0;
 }
 #splash-about{
-  @include vertical-align(absolute, 10%, 90%);
+  position:absolute;
+  top:0;
+  right:0;
 }
 #splash-about2{
-  @include vertical-align(absolute, 90%, 10%);
+  position:absolute;
+  bottom:0;
+  left:0;
 }
 #splash-graduates{
-  @include vertical-align(absolute, 90%, 90%);
+  position: absolute;
+  bottom: 0;
+  right:0;
 }

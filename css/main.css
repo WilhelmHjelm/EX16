@@ -2528,61 +2528,43 @@ footer#colophon .site-info p {
 /* line 6, ../scss/components/_splash.scss */
 #splash-lecturers {
   position: absolute;
-  top: 20%;
-  left: 3%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 10;
+  left: 0;
 }
 
-/* line 9, ../scss/components/_splash.scss */
+/* line 11, ../scss/components/_splash.scss */
 #splash-lecturers2 {
   position: absolute;
-  top: 99%;
-  left: 99%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  bottom: 50;
+  right: 0;
 }
 
-/* line 12, ../scss/components/_splash.scss */
+/* line 16, ../scss/components/_splash.scss */
 #splash-catalogue {
   position: absolute;
-  top: 10%;
-  left: 60%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/* line 15, ../scss/components/_splash.scss */
-#splash-about {
-  position: absolute;
-  top: 10%;
-  left: 90%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/* line 18, ../scss/components/_splash.scss */
-#splash-about2 {
-  position: absolute;
-  top: 90%;
-  left: 10%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  right: 0;
+  top: 0;
 }
 
 /* line 21, ../scss/components/_splash.scss */
+#splash-about {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 26, ../scss/components/_splash.scss */
+#splash-about2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 31, ../scss/components/_splash.scss */
 #splash-graduates {
   position: absolute;
-  top: 90%;
-  left: 90%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  right: 0;
 }
 
 /*
