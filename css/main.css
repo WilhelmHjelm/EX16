@@ -1448,6 +1448,7 @@ input[type="button"].button-primary:focus {
   height: 45px;
   margin: 0 2px;
   padding: 0 7px;
+  text-align: left;
   color: #32647f;
   font-weight: 600;
   line-height: 45px;
@@ -1455,26 +1456,26 @@ input[type="button"].button-primary:focus {
   border-radius: 100%;
   border: 1px solid #32647f;
 }
-/* line 80, ../scss/components/_buttons.scss */
+/* line 81, ../scss/components/_buttons.scss */
 .social-media a:first-child, .social-media-head a:first-child {
   margin-left: 0;
 }
-/* line 83, ../scss/components/_buttons.scss */
+/* line 84, ../scss/components/_buttons.scss */
 .social-media a:last-child, .social-media-head a:last-child {
   margin-right: 0;
 }
-/* line 87, ../scss/components/_buttons.scss */
+/* line 88, ../scss/components/_buttons.scss */
 .social-media a:hover, .social-media-head a:hover {
   color: #fd9907;
   border: 1px solid #fd9907;
 }
 
-/* line 95, ../scss/components/_buttons.scss */
+/* line 96, ../scss/components/_buttons.scss */
 .social-media-head {
   text-align: left;
   margin-top: 20px;
 }
-/* line 98, ../scss/components/_buttons.scss */
+/* line 99, ../scss/components/_buttons.scss */
 .social-media-head a:hover {
   color: white;
   border: 1px solid white;
