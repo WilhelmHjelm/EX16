@@ -50,7 +50,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="container">
 			<div class="six columns site-info">
-				<div class="logo"><img id="footer-logo" src="<?php echo get_template_directory_uri(); ?>/img/ex16-logo.jpg" alt="<?php bloginfo('name')?>"></div>
+				<div class="logo"><img id="footer-logo" src="<?php echo get_template_directory_uri(); ?>/img/logotypex16.png" alt="<?php bloginfo('name')?>"></div>
 				<p><strong>Examensdagarna för GDK</strong><br>
 					12-14 maj i Kåkenhus, Campus Norrköping</p>
 			</div> <!-- .site-info -->
