@@ -88,7 +88,7 @@ get_header(); ?>
   </div> <!-- .container -->
 
 </section>
-
+<?php /*
 <section id="lecturers">
   <div class="container">
     <!--- <h1 class="turquoise-text">Föreläsare</h1> -->
@@ -124,7 +124,7 @@ get_header(); ?>
     ?>
 </div>
 </section>
-
+*/ ?>
 <section id="company-evening">
   <div class="container">
     <div class="seven columns">

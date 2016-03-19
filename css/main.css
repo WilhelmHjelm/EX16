@@ -1303,6 +1303,11 @@ section,
   text-align: center;
 }
 
+/* line 51, ../scss/base/_layout.scss */
+#company-evening {
+  padding-bottom: 50px;
+}
+
 @media (min-width: 780px) {
   /* line 58, ../scss/base/_layout.scss */
   .entry-content.about-text {
