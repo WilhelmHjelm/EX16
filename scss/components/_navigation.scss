@@ -24,7 +24,7 @@
     background: $turquoise;
     box-sizing: border-box;
   }
-  
+
 
   .container {
     @include vertical-align(absolute, 50%, 50%);
@@ -33,12 +33,15 @@
       font-size: 18px;
     }
     .nav-info p.contact-info {
-      font-size: 14px;
+      font-size: 15px;
       margin-top: 20px;
 
       a {
         text-decoration: none;
         font-weight: bold;
+        &:hover {
+          color: white;
+        }
       }
     }
   }
