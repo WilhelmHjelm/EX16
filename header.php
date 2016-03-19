@@ -13,7 +13,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta description="Examensdagarna för Grafisk design och kommunikation på Linköpings universitet. 12-14 maj i Kåkenhus på Campus Norrköping.">
 <meta property="og:site_name" content="EX16">
 <?php $current_url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>

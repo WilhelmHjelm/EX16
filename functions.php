@@ -427,11 +427,3 @@ function my_theme_register_required_plugins() {
 	tgmpa( $plugins, $config );
 }
 ?>
-
-<?php
-/**
- * GRATTIS PÅ FÖDELSEDAGEN WILLE
- * Hoppas Kentbiljetterna inte är slutsålda och att livet
- * innehåller tårtor, presenter, kramar och är bra i övrigt!
- */
- ?>
