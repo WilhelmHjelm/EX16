@@ -1,15 +1,17 @@
 #fixed-nav {
   position: fixed;
-  z-index: 800;
+  z-index: 900;
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
   @include transition(all);
   opacity: 0;
   visibility: hidden;
+  @media (min-width: $break-mobile) {
+    padding: 20px;
+  }
 
   &.open {
     width: 100%;
@@ -77,8 +79,8 @@
 
 #hamburger {
   position: fixed;
-  top: 25px;
-  right: 25px;
+  top: 15px;
+  right: 15px;
 	z-index: 1000;
 	width: 24px;
   height: 17px;
@@ -95,6 +97,11 @@
   cursor: pointer;
   border: 0;
   background: $turquoise;
+
+  @media (min-width: $break-mobile) {
+    top: 25px;
+    right: 25px;
+  }
 
 	  span {
 		  display: block;
@@ -162,16 +169,4 @@
   margin-left: -10px;
   width: 30px;
   background: white;
-}
-
-.back-button{
-  position: fixed;
-  top: 25px;
-  left: 25px;
-	z-index: 1;
-	width: 60px;
-  height: 60px;
-}
-#back-button{
-  width: 100%;
 }

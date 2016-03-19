@@ -63,3 +63,16 @@ footer#colophon {
 #footer-logo{
 	width:100%;
 }
+
+@media (max-width: $break-grid) {
+  footer#colophon {
+    .columns.social-media {
+      text-align: center !important;
+    }
+    .site-info {
+      display: none;
+    }
+
+  }
+
+}

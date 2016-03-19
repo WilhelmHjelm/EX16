@@ -2,23 +2,63 @@
 -------------------------------- */
 
 #masthead{
-	height:175px;
+	height:125px;
+	width: 100%;
+
+	@media (min-width: $break-mobile) {
+		height:175px;
+	}
+
+	.logotype{
+		position: relative;
+	  top: 18px;
+	  left: 15px;
+		z-index: 800;
+		display: block;
+		width: 60px;
+	  height: 60px;
+		background: url(../img/logotypex16.png) no-repeat top left;
+		background-size: contain;
+
+		@media (min-width: $break-mobile) {
+			position: fixed;
+			top: 20px;
+		  left: 25px;
+			width: 62px;
+		  height: 65px;
+		}
+
+	}
+
 }
 
 #masthead.home {
 	position: relative;
 	width:100vw;
+	min-height: 100px;
 	height: auto;
 	max-height: 100vh;
 	overflow: hidden;
 
 	#splash-video {
+		display: none;
 		z-index: 100;
     width: 100%;
     height: auto;
 		margin-bottom: -8px;
     background: url(../img/splash-fallback.jpg) no-repeat center center;
     background-size: cover;
+
+		@media (min-width: $break-mobile + 250) {
+			display: block;
+		}
+
+	} /* #splash-video */
+	.logotype {
+			display: block;
+			@media (min-width: $break-mobile + 250) {
+				display: none;
+			}
 	}
 
 
@@ -39,10 +79,17 @@
 
 section,
 .section-padding-x2 { /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
-	padding: 150px 0;
-}
-.section-padding {
 	padding: 75px 0;
+	@media (min-width: $break-mobile) {
+		padding: 150px 0;
+	}
+}
+
+.section-padding {
+	padding: 50px 0;
+	@media (min-width: $break-mobile) {
+		padding: 75px 0;
+	}
 }
 
 #about {
