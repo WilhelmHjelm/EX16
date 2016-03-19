@@ -48,7 +48,7 @@ get_header(); ?>
             'type'      => 'projektgruppen',
             'taxonomy'  => 'category',
             'orderby'   => 'ID',
-            'order'     => 'DESC',
+            'order'     => 'ASC',
          );
 
       $categories = get_categories( $args );
