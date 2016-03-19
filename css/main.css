@@ -54,7 +54,7 @@
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0);
   clip: auto !important;
   color: #21759b;
   display: block;
@@ -711,7 +711,7 @@ a:hover {
   content: "Vänta, sidan laddar...";
   text-align: center;
   font-size: 12px;
-  color: rgba(50, 100, 127, 0.8);
+  color: rgba(50, 100, 127, 0);
   opacity: 0;
   background-image: url(../img/loading.gif);
   background-position: center center;
@@ -1888,7 +1888,7 @@ label > .label-body {
 
 /* line 39, ../scss/components/_lecturers.scss */
 .grid-forelasare figcaption h3 {
-  background-color: rgba(0, 176, 191, 0.9);
+  background-color: #00b0bf;
 }
 
 /* line 44, ../scss/components/_lecturers.scss */
@@ -1941,7 +1941,7 @@ label > .label-body {
 
 /* line 84, ../scss/components/_lecturers.scss */
 figure.hover-lecturer {
-  background-color: rgba(0, 176, 191, 0.9);
+  background-color: #00b0bf;
 }
 
 /* line 88, ../scss/components/_lecturers.scss */
@@ -1986,7 +1986,7 @@ figure.hover-lecturer h3 {
 
 /* line 123, ../scss/components/_lecturers.scss */
 figure.hover-lecturer p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0);
   opacity: 0;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
   transition: opacity 0.2s, transform 0.35s;
