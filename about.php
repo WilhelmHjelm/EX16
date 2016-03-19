@@ -13,7 +13,7 @@ get_header(); ?>
   <div class="ten columns offset-by-one">
     <header class="entry-header">
   		<?php the_title( '<h1 class="entry-title orange-text">', '</h1>' ); ?>
-      <h5>Examensdagarna 2016 för Grafisk design och kommunikation på Linköpings universitet. Hålls den 12-14 maj i Kåkenhus, Campus Norrköping.</h5><br><br>
+      <h5>Examensdagarna 2016 för Grafisk design och kommunikation på Linköpings universitet hålls den 12-14 maj i Kåkenhus, Campus Norrköping.</h5><br><br>
   	</header><!-- .entry-header -->
   </div>
   <?php while ( have_posts() ) : the_post(); ?>
