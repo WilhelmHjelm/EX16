@@ -1440,8 +1440,11 @@ input[type="button"].button-primary:focus {
 .social-media, .social-media-head {
   text-align: right;
 }
-/* line 66, ../scss/components/_buttons.scss */
-.social-media a, .social-media-head a {
+
+/* line 69, ../scss/components/_buttons.scss */
+.social-media a,
+.social-media-head a,
+.og-details a.fa {
   display: inline-block;
   box-sizing: border-box;
   width: 45px;
@@ -1449,6 +1452,7 @@ input[type="button"].button-primary:focus {
   margin: 0 2px;
   padding: 0 7px;
   text-align: left;
+  text-decoration: none;
   color: #32647f;
   font-weight: 600;
   line-height: 45px;
@@ -1456,30 +1460,44 @@ input[type="button"].button-primary:focus {
   border-radius: 100%;
   border: 1px solid #32647f;
 }
-/* line 81, ../scss/components/_buttons.scss */
-.social-media a:first-child, .social-media-head a:first-child {
+/* line 85, ../scss/components/_buttons.scss */
+.social-media a:first-child,
+.social-media-head a:first-child,
+.og-details a.fa:first-child {
   margin-left: 0;
 }
-/* line 84, ../scss/components/_buttons.scss */
-.social-media a:last-child, .social-media-head a:last-child {
+/* line 88, ../scss/components/_buttons.scss */
+.social-media a:last-child,
+.social-media-head a:last-child,
+.og-details a.fa:last-child {
   margin-right: 0;
 }
-/* line 88, ../scss/components/_buttons.scss */
-.social-media a:hover, .social-media-head a:hover {
+/* line 92, ../scss/components/_buttons.scss */
+.social-media a:hover,
+.social-media-head a:hover,
+.og-details a.fa:hover {
   color: #fd9907;
   border: 1px solid #fd9907;
 }
 
-/* line 96, ../scss/components/_buttons.scss */
+/* line 99, ../scss/components/_buttons.scss */
 .social-media-head {
   text-align: left;
   margin-top: 20px;
 }
-/* line 99, ../scss/components/_buttons.scss */
+/* line 102, ../scss/components/_buttons.scss */
 .social-media-head a:hover {
   color: white;
   border: 1px solid white;
   opacity: 1;
+}
+
+/* Examensklassen, social media links */
+/* line 110, ../scss/components/_buttons.scss */
+.og-details a.fa {
+  margin: 0 2px;
+  text-align: center;
+  font-size: 16px;
 }
 
 /* Forms
@@ -2170,16 +2188,7 @@ i {
   max-width: 100%;
 }
 
-/* line 179, ../scss/components/_expanding-grid.scss */
-.og-details a.fa {
-  display: inline-block;
-  margin: 12px 12px 0 0;
-  outline: none;
-  font-size: 28px;
-  text-decoration: none;
-}
-
-/* line 189, ../scss/components/_expanding-grid.scss */
+/* line 178, ../scss/components/_expanding-grid.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -2196,18 +2205,18 @@ i {
 }
 
 @-webkit-keyframes loader {
-  /* line 205, ../scss/components/_expanding-grid.scss */
+  /* line 194, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 206, ../scss/components/_expanding-grid.scss */
+  /* line 195, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 207, ../scss/components/_expanding-grid.scss */
+  /* line 196, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2215,18 +2224,18 @@ i {
 }
 
 @-moz-keyframes loader {
-  /* line 211, ../scss/components/_expanding-grid.scss */
+  /* line 200, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 212, ../scss/components/_expanding-grid.scss */
+  /* line 201, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 213, ../scss/components/_expanding-grid.scss */
+  /* line 202, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2234,18 +2243,18 @@ i {
 }
 
 @keyframes loader {
-  /* line 217, ../scss/components/_expanding-grid.scss */
+  /* line 206, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 218, ../scss/components/_expanding-grid.scss */
+  /* line 207, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 219, ../scss/components/_expanding-grid.scss */
+  /* line 208, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2253,12 +2262,12 @@ i {
 }
 
 @media screen and (max-width: 960px) {
-  /* line 225, ../scss/components/_expanding-grid.scss */
+  /* line 214, ../scss/components/_expanding-grid.scss */
   .og-fullimg {
     display: none;
   }
 
-  /* line 226, ../scss/components/_expanding-grid.scss */
+  /* line 215, ../scss/components/_expanding-grid.scss */
   .og-details {
     float: none;
     width: 100%;

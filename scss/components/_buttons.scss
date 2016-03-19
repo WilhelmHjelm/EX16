@@ -62,8 +62,11 @@ input[type="button"].button-primary:focus {
 
 .social-media, .social-media-head {
 	text-align: right;
+}
 
-  a {
+  .social-media a,
+  .social-media-head a,
+  .og-details a.fa {
     display: inline-block;
     box-sizing: border-box;
     width: 45px;
@@ -71,6 +74,7 @@ input[type="button"].button-primary:focus {
     margin: 0 2px;
     padding: 0 7px;
     text-align: left;
+    text-decoration: none;
     color: $blue;
     font-weight: 600;
     line-height: 45px;
@@ -91,7 +95,6 @@ input[type="button"].button-primary:focus {
     }
   }
 
-}
 
 .social-media-head{
 	text-align: left;
@@ -101,4 +104,11 @@ input[type="button"].button-primary:focus {
     border: 1px solid white;
     opacity: 1;
   }
+}
+
+/* Examensklassen, social media links */
+.og-details a.fa {
+	margin: 0 2px;
+  text-align: center;
+  font-size: 16px;
 }
