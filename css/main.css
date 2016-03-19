@@ -2486,8 +2486,9 @@ input:checked + label {
   flex-basis: auto;
   width: 33.3333%;
   box-sizing: border-box;
+  padding: 10px 10px 0 10px;
 }
-/* line 18, ../scss/components/_footer.scss */
+/* line 19, ../scss/components/_footer.scss */
 .sponsors .sponsor a:hover {
   opacity: 0.6;
 }
@@ -2505,22 +2506,22 @@ input:checked + label {
     width: 20%;
   }
 }
-/* line 31, ../scss/components/_footer.scss */
+/* line 32, ../scss/components/_footer.scss */
 .sponsors .sponsor img {
   max-width: 100%;
 }
 
-/* line 40, ../scss/components/_footer.scss */
+/* line 41, ../scss/components/_footer.scss */
 footer#colophon {
   margin-top: 50px;
   padding: 30px 0 35px 0;
   border-top: 1px solid #ddd;
 }
-/* line 45, ../scss/components/_footer.scss */
+/* line 46, ../scss/components/_footer.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 48, ../scss/components/_footer.scss */
+/* line 49, ../scss/components/_footer.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -2528,23 +2529,23 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 56, ../scss/components/_footer.scss */
+/* line 57, ../scss/components/_footer.scss */
 footer#colophon .site-info p {
   margin: 5px 0 0 60px;
   font-size: 14px;
 }
 
-/* line 65, ../scss/components/_footer.scss */
+/* line 66, ../scss/components/_footer.scss */
 #footer-logo {
   width: 100%;
 }
 
 @media (max-width: 960px) {
-  /* line 71, ../scss/components/_footer.scss */
+  /* line 72, ../scss/components/_footer.scss */
   footer#colophon .columns.social-media {
     text-align: center !important;
   }
-  /* line 74, ../scss/components/_footer.scss */
+  /* line 75, ../scss/components/_footer.scss */
   footer#colophon .site-info {
     display: none;
   }
