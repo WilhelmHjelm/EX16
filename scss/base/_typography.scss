@@ -1,8 +1,8 @@
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.6em; /* currently ems cause chrome bug misinterpreting pxs on body element */
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.5;
   font-weight: 400;
   font-family: $font-stack;
   color: #222; }
@@ -24,6 +24,7 @@ h5 { font-size: modular-scale($typo-scale-base, 0, $typo-scale-ratio); line-heig
 h6 { font-size: modular-scale($typo-scale-base, 0, $typo-scale-ratio); line-height: 1.6; }
 
 @media (min-width: $break-mobile) {
+  body {font-size: 16px;}
   h1 { font-size: modular-scale($typo-scale-base, 4, $typo-scale-ratio); }
   h2 { font-size: modular-scale($typo-scale-base, 3, $typo-scale-ratio); }
   h3 { font-size: modular-scale($typo-scale-base, 2, $typo-scale-ratio); }

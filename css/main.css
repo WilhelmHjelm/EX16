@@ -517,9 +517,8 @@ html {
 
 /* line 3, ../scss/base/_typography.scss */
 body {
-  font-size: 1.6em;
-  /* currently ems cause chrome bug misinterpreting pxs on body element */
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.5;
   font-weight: 400;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   color: #222;
@@ -576,100 +575,105 @@ h6 {
 
 @media (min-width: 480px) {
   /* line 27, ../scss/base/_typography.scss */
+  body {
+    font-size: 16px;
+  }
+
+  /* line 28, ../scss/base/_typography.scss */
   h1 {
     font-size: 50.51735px;
   }
 
-  /* line 28, ../scss/base/_typography.scss */
+  /* line 29, ../scss/base/_typography.scss */
   h2 {
     font-size: 37.89749px;
   }
 
-  /* line 29, ../scss/base/_typography.scss */
+  /* line 30, ../scss/base/_typography.scss */
   h3 {
     font-size: 28.43022px;
   }
 
-  /* line 30, ../scss/base/_typography.scss */
+  /* line 31, ../scss/base/_typography.scss */
   h4 {
     font-size: 21.328px;
   }
 
-  /* line 31, ../scss/base/_typography.scss */
+  /* line 32, ../scss/base/_typography.scss */
   h5 {
     font-size: 16px;
   }
 
-  /* line 32, ../scss/base/_typography.scss */
+  /* line 33, ../scss/base/_typography.scss */
   h6 {
     font-size: 16px;
   }
 }
 @media (min-width: 960px) {
-  /* line 35, ../scss/base/_typography.scss */
+  /* line 36, ../scss/base/_typography.scss */
   h1 {
     font-size: 67.33963px;
   }
 
-  /* line 36, ../scss/base/_typography.scss */
+  /* line 37, ../scss/base/_typography.scss */
   h2 {
     font-size: 50.51735px;
   }
 
-  /* line 37, ../scss/base/_typography.scss */
+  /* line 38, ../scss/base/_typography.scss */
   h3 {
     font-size: 37.89749px;
   }
 
-  /* line 38, ../scss/base/_typography.scss */
+  /* line 39, ../scss/base/_typography.scss */
   h4 {
     font-size: 28.43022px;
   }
 
-  /* line 39, ../scss/base/_typography.scss */
+  /* line 40, ../scss/base/_typography.scss */
   h5 {
     font-size: 21.328px;
   }
 
-  /* line 40, ../scss/base/_typography.scss */
+  /* line 41, ../scss/base/_typography.scss */
   h6 {
     font-size: 16px;
   }
 }
-/* line 43, ../scss/base/_typography.scss */
+/* line 44, ../scss/base/_typography.scss */
 p {
   margin-top: 0;
 }
 
-/* line 47, ../scss/base/_typography.scss */
+/* line 48, ../scss/base/_typography.scss */
 a {
   color: #32647f;
   opacity: 1;
   transition: all 100ms linear;
 }
 
-/* line 52, ../scss/base/_typography.scss */
+/* line 53, ../scss/base/_typography.scss */
 a:hover {
   color: #fd9907;
   opacity: 0.8;
 }
 
-/* line 57, ../scss/base/_typography.scss */
+/* line 58, ../scss/base/_typography.scss */
 .blue-text {
   color: #32647f;
 }
 
-/* line 58, ../scss/base/_typography.scss */
+/* line 59, ../scss/base/_typography.scss */
 .turquoise-text {
   color: #00b0bf;
 }
 
-/* line 59, ../scss/base/_typography.scss */
+/* line 60, ../scss/base/_typography.scss */
 .green-text {
   color: #00b9a2;
 }
 
-/* line 60, ../scss/base/_typography.scss */
+/* line 61, ../scss/base/_typography.scss */
 .orange-text {
   color: #fd9907;
 }
@@ -1437,24 +1441,38 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 60px;
-  padding: 0 40px;
+  height: 40px;
+  padding: 0 30px;
   color: #32647f;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  line-height: 60px;
-  letter-spacing: .1rem;
+  line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
   border-radius: 45px;
-  border: 3px solid #32647f;
+  border: 2px solid #32647f;
   cursor: pointer;
 }
+@media (min-width: 480px) {
+  /* line 5, ../scss/components/_buttons.scss */
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    height: 60px;
+    padding: 0 40px;
+    font-size: 16px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    border: 3px solid #32647f;
+  }
+}
 
-/* line 32, ../scss/components/_buttons.scss */
+/* line 41, ../scss/components/_buttons.scss */
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -1470,7 +1488,7 @@ input[type="button"]:focus {
   outline: 0;
 }
 
-/* line 40, ../scss/components/_buttons.scss */
+/* line 49, ../scss/components/_buttons.scss */
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -1481,7 +1499,7 @@ input[type="button"].button-primary {
   border-color: #33C3F0;
 }
 
-/* line 53, ../scss/components/_buttons.scss */
+/* line 62, ../scss/components/_buttons.scss */
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -1497,17 +1515,17 @@ input[type="button"].button-primary:focus {
   border-color: #1EAEDB;
 }
 
-/* line 59, ../scss/components/_buttons.scss */
+/* line 68, ../scss/components/_buttons.scss */
 .read-more-home {
   margin-top: 50px;
 }
 
-/* line 63, ../scss/components/_buttons.scss */
+/* line 72, ../scss/components/_buttons.scss */
 .social-media, .social-media-head {
   text-align: right;
 }
 
-/* line 69, ../scss/components/_buttons.scss */
+/* line 78, ../scss/components/_buttons.scss */
 .social-media a,
 .social-media-head a,
 .og-details a.fa {
@@ -1526,19 +1544,19 @@ input[type="button"].button-primary:focus {
   border-radius: 100%;
   border: 1px solid #32647f;
 }
-/* line 85, ../scss/components/_buttons.scss */
+/* line 94, ../scss/components/_buttons.scss */
 .social-media a:first-child,
 .social-media-head a:first-child,
 .og-details a.fa:first-child {
   margin-left: 0;
 }
-/* line 88, ../scss/components/_buttons.scss */
+/* line 97, ../scss/components/_buttons.scss */
 .social-media a:last-child,
 .social-media-head a:last-child,
 .og-details a.fa:last-child {
   margin-right: 0;
 }
-/* line 92, ../scss/components/_buttons.scss */
+/* line 101, ../scss/components/_buttons.scss */
 .social-media a:hover,
 .social-media-head a:hover,
 .og-details a.fa:hover {
@@ -1546,12 +1564,12 @@ input[type="button"].button-primary:focus {
   border: 1px solid #fd9907;
 }
 
-/* line 99, ../scss/components/_buttons.scss */
+/* line 108, ../scss/components/_buttons.scss */
 .social-media-head {
   text-align: left;
   margin-top: 20px;
 }
-/* line 102, ../scss/components/_buttons.scss */
+/* line 111, ../scss/components/_buttons.scss */
 .social-media-head a:hover {
   color: white;
   border: 1px solid white;
@@ -1559,7 +1577,7 @@ input[type="button"].button-primary:focus {
 }
 
 /* Examensklassen, social media links */
-/* line 110, ../scss/components/_buttons.scss */
+/* line 119, ../scss/components/_buttons.scss */
 .og-details a.fa {
   margin: 0 4px;
   text-align: center;
@@ -2191,6 +2209,7 @@ i {
 /* line 120, ../scss/components/_expanding-grid.scss */
 .og-close {
   position: absolute;
+  z-index: 100;
   width: 40px;
   height: 40px;
   top: 40px;
@@ -2198,7 +2217,7 @@ i {
   cursor: pointer;
 }
 
-/* line 130, ../scss/components/_expanding-grid.scss */
+/* line 131, ../scss/components/_expanding-grid.scss */
 .og-close::before,
 .og-close::after {
   content: '';
@@ -2212,20 +2231,20 @@ i {
   transform: rotate(45deg);
 }
 
-/* line 142, ../scss/components/_expanding-grid.scss */
+/* line 143, ../scss/components/_expanding-grid.scss */
 .og-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-/* line 149, ../scss/components/_expanding-grid.scss */
+/* line 150, ../scss/components/_expanding-grid.scss */
 .og-close:hover::before,
 .og-close:hover::after {
   background: #666;
 }
 
-/* line 154, ../scss/components/_expanding-grid.scss */
+/* line 155, ../scss/components/_expanding-grid.scss */
 .og-fullimg,
 .og-details {
   width: 27%;
@@ -2235,28 +2254,28 @@ i {
   position: relative;
 }
 
-/* line 162, ../scss/components/_expanding-grid.scss */
+/* line 163, ../scss/components/_expanding-grid.scss */
 .og-details {
   width: 64%;
   padding: 20px 0 0 0;
   margin: 0;
 }
 
-/* line 168, ../scss/components/_expanding-grid.scss */
+/* line 169, ../scss/components/_expanding-grid.scss */
 .og-fullimg {
   text-align: center;
   padding-top: 150%;
   overflow: hidden;
 }
 
-/* line 174, ../scss/components/_expanding-grid.scss */
+/* line 175, ../scss/components/_expanding-grid.scss */
 .og-fullimg img {
   display: inline-block;
   max-height: 100%;
   max-width: 100%;
 }
 
-/* line 182, ../scss/components/_expanding-grid.scss */
+/* line 183, ../scss/components/_expanding-grid.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -2273,18 +2292,18 @@ i {
 }
 
 @-webkit-keyframes loader {
-  /* line 198, ../scss/components/_expanding-grid.scss */
+  /* line 199, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 199, ../scss/components/_expanding-grid.scss */
+  /* line 200, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 200, ../scss/components/_expanding-grid.scss */
+  /* line 201, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2292,18 +2311,18 @@ i {
 }
 
 @-moz-keyframes loader {
-  /* line 204, ../scss/components/_expanding-grid.scss */
+  /* line 205, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 205, ../scss/components/_expanding-grid.scss */
+  /* line 206, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 206, ../scss/components/_expanding-grid.scss */
+  /* line 207, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2311,18 +2330,18 @@ i {
 }
 
 @keyframes loader {
-  /* line 210, ../scss/components/_expanding-grid.scss */
+  /* line 211, ../scss/components/_expanding-grid.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 211, ../scss/components/_expanding-grid.scss */
+  /* line 212, ../scss/components/_expanding-grid.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
   }
 
-  /* line 212, ../scss/components/_expanding-grid.scss */
+  /* line 213, ../scss/components/_expanding-grid.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
@@ -2330,12 +2349,12 @@ i {
 }
 
 @media screen and (max-width: 960px) {
-  /* line 218, ../scss/components/_expanding-grid.scss */
+  /* line 219, ../scss/components/_expanding-grid.scss */
   .og-fullimg {
     display: none;
   }
 
-  /* line 219, ../scss/components/_expanding-grid.scss */
+  /* line 220, ../scss/components/_expanding-grid.scss */
   .og-details {
     float: none;
     width: 100%;
