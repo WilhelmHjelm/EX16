@@ -1438,37 +1438,38 @@ input[type="button"].button-primary:focus {
 /* line 66, ../scss/components/_buttons.scss */
 .social-media a, .social-media-head a {
   display: inline-block;
+  box-sizing: border-box;
   width: 45px;
   height: 45px;
   margin: 0 2px;
+  padding: 0 7px;
   color: #32647f;
-  text-align: center;
   font-weight: 600;
   line-height: 45px;
   white-space: nowrap;
   border-radius: 100%;
   border: 1px solid #32647f;
 }
-/* line 79, ../scss/components/_buttons.scss */
+/* line 80, ../scss/components/_buttons.scss */
 .social-media a:first-child, .social-media-head a:first-child {
   margin-left: 0;
 }
-/* line 82, ../scss/components/_buttons.scss */
+/* line 83, ../scss/components/_buttons.scss */
 .social-media a:last-child, .social-media-head a:last-child {
   margin-right: 0;
 }
-/* line 86, ../scss/components/_buttons.scss */
+/* line 87, ../scss/components/_buttons.scss */
 .social-media a:hover, .social-media-head a:hover {
   color: #fd9907;
   border: 1px solid #fd9907;
 }
 
-/* line 94, ../scss/components/_buttons.scss */
+/* line 95, ../scss/components/_buttons.scss */
 .social-media-head {
   text-align: left;
   margin-top: 20px;
 }
-/* line 97, ../scss/components/_buttons.scss */
+/* line 98, ../scss/components/_buttons.scss */
 .social-media-head a:hover {
   color: white;
   border: 1px solid white;
