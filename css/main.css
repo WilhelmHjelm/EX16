@@ -726,44 +726,49 @@ main {
 }
 
 /* line 38, ../scss/base/_misc.scss */
+html, body {
+  width: 100%;
+}
+
+/* line 42, ../scss/base/_misc.scss */
 .blue-bg {
   background-color: #32647f;
 }
 
-/* line 39, ../scss/base/_misc.scss */
+/* line 43, ../scss/base/_misc.scss */
 .turquoise-bg {
   background-color: #00b0bf;
 }
 
-/* line 40, ../scss/base/_misc.scss */
+/* line 44, ../scss/base/_misc.scss */
 .green-bg {
   background-color: #00b9a2;
 }
 
-/* line 41, ../scss/base/_misc.scss */
+/* line 45, ../scss/base/_misc.scss */
 .orange-bg {
   background-color: #fd9907;
 }
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 45, ../scss/base/_misc.scss */
+/* line 49, ../scss/base/_misc.scss */
 ul {
   list-style: circle inside;
 }
 
-/* line 47, ../scss/base/_misc.scss */
+/* line 51, ../scss/base/_misc.scss */
 ol {
   list-style: decimal inside;
 }
 
-/* line 49, ../scss/base/_misc.scss */
+/* line 53, ../scss/base/_misc.scss */
 ol, ul {
   padding-left: 0;
   margin-top: 0;
 }
 
-/* line 55, ../scss/base/_misc.scss */
+/* line 59, ../scss/base/_misc.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -772,14 +777,14 @@ ol ul {
   font-size: 90%;
 }
 
-/* line 58, ../scss/base/_misc.scss */
+/* line 62, ../scss/base/_misc.scss */
 li {
   margin-bottom: 1rem;
 }
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 64, ../scss/base/_misc.scss */
+/* line 68, ../scss/base/_misc.scss */
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -790,7 +795,7 @@ code {
   border-radius: 4px;
 }
 
-/* line 72, ../scss/base/_misc.scss */
+/* line 76, ../scss/base/_misc.scss */
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
@@ -799,7 +804,7 @@ pre > code {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 81, ../scss/base/_misc.scss */
+/* line 85, ../scss/base/_misc.scss */
 th,
 td {
   padding: 12px 15px;
@@ -807,13 +812,13 @@ td {
   border-bottom: 1px solid #E1E1E1;
 }
 
-/* line 86, ../scss/base/_misc.scss */
+/* line 90, ../scss/base/_misc.scss */
 th:first-child,
 td:first-child {
   padding-left: 0;
 }
 
-/* line 89, ../scss/base/_misc.scss */
+/* line 93, ../scss/base/_misc.scss */
 th:last-child,
 td:last-child {
   padding-right: 0;
@@ -821,7 +826,7 @@ td:last-child {
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 94, ../scss/base/_misc.scss */
+/* line 98, ../scss/base/_misc.scss */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -1282,7 +1287,7 @@ object {
 /* line 35, ../scss/base/_layout.scss */
 #masthead.home {
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-height: 100px;
   height: auto;
   max-height: 100vh;
@@ -2454,9 +2459,8 @@ input:checked + label {
 }
 /* line 13, ../scss/components/_footer.scss */
 .sponsors .sponsor {
-  flex-basis: 33.3333%;
-  vertical-align: bottom;
-  padding: 15px 15px 0 15px;
+  flex-basis: auto;
+  width: 33.3333%;
   box-sizing: border-box;
 }
 /* line 18, ../scss/components/_footer.scss */
@@ -2466,31 +2470,33 @@ input:checked + label {
 @media (min-width: 480px) {
   /* line 13, ../scss/components/_footer.scss */
   .sponsors .sponsor {
-    flex-basis: 25%;
+    flex-basis: auto;
+    width: 25%;
   }
 }
 @media (min-width: 960px) {
   /* line 13, ../scss/components/_footer.scss */
   .sponsors .sponsor {
-    flex-basis: 20%;
+    flex-basis: auto;
+    width: 20%;
   }
 }
-/* line 29, ../scss/components/_footer.scss */
+/* line 31, ../scss/components/_footer.scss */
 .sponsors .sponsor img {
   max-width: 100%;
 }
 
-/* line 38, ../scss/components/_footer.scss */
+/* line 40, ../scss/components/_footer.scss */
 footer#colophon {
   margin-top: 50px;
   padding: 30px 0 35px 0;
   border-top: 1px solid #ddd;
 }
-/* line 43, ../scss/components/_footer.scss */
+/* line 45, ../scss/components/_footer.scss */
 footer#colophon .site-info {
   position: relative;
 }
-/* line 46, ../scss/components/_footer.scss */
+/* line 48, ../scss/components/_footer.scss */
 footer#colophon .site-info .logo {
   position: absolute;
   top: 0;
@@ -2498,23 +2504,23 @@ footer#colophon .site-info .logo {
   width: 45px;
   height: 45px;
 }
-/* line 54, ../scss/components/_footer.scss */
+/* line 56, ../scss/components/_footer.scss */
 footer#colophon .site-info p {
   margin: 5px 0 0 60px;
   font-size: 14px;
 }
 
-/* line 63, ../scss/components/_footer.scss */
+/* line 65, ../scss/components/_footer.scss */
 #footer-logo {
   width: 100%;
 }
 
 @media (max-width: 960px) {
-  /* line 69, ../scss/components/_footer.scss */
+  /* line 71, ../scss/components/_footer.scss */
   footer#colophon .columns.social-media {
     text-align: center !important;
   }
-  /* line 72, ../scss/components/_footer.scss */
+  /* line 74, ../scss/components/_footer.scss */
   footer#colophon .site-info {
     display: none;
   }

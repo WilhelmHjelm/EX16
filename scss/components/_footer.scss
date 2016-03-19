@@ -11,19 +11,21 @@
   height: auto;
 
   .sponsor{
-    flex-basis: 33.3333%;
-    vertical-align: bottom;
-    padding: 15px 15px 0 15px;
+    flex-basis: auto;
+    width: 33.3333%;
     box-sizing: border-box;
+
     a:hover {
       opacity: 0.6;
     }
 
     @media (min-width: $break-mobile) {
-    flex-basis: 25%;
+      flex-basis: auto;
+      width: 25%;
     }
     @media (min-width: $break-grid) {
-      flex-basis: 20%;
+      flex-basis: auto;
+      width: 20%;
     }
 
     img {
