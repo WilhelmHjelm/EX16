@@ -35,6 +35,10 @@ main {
   display: block;
 }
 
+html, body {
+  width: 100%;
+}
+
 .blue-bg { background-color: $blue; }
 .turquoise-bg { background-color: $turquoise; }
 .green-bg { background-color: $green; }
