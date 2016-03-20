@@ -332,7 +332,7 @@ function my_theme_register_required_plugins() {
 		),
 		array(
 			'name'      => 'WordPress Importer',
-			'slug'      => 'wordpress-mporter',
+			'slug'      => 'wordpress-importer',
 			'required'  => false,
 		),
 	);
