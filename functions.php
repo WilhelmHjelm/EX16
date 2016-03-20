@@ -311,11 +311,6 @@ function my_theme_register_required_plugins() {
 			'required'  => true,
 		),
 		array(
-			'name'      => 'WP Retina 2x',
-			'slug'      => 'wp-retina-2x',
-			'required'  => false,
-		),
-		array(
 			'name'      => 'Google Analytics by Yoast',
 			'slug'      => 'google-analytics-for-wordpress',
 			'required'  => false,
@@ -336,8 +331,8 @@ function my_theme_register_required_plugins() {
 			'required'  => false,
 		),
 		array(
-			'name'      => 'wordpress-importer',
-			'slug'      => 'WordPress Importer',
+			'name'      => 'WordPress Importer',
+			'slug'      => 'wordpress-mporter',
 			'required'  => false,
 		),
 	);
