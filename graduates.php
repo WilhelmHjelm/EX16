@@ -13,7 +13,7 @@ get_header(); ?>
 
 <?php endwhile; // end of the loop. ?>
 
-<img class="splash" id="splash-graduates" src="<?php echo get_template_directory_uri(); ?>/img/splash-10.svg" alt="splash">
+<img class="splash" id="splash-graduates" src="<?php echo get_template_directory_uri(); ?>/img/splash-08.svg" alt="splash">
 <div class="container">
   <div class="twelve columns">
   <?php the_title( '<h1 class="entry-title blue-text">', '</h1>' ); ?>

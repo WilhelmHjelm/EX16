@@ -2596,7 +2596,7 @@ footer#colophon .site-info p {
 /* line 33, ../scss/components/_splash.scss */
 #splash-graduates {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
 }
 
