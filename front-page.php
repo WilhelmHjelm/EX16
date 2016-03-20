@@ -132,7 +132,7 @@ get_header(); ?>
     </div>
     <div class="five columns">
       <h2 class="orange-text">FÖRETAGSKVÄLL</h2>
-      <p>Info om företagskvällen Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Den 12 maj annordnar EX16 en företagskväll då bandet mellan universitet och näringsliv ska växa sig starkare. Här formas möjligheter till att knyta värdefulla kontakter inför framtiden och det är även examenklassens tillfälle att visa upp sina allra starkaste projekt. Kvällen kommer ta plats i Kåkenhus på Campus Norrköping och inledas med en förläsning följt av mingel, tilltugg och uppvisning av alster.</p>
       <a href="mailto:foretagskvall@ex16.se" class="button">Vill du vara med på företagskvällen?</a>
     </div>
 </section>
