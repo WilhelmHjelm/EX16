@@ -1,9 +1,10 @@
 @import "helpers/variables";
 @import "helpers/functions";
 @import "helpers/mixins";
-@import "helpers/helper-classes";
 
 @import "base/normalize";
+@import "helpers/helper-classes";
+
 @import "base/typography";
 @import "base/misc";
 @import "base/grid";
