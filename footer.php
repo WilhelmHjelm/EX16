@@ -47,7 +47,7 @@
 	</section>
 
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer">
 	<div class="container">
 			<div class="six columns site-info">
 				<div class="logo"><img id="footer-logo" src="<?php echo get_template_directory_uri(); ?>/img/logotypex16.png" alt="<?php bloginfo('name')?>"></div>

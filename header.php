@@ -50,14 +50,14 @@
 				</div>
 				<p class="contact-info">Kontakt:<br><a href="mailto:info@ex16.se">info@ex16.se</a></p>
 			</div>
-		<nav id="site-navigation" class="main-navigation offset-by-one six columns" role="navigation">
+		<nav id="site-navigation" class="main-navigation offset-by-one six columns">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation .six-columns -->
 		</div> <!-- .container -->
 	</div> <!-- .overlay -->
 </div> <!-- #fixed-nav -->
 
-	<header id="masthead" class="site-header <?php if ( is_front_page() && is_home() ) : ?>home<?php else : ?>splash<?php endif; ?>" role="banner">
+	<header id="masthead" class="site-header <?php if ( is_front_page() && is_home() ) : ?>home<?php else : ?>splash<?php endif; ?>">
 		<?php if ( is_front_page() && is_home() ) : ?>
 			<video autoplay loop id="splash-video">
 				<source src="<?php echo get_template_directory_uri(); ?>/videos/banner.webm" type="video/webm"/>
@@ -70,4 +70,4 @@
 			<a href="<?php echo get_home_url(); ?>" class="logotype"></a>
 	</header><!-- #masthead -->
 
-	<main id="content" role="main">
+	<main id="content">
