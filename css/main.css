@@ -2560,28 +2560,28 @@ footer#colophon .site-info p {
 #splash-lecturers {
   position: absolute;
   top: 10;
-  left: 0;
+  left: -30px;
 }
 
 /* line 11, ../scss/components/_splash.scss */
 #splash-lecturers2 {
   position: absolute;
   bottom: 50;
-  right: 0;
+  right: -20px;
 }
 
 /* line 16, ../scss/components/_splash.scss */
 #splash-catalogue {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -10px;
 }
 
 /* line 21, ../scss/components/_splash.scss */
 #splash-about {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -15px;
   width: 300px;
 }
 
@@ -2596,8 +2596,8 @@ footer#colophon .site-info p {
 /* line 33, ../scss/components/_splash.scss */
 #splash-graduates {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -50px;
+  right: 0px;
 }
 
 /*
