@@ -130,7 +130,7 @@ get_header(); ?>
   <div class="container">
       <div class="row">
       <div class="twelve columns aligncenter">
-      <h2 class="orange-text">FÖRETAGSKVÄLL</h2>
+      <h2 class="orange-text">EX by night</h2>
     </div> <!-- .columns -->
       </div> <!-- .row -->
       <div class="row">
