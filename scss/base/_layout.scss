@@ -81,7 +81,7 @@ section,
 .section-padding-x2 { /* MÖJLIGT ATT DETTA MÅSTE SPECIFICERAS BÄTTRE, <section> är inte så specifikt liksom */
 	padding: 75px 0;
 	@media (min-width: $break-mobile) {
-		padding: 150px 0;
+		padding: 125px 0;
 	}
 }
 
@@ -92,12 +92,8 @@ section,
 	}
 }
 
-#about {
-	text-align: center;
-}
 #company-evening{
 	position: relative;
-	padding: 125px 0;
 	border-bottom: 1px solid #ddd;
 
 	.twelve {
@@ -144,8 +140,8 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem; }
-
+  margin-bottom: 2.5rem;
+}
 
   /* Clearing
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
