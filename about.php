@@ -106,7 +106,7 @@ get_header(); ?>
 
       ?>
  <?php } /* End categories */ ?>
-
+ </div> <!-- .columns -->
 </div> <!-- .container -->
 
 <?php
