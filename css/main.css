@@ -1866,6 +1866,12 @@ label > .label-body {
   background: white;
 }
 
+/* line 173, ../scss/components/_navigation.scss */
+#menu-logo {
+  width: 60px;
+  padding: 10px;
+}
+
 /* line 1, ../scss/components/_lecturers.scss */
 .grid-forelasare {
   position: relative;

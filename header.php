@@ -36,6 +36,7 @@
 
 <div id="fixed-nav">
 	<div class="overlay">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/logotyp-white.svg" id="menu-logo" alt="EX16">
 		<div class="container">
 			<div class="five columns nav-info">
 				<h2>EX16</h2>
