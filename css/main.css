@@ -1363,7 +1363,7 @@ section,
   /* line 81, ../scss/base/_layout.scss */
   section,
   .section-padding-x2 {
-    padding: 150px 0;
+    padding: 125px 0;
   }
 }
 
@@ -1379,31 +1379,25 @@ section,
 }
 
 /* line 95, ../scss/base/_layout.scss */
-#about {
-  text-align: center;
-}
-
-/* line 98, ../scss/base/_layout.scss */
 #company-evening {
   position: relative;
-  padding: 125px 0;
   border-bottom: 1px solid #ddd;
 }
-/* line 103, ../scss/base/_layout.scss */
+/* line 99, ../scss/base/_layout.scss */
 #company-evening .twelve {
   margin-bottom: 30px;
 }
-/* line 106, ../scss/base/_layout.scss */
+/* line 102, ../scss/base/_layout.scss */
 #company-evening img {
   margin-bottom: 15px;
 }
-/* line 109, ../scss/base/_layout.scss */
+/* line 105, ../scss/base/_layout.scss */
 #company-evening p {
   margin-top: 15px;
 }
 
 @media (min-width: 780px) {
-  /* line 117, ../scss/base/_layout.scss */
+  /* line 113, ../scss/base/_layout.scss */
   .entry-content.about-text {
     -webkit-column-count: 2;
     /* Chrome, Safari, Opera */
@@ -1419,13 +1413,13 @@ section,
 }
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 131, ../scss/base/_layout.scss */
+/* line 127, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 136, ../scss/base/_layout.scss */
+/* line 132, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1433,7 +1427,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 146, ../scss/base/_layout.scss */
+/* line 142, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1449,7 +1443,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 156, ../scss/base/_layout.scss */
+/* line 152, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
