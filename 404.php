@@ -14,11 +14,11 @@ get_header(); ?>
 
 			<section class="error-404 not-found container">
 				<header class="page-header">
-					<h1 class="page-title">EXcuse us</h1>
+					<h1 class="page-title orange-text">EX<span id="error-title">cuse us</span>!</h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p>Sidan du försökte nå finns inte eller har flyttats.</p>
+					<h4>Sidan du försökte nå finns inte eller har flyttats.</h4>
 
 					<a href="<?php echo get_home_url(); ?>"> <p>Tillbaka till start</p></a>
 					<a href="javascript:javascript:history.go(-1)"><p>Gå tillbaka till förra sidan</p></a>

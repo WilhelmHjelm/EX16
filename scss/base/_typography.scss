@@ -59,3 +59,7 @@ a:hover {
 .turquoise-text { color: $turquoise; }
 .green-text { color: $green; }
 .orange-text { color: $orange; }
+
+#error-title{
+  text-transform: lowercase;
+}
