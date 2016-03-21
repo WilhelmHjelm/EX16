@@ -96,7 +96,16 @@ section,
 	text-align: center;
 }
 #company-evening{
-	padding-bottom: 50px;
+	position: relative;
+	padding: 125px 0;
+	border-bottom: 1px solid #ddd;
+
+	.twelve {
+		margin-bottom: 30px;
+	}
+	img {
+		margin-bottom: 20px;
+	}
 }
 
 

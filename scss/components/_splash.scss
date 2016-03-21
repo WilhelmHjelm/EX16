@@ -1,6 +1,12 @@
 .splash{
+  display: none;
   width: 25%;
   z-index: -1;
+
+  @media (min-width: $break-grid) {
+    display: block;
+  }
+
 }
 
 #splash-lecturers{
@@ -34,4 +40,10 @@
   position: absolute;
   top: -50px;
   right:0px;
+}
+#splash-company-evening{
+  position: absolute;
+  top: 50px;
+  left: -10px;
+  width: 35%;
 }

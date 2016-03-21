@@ -126,15 +126,28 @@ get_header(); ?>
 </section>
 */ ?>
 <section id="company-evening">
+          <img class="splash" id="splash-company-evening" src="<?php echo get_template_directory_uri(); ?>/img/splash-03.svg" alt="splash">
   <div class="container">
-    <div class="seven columns">
-      <iframe src="https://player.vimeo.com/video/152694696?color=64a508" width="738" height="415" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-    <div class="five columns">
+      <div class="row">
+      <div class="twelve columns aligncenter">
       <h2 class="orange-text">FÖRETAGSKVÄLL</h2>
-      <p>Den 12 maj annordnar EX16 en företagskväll då bandet mellan universitet och näringsliv ska växa sig starkare. Här formas möjligheter till att knyta värdefulla kontakter inför framtiden och det är även examenklassens tillfälle att visa upp sina allra starkaste projekt. Kvällen kommer ta plats i Kåkenhus på Campus Norrköping och inledas med en förläsning följt av mingel, tilltugg och uppvisning av alster.</p>
-      <a href="mailto:foretagskvall@ex16.se" class="button">Vill du vara med på företagskvällen?</a>
-    </div>
+    </div> <!-- .columns -->
+      </div> <!-- .row -->
+      <div class="row">
+      <div class="five columns offset-by-one">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/foretagskvall.jpg" alt="EX16 Företagskväll">
+      </div> <!-- .columns -->
+      <div class="five columns">
+        <p>Den 12 maj annordnar EX16 en företagskväll då bandet mellan universitet och näringsliv ska växa sig starkare.
+          Här formas möjligheter till att knyta värdefulla kontakter inför framtiden och det är även examenklassens
+          tillfälle att visa upp sina allra starkaste projekt. Kvällen kommer ta plats i Kåkenhus på Campus Norrköping
+          och inledas med en förläsning följt av mingel, tilltugg och uppvisning av alster.<br><br>
+          Är du eller ditt företag intresserade av att träffa branschens framtida talanger? Maila
+          <a href="mailto:foretagskvall@ex16.se">foretagskvall@ex16.se</a> för mer information.
+        </p>
+      </div> <!-- .columns -->
+      </div> <!-- .row -->
+  </div> <!-- .container -->
 </section>
 
 

@@ -40,7 +40,7 @@
 			<div class="five columns nav-info">
 				<h2>EX16</h2>
 				<p>Den 12-14 maj är det äntligen dags för EX16 som är årets upplaga av examensdagarna för Grafisk design och kommunikation. Examensdagarna har som syfte att vara ett forum för kreativitet och inspiration samt föra samman examenseleverna med företag och framtida arbetsgivare.
-Välkommen! 
+Välkommen!
 </p>
 					<div class="social-media-head">
 						<a href="https://www.facebook.com/gdkex16" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
@@ -59,7 +59,7 @@ Välkommen!
 	</div> <!-- .overlay -->
 </div> <!-- #fixed-nav -->
 
-	<header id="masthead" class="site-header <?php if ( is_front_page() && is_home() ) : ?>home<?php else : ?>splash<?php endif; ?>">
+	<header id="masthead" class="site-header <?php if ( is_front_page() && is_home() ) : ?>home<?php endif; ?>">
 		<?php if ( is_front_page() && is_home() ) : ?>
 			<video autoplay loop id="splash-video">
 				<source src="<?php echo get_template_directory_uri(); ?>/videos/banner.webm" type="video/webm"/>
