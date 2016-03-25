@@ -24,62 +24,43 @@ get_header(); ?>
 </section>
 
 <section id="schedule">
+  <div id="splash-schedule"></div>
   <div class="container">
   <!--  <div class="ten columns offset-by-one">
       <h2 class="green-text">Schema och föreläsare presenteras inom kort</h2>
     </div> -->
     <div class="row">
-    <div class="twelve columns aligncenter">
-      <h2 class="green-text">Schema</h2>
+    <div class="twelve columns">
+      <h1 class="green-text">Schema</h1>
     </div> <!-- .twelve .columns -->
   </div> <!-- .row -->
   <div class="row">
-    <ul class="four columns big-events">
-      <li>
-        <h4>Utställning</h4>
-        <span class="date">12-14 maj (tors-lör)</span>
-        <span class="time">09.00-18.00</span>
-        <p>Utställning av olika grafiska alster som examensklassen producerat under åren på GDK.
-          Hålls i Färgeriet i Kåkenhus. Gå in via entrén mot Skvallertorget.</p>
-      </li>
-      <li>
-        <h4>Företagskväll</h4>
-        <span class="date">12 maj (tors)</span>
-        <span class="time">18.00-21.00</span>
-        <p>En kväll med företag. Hålls i Färgeriet i Kåkenhus. Gå in via entrén mot Skvallertorget.</p>
-      </li>
-    </ul>
-
-    <div class="eight columns">
-    <input id="tab1" type="radio" name="tabs" checked>
-    <label for="tab1">Torsdag</label>
-
-    <input id="tab2" type="radio" name="tabs">
-    <label for="tab2">Fredag</label>
-
-    <input id="tab3" type="radio" name="tabs">
-    <label for="tab3">Lördag</label>
-
-      <ul class="tab-content" id="content1">
-          <li>09:00 <strong>Invigning av EX16</strong></li>
-          <li>09:00 <strong>Utställningen öppnar</strong></li>
-          <li>10:15-12:00 <strong>Föreläsning i K4</strong><span>Bo Bergström talar om saker man kan göra med en katt.</span></li>
-          <li>18:00 <strong>Företagskvällen börjar</strong><span>Läs mer om vad som händer.</span></li>
-          <li>21:00 <strong>Utställningen och företagskvällen stänger</strong></li>
-      </ul>
-
-      <ul class="tab-content" id="content2">
-          <li>09:00 <strong>Utställningen öppnar</strong></li>
-          <li>12:15-13:00 <strong>Föreläsning i K4</strong><span>Crazy Pictures talar om för dig vad du vill veta.</span></li>
-          <li>13:15-15:00 <strong>Föreläsning i K4</strong><span>Lars Winnerbäck kommer och gästspelar.</span></li>
-          <li>18:00 <strong>Utställningen stänger</strong></li>
-      </ul>
-
-      <ul class="tab-content" id="content3">
-        <li>10:00 <strong>Utställningen öppnar</strong></li>
-        <li>14:00 <strong>Utställningen stänger</strong></li>
-        <li>19:00 <strong>Examenssittning</strong><span>Hålls på Laxholmen och är examensklassens avslutande sittning.</span></li>
-      </ul>
+    <div class="three columns thursday">
+        <h4 class="turquoise-text">Torsdag</h4>
+        <ul class="tab-content">
+            <li>09:00<br><strong>Invigning av EX16</strong><br><span>Äger rum i Färgeriet, Kåkenhus.</span></li>
+            <li>09:00<br><strong>Utställningen öppnar</strong></li>
+            <li>10:15-12:00<br><strong>Föreläsning i K4</strong><br><span>Bo Bergström talar om saker man kan göra med en katt.</span></li>
+            <li>18:00<br><strong>Företagskvällen börjar</strong><br><span>Läs mer om vad som händer.</span></li>
+            <li>21:00<br><strong>Utställningen och företagskvällen stänger</strong></li>
+        </ul>
+    </div> <!-- .columns -->
+    <div class="three columns friday">
+        <h4 class="green-text">Fredag</h4>
+        <ul class="tab-content">
+            <li>09:00<br><strong>Utställningen öppnar</strong></li>
+            <li>12:15-13:00<br><strong>Föreläsning i K4</strong><br><span>Crazy Pictures talar om för dig vad du vill veta.</span></li>
+            <li>13:15-15:00<br><strong>Föreläsning i K4</strong><br><span>Lars Winnerbäck kommer och gästspelar.</span></li>
+            <li>18:00<br><strong>Utställningen stänger</strong></li>
+        </ul>
+    </div> <!-- .columns -->
+    <div class="three columns saturday">
+        <h4 class="orange-text">Lördag</h4>
+        <ul class="tab-content" id="content3">
+          <li>10:00<br><strong>Utställningen öppnar</strong></li>
+          <li>14:00<br><strong>Utställningen stänger</strong></li>
+          <li>19:00<br><strong>Examenssittning</strong><br><span>Hålls på Laxholmen och är examensklassens avslutande sittning.</span></li>
+        </ul>
     </div> <!-- .columns -->
     </div> <!-- .row -->
   </div> <!-- .container -->

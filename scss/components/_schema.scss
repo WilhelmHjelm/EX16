@@ -1,90 +1,67 @@
 #schedule {
-  background: #e8e8e8;
-  text-align: center;
-  font-style: italic;
-}
+  position: relative;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 
-.schema{
-  background-color: $green;
-}
-.fast-schema{
-  background-color: $turquoise;
-  p{
-    padding:13px;
-    color: white;
+  .twelve.columns {
+    margin-bottom: 25px;
   }
-}
+
+  h4 {
+    font-weight: bold;
+  }
+
+
+  .thursday .tab-content {
+      li {
+      border-left: 1px solid $turquoise;
+      }
+      strong {
+        color: $turquoise;
+      }
+    }
+  .friday .tab-content {
+      li {
+      border-left: 1px solid $green;
+      }
+      strong {
+        color: $green;
+      }
+    }
+    .saturday .tab-content {
+        li {
+        border-left: 1px solid $orange;
+        }
+        strong {
+          color: $orange;
+        }
+      }
+
+
 .tab-content {
-  display: none;
-  padding: 20px 0 0;
-  border-top: 1px solid $blue;
-  transition: all 0.3s ease-in-out;
-}
-.tab-content p{
-  padding:13px;
-  color:white;
-}
-
-input {
-  display: none !important;
-}
-
-label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-  font-weight: 600;
-  text-align: center;
-  color: #ddd;
-  border: 1px solid transparent;
-  transition: all 0.3s ease-in-out;
-}
-
-label:before {
-  font-weight: normal;
-  margin-right: 10px;
-}
-
-label:hover {
-  color: #fff;
-  cursor: pointer;
-  background-color: $turquoise;
-  border: 1px solid $green;
-  border-top: 2px solid $blue;
-  border-bottom: 1px solid $blue;
-  transition: all 0.3s ease-in-out;
-}
-
-input:checked + label {
-  color: white;
-  border: 1px solid $green;
-  border-top: 2px solid $blue;
-  border-bottom: 1px solid $blue;
-  background-color: $blue;
-  transition: all 0.3s ease-in-out;
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
   display: block;
-  transition: all 0.3s ease-in-out;
-  background-color: $blue;
-}
+  margin: 15px 0 0 0;
 
-@media screen and (max-width: 650px) {
-  label {
-    font-size: 0;
-  }
-  label:before {
-    margin: 0;
-    font-size: 18px;
-  }
-}
+  li {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
 
-@media screen and (max-width: 400px) {
-  label {
-    padding: 15px;
+    &.blue-border {border-left: 1px solid $blue;}
+    &.turquoise-border {border-left: 1px solid $turquoise;}
+    &.green-border {border-left: 1px solid $green;}
+    &.orange-border {border-left: 1px solid $orange;}
+
   }
-}
+
+  span {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+
+} /* tab-content */
+
+}/* schedule */
