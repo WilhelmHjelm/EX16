@@ -31,7 +31,7 @@ get_header(); ?>
     </div> -->
     <div class="row">
     <div class="twelve columns">
-      <h1 class="green-text">Schema</h1>
+      <h2 class="green-text">Schema</h2>
     </div> <!-- .twelve .columns -->
   </div> <!-- .row -->
   <div class="row">
@@ -66,10 +66,12 @@ get_header(); ?>
   </div> <!-- .container -->
 
 </section>
-<?php /*
+
 <section id="lecturers">
   <div class="container">
-    <!--- <h1 class="turquoise-text">Föreläsare</h1> -->
+    <div class="twelve columns aligncenter">
+    <h2 class="turquoise-text">Föreläsare</h2>
+    </div> <!-- .columns -->
   <?php
   // Custom post type "forelasare" list
 
@@ -92,17 +94,12 @@ get_header(); ?>
             </figrure>
           </a>
         </div>
-
           <?php
         }
-      }
-      else {
-
       }
     ?>
 </div>
 </section>
-*/ ?>
 <section id="company-evening">
           <img class="splash" id="splash-company-evening" src="<?php echo get_template_directory_uri(); ?>/img/splash-03.svg" alt="splash">
   <div class="container">
