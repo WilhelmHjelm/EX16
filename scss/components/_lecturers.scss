@@ -21,16 +21,6 @@
 	text-align: center;
 	cursor: pointer;
 
-	@media (min-width: $break-mobile) {
-		width: 100%;
-	}
-
-	@media (min-width: $break-mobile + 200) {
-		width: 100%;
-	}
-	@media (min-width: $break-grid) {
-		width: 100%;
-	}
 
 }
 
@@ -167,4 +157,7 @@ i{
 }
 .lecturer-img{
 	width: 500px;
+}
+.headline-lecturers{
+	padding-bottom:100px;
 }
