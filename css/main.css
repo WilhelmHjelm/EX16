@@ -2089,6 +2089,11 @@ i {
   padding-right: 2px;
 }
 
+/* line 168, ../scss/components/_lecturers.scss */
+.lecturer-img {
+  width: 500px;
+}
+
 /* line 1, ../scss/components/_expanding-grid.scss */
 .og-grid {
   list-style: none;
@@ -2572,7 +2577,7 @@ footer#colophon .site-info p {
 /* line 12, ../scss/components/_splash.scss */
 #splash-lecturers {
   position: absolute;
-  top: 10;
+  bottom: 0;
   left: -30px;
 }
 

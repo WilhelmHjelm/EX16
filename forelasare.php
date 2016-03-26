@@ -30,10 +30,10 @@ get_header(); ?>
         ?>
         <div class="container">
           <div class="six columns" id="<?php the_title(); ?>">
-            <img src="<?php the_field('image'); ?>" alt="<?php the_title(); ?>">
+            <img class="lecturer-img" src="<?php the_field('image'); ?>" alt="<?php the_title(); ?>">
           </div>
           <div class="six columns">
-            <h3><?php the_title(); ?></h3>
+            <h3 class="lecturer-titel"><?php the_title(); ?></h3>
             <p><?php the_content(); ?></p>
             <p><i class="fa fa-clock-o"></i><?php the_field('time'); ?><i class="fa fa-map-marker"></i><?php the_field('place'); ?></p>
           </div>
