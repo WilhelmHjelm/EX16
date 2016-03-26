@@ -72,6 +72,7 @@ get_header(); ?>
     <div class="twelve columns aligncenter">
     <h2 class="turquoise-text">Föreläsare</h2>
     </div> <!-- .columns -->
+  </div>
   <?php
   // Custom post type "forelasare" list
 
@@ -80,23 +81,28 @@ get_header(); ?>
       );
       $lecturers = new WP_Query( $args );
       if( $lecturers->have_posts() ) {
+        echo '<div class="container lecturers-grid">';
         while( $lecturers->have_posts() ) {
           $lecturers->the_post();
           ?>
-          <div class="grid-forelasare">
-            <figure class="hover-lecturer">
-              <a href="<?php echo get_page_link(45); ?>#<?php the_title(); ?>">
-                <?php the_post_thumbnail(); ?>
-                <figcaption>
-                  <h3><?php the_title(); ?></h3>
+          <figure class="lecturer">
+            <img src="<?php the_field('image'); ?>" alt="<?php the_title();?>">
+              <figcaption>
+                <div>
+                  <h2><?php the_title(); ?></h2>
                   <p><i class="fa fa-clock-o"></i><?php the_field('time'); ?><i class="fa fa-map-marker"></i><?php the_field('place'); ?></p>
-                </figcaption>
-            </figrure>
-          </a>
-        </div>
+                </div>
+                <a href="<?php echo get_page_link(45); ?>#<?php the_title(); ?>"></a>
+              </figcaption>
+            </figure>
           <?php
         }
       }
+
+      else {
+        echo 'Det finns inga föreläsare att visa';
+      }
+
     ?>
 </div>
 </section>

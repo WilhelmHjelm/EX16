@@ -1,52 +1,52 @@
-.grid-forelasare {
+.lecturers-grid {
 	position: relative;
 	margin: 0 auto;
+	padding: 1em 0 4em;
 	max-width: 2000px;
 	list-style: none;
 	text-align: center;
 }
 
 /* Common style */
-.grid-forelasare figure {
+.lecturers-grid figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	min-width: 240px;
-	max-width: 340px;
-	max-height: 260px;
-	width: 48%;
+	min-width: 280px;
+	max-width: 440px;
+	max-height: 320px;
+	width: 33%;
+	background: $turquoise;
 	text-align: center;
 	cursor: pointer;
 }
 
-.grid-forelasare figure img {
+.lecturers-grid figure img {
 	position: relative;
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.8;
+	opacity: 0.6;
 }
 
-.grid-forelasare figure figcaption {
+.lecturers-grid figure figcaption {
 	padding: 2em;
+	padding-left: 1em;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.25em;
+	font-size: 30px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-.grid-forelasare figcaption h3{
-	background-color: transparentize($turquoise, .1);
-}
 
-.grid-forelasare figure figcaption::before,
-.grid-forelasare figure figcaption::after {
+.lecturers-grid figure figcaption::before,
+.lecturers-grid figure figcaption::after {
 	pointer-events: none;
 }
 
-.grid-forelasare figure figcaption,
-.grid-forelasare figure figcaption > a {
+.lecturers-grid figure figcaption,
+.lecturers-grid figure figcaption > a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -54,38 +54,38 @@
 	height: 100%;
 }
 
-.grid-forelasare figure figcaption > a {
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.lecturers-grid figure figcaption > a {
 	z-index: 1000;
-	text-indent: 100%;
+	text-indent: 200%;
 	white-space: nowrap;
 	font-size: 0;
 	opacity: 0;
 }
 
-.grid-forelasare figure h3 {
-	word-spacing: -0.15em;
-	font-weight: 700;
-}
-
-.grid-forelasare figure h3 span {
+.lecturers-grid figure h2 {
 	font-weight: 800;
+	font-size: inherit;
 }
 
-.grid-forelasare figure h3,
-.grid-forelasare figure p {
+.lecturers-grid figure h2,
+.lecturers-grid figure p {
 	margin: 0;
 }
 
-.grid-forelasare figure p {
+.lecturers-grid figure p {
 	letter-spacing: 1px;
-	font-size: 18px;
+	font-size: 68.5%;
 }
 
-figure.hover-lecturer {
-	background-color: transparentize($turquoise, .1);
-}
+/* Individual effects */
 
-figure.hover-lecturer img {
+/*---------------*/
+/***** Lily *****/
+/*---------------*/
+
+figure.lecturer img {
 	max-width: none;
 	width: -webkit-calc(100% + 50px);
 	width: calc(100% + 50px);
@@ -96,11 +96,11 @@ figure.hover-lecturer img {
 	transform: translate3d(-40px,0,0);
 }
 
-figure.hover-lecturer figcaption {
+figure.lecturer figcaption {
 	text-align: left;
 }
 
-figure.hover-lecturer figcaption > div {
+figure.lecturer figcaption > div {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -109,47 +109,44 @@ figure.hover-lecturer figcaption > div {
 	height: 50%;
 }
 
-figure.hover-lecturer h3,
-figure.hover-lecturer p {
+figure.lecturer h2,
+figure.lecturer p {
 	-webkit-transform: translate3d(0,40px,0);
 	transform: translate3d(0,40px,0);
 }
 
-figure.hover-lecturer h3 {
+figure.lecturer h2 {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
 
-figure.hover-lecturer p {
+figure.lecturer p {
 	color: rgba(255,255,255,0.8);
 	opacity: 0;
 	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
 	transition: opacity 0.2s, transform 0.35s;
 }
 
-figure.hover-lecturer:hover img,
-figure.hover-lecturer:hover p {
+figure.lecturer:hover img {
+	opacity: 0.4;
+}
+figure.lecturer:hover p {
 	opacity: 1;
 }
 
-figure.hover-lecturer:hover img,
-figure.hover-lecturer:hover h3,
-figure.hover-lecturer:hover p {
+figure.lecturer:hover img,
+figure.lecturer:hover h2,
+figure.lecturer:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
-figure.hover-lecturer:hover p {
+figure.lecturer:hover p {
 	-webkit-transition-delay: 0.05s;
 	transition-delay: 0.05s;
 	-webkit-transition-duration: 0.35s;
 	transition-duration: 0.35s;
 }
-figcaption i{
-	padding-left:5px;
-	padding-right:2px;
-}
-
 /*----Föreläsare-page -------*/
 
 i{
