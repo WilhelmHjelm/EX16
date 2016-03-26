@@ -20,6 +20,18 @@
 	background: $turquoise;
 	text-align: center;
 	cursor: pointer;
+
+	@media (min-width: $break-mobile) {
+		width: 100%;
+	}
+
+	@media (min-width: $break-mobile + 200) {
+		width: 100%;
+	}
+	@media (min-width: $break-grid) {
+		width: 100%;
+	}
+
 }
 
 .lecturers-grid figure img {
