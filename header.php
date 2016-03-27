@@ -14,12 +14,12 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta description="Examensdagarna för Grafisk design och kommunikation på Linköpings universitet. 12-14 maj i Kåkenhus på Campus Norrköping.">
+<meta description="Examensdagarna för Grafisk design och kommunikation, 12-14 maj i Kåkenhus på Campus Norrköping.">
 <meta property="og:site_name" content="EX16">
 <?php $current_url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
 <meta property="og:url" content="<?php echo $current_url; ?>">
 <meta property="og:title" content="<?php if ( is_front_page() && is_home() ) : ?>Startsida<?php else : echo the_title(); endif; ?>">
-<meta property="og:description" content="Examensdagarna för Grafisk design och kommunikation på Linköpings universitet. 12-14 maj i Kåkenhus på Campus Norrköping.">
+<meta property="og:description" content="Examensdagarna för Grafisk design och kommunikation, 12-14 maj i Kåkenhus på Campus Norrköping.">
 <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_social_1200x630.png">
 
 <link rel="profile" href="http://gmpg.org/xfn/11">
