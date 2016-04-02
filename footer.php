@@ -15,7 +15,7 @@
 
 
 	<?php
-	if ( !is_post_type_archive('utstallning')) : ?>
+	if ( !is_post_type_archive('utstallning') && !is_singular('utstallning')) : ?>
 	<section id="sponsorer" class="container">
 		<div class="twelve columns">
 			<h5>Samarbetspartners</h5>

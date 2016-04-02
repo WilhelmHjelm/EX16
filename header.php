@@ -33,7 +33,7 @@
 	<div class="loading"></div>
 <div id="page" class="hfeed site">
 <?php
-if ( is_post_type_archive('utstallning')) : ?>
+if ( is_post_type_archive('utstallning') || is_singular('utstallning')) : ?>
 
 <header id="masthead" class="site-header utstallning">
 		<a href="<?php echo get_home_url(); ?>" class="logotype"></a>
