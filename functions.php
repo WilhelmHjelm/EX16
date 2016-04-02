@@ -252,11 +252,16 @@ function custom_post_type() {
 	)
 	);
 	register_post_type( 'portfolio', array(
-		'labels'        => array('name' => __( 'Portfolio', 'ex16'  ), 'singular_name' => __( 'Portfolio', 'ex16'  ) ),
+		'labels'        => array(
+										'name' 					=> __( 'Utställning', 'ex16'  ),
+										'singular_name' => __( 'Utställningsalster', 'ex16'  ),
+										'add_new' => __( 'Nytt alster', 'ex16'  ),
+										'add_new_item' => __( 'Lägg till nytt utställningsalster', 'ex16'  )
+									),
 		'description'   => 'Holds the information about EX16 digital works.',
 		'public'        => true,
 		'menu_position' => 8,
-		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'supports'      => array( 'title', 'editor',  'custom-fields' ),
 		'has_archive'   => false
 	)
 	);
