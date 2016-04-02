@@ -35,7 +35,6 @@
 #masthead.utstallning {
 	position: relative;
 	height: 125px;
-	border-bottom: 1px solid #000;
 
 	.logotype{
 		@include vertical-align(absolute, 50%, 50%);
