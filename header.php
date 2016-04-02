@@ -36,7 +36,7 @@
 if ( is_post_type_archive('utstallning') || is_singular('utstallning')) : ?>
 
 <header id="masthead" class="site-header utstallning">
-		<a href="<?php echo get_home_url(); ?>" class="logotype"></a>
+		<a href="<?php echo get_home_url(); ?>/utstallning" class="logotype"></a>
 </header><!-- #masthead -->
 
 <?php else: ?>
