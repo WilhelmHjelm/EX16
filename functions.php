@@ -251,7 +251,7 @@ function custom_post_type() {
 		'has_archive'   => false
 	)
 	);
-	register_post_type( 'portfolio', array(
+	register_post_type( 'exhibition', array(
 		'labels'        => array(
 										'name' 					=> __( 'Utställning', 'ex16'  ),
 										'singular_name' => __( 'Utställningsalster', 'ex16'  ),
@@ -262,12 +262,26 @@ function custom_post_type() {
 		'public'        => true,
 		'menu_position' => 8,
 		'supports'      => array( 'title', 'editor',  'custom-fields' ),
-		'has_archive'   => false
+		'has_archive'   => false,
+		'taxonomies' 		=> array('exhibition_category')
 	)
 	);
 
 }
 add_action( 'init', 'custom_post_type');
+
+function taxonomies_exhibition() {
+  $labels = array(
+    'name'              => _x( 'Kategorier', 'taxonomy general name' ),
+    'singular_name'     => _x( 'Kategori', 'taxonomy singular name' ),
+  );
+  $args = array(
+    'labels' => $labels,
+    'hierarchical' => true,
+  );
+  register_taxonomy( 'exhibition_category', 'exhibition', $args );
+}
+add_action( 'init', 'taxonomies_exhibition', 0 );
 
 /**
  * Implement the Custom Header feature.
