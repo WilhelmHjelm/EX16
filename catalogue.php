@@ -19,7 +19,7 @@ get_header(); ?>
   </div>
 
   <div class="twelve columns aligncenter">
-    <div data-configid="14667575/33814781" style="width:800px; height:715px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+    <div data-configid="14667575/33814781" style="width:100%; height:715px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
   </div>
 
 <?php
