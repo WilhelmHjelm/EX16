@@ -32,6 +32,14 @@
 <body <?php body_class(); ?>>
 	<div class="loading"></div>
 <div id="page" class="hfeed site">
+<?php
+if ( is_post_type_archive('utstallning')) : ?>
+
+<header id="masthead" class="site-header utstallning">
+		<a href="<?php echo get_home_url(); ?>" class="logotype"></a>
+</header><!-- #masthead -->
+
+<?php else: ?>
 <div id="hamburger"><span></span><span></span><span></span></div>
 
 <div id="fixed-nav">
@@ -71,5 +79,5 @@ Välkommen!
 			<?php endif; ?>
 			<a href="<?php echo get_home_url(); ?>" class="logotype"></a>
 	</header><!-- #masthead -->
-
+<?php endif; ?>
 	<main id="content">

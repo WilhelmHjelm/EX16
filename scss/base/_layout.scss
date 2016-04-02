@@ -32,6 +32,29 @@
 
 }
 
+#masthead.utstallning {
+	position: relative;
+	height: 125px;
+	border-bottom: 1px solid #000;
+
+	.logotype{
+		@include vertical-align(absolute, 50%, 50%);
+		z-index: 800;
+		display: block;
+		width: 60px;
+	  height: 60px;
+		background: url(../img/logotypex16.png) no-repeat top left;
+		background-size: contain;
+
+		@media (min-width: $break-mobile) {
+			@include vertical-align(absolute, 50%, 50%);
+			width: 60px;
+		  height: 60px;
+		}
+
+	}
+}
+
 #masthead.home {
 	position: relative;
 	width:100%;
