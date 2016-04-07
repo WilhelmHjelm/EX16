@@ -1416,15 +1416,20 @@ section,
     column-gap: 25px;
   }
 }
+/* line 127, ../scss/base/_layout.scss */
+.issuuembed {
+  padding-top: 60px;
+}
+
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 131, ../scss/base/_layout.scss */
+/* line 135, ../scss/base/_layout.scss */
 button,
 .button {
   margin-bottom: 1rem;
 }
 
-/* line 136, ../scss/base/_layout.scss */
+/* line 140, ../scss/base/_layout.scss */
 input,
 textarea,
 select,
@@ -1432,7 +1437,7 @@ fieldset {
   margin-bottom: 1.5rem;
 }
 
-/* line 146, ../scss/base/_layout.scss */
+/* line 150, ../scss/base/_layout.scss */
 pre,
 blockquote,
 dl,
@@ -1448,7 +1453,7 @@ form {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Self Clearing Goodness */
-/* line 156, ../scss/base/_layout.scss */
+/* line 160, ../scss/base/_layout.scss */
 .container:after,
 .row:after,
 .u-cf {
@@ -2032,7 +2037,7 @@ figure.lecturer h2 {
 
 /* line 125, ../scss/components/_lecturers.scss */
 figure.lecturer p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0);
   opacity: 0;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
   transition: opacity 0.2s, transform 0.35s;
