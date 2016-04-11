@@ -17,24 +17,34 @@
 	max-width: 440px;
 	max-height: 320px;
 	width: 33%;
-	background: $turquoise;
 	text-align: center;
 	cursor: pointer;
 
+	@media (min-width: $break-mobile) {
+		width: 100%;
+	}
+
+	@media (min-width: $break-mobile + 200) {
+		width: 100%;
+	}
+	@media (min-width: $break-grid) {
+		width: 100%;
+	}
 
 }
+
 
 .lecturers-grid figure img {
 	position: relative;
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.6;
+	opacity: 1;
 }
 
 .lecturers-grid figure figcaption {
-	padding: 2em;
-	padding-left: 1em;
+	padding: 3em;
+	padding-left: 0.5em;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 30px;
@@ -81,17 +91,11 @@
 	font-size: 68.5%;
 }
 
-/* Individual effects */
-
-/*---------------*/
-/***** Lily *****/
-/*---------------*/
-
 figure.lecturer img {
 	max-width: none;
 	width: -webkit-calc(100% + 50px);
 	width: calc(100% + 50px);
-	opacity: 0.7;
+	opacity: 1;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(-40px,0, 0);
@@ -111,26 +115,41 @@ figure.lecturer figcaption > div {
 	height: 50%;
 }
 
-figure.lecturer h2,
-figure.lecturer p {
+figure.lecturer h2 {
+	/*
 	-webkit-transform: translate3d(0,40px,0);
 	transform: translate3d(0,40px,0);
+	*/
+	background-color: $turquoise;
+	background-size: contain;
+}
+
+figure.lecturer p{
+	background-color: black;
+	color: white;
+	margin-top: 3px;
 }
 
 figure.lecturer h2 {
+	/*
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
+	*/
+	padding:10px;
 }
 
 figure.lecturer p {
-	color: rgba(255,255,255,0.8);
-	opacity: 0;
+	color: rgba(255,255,255,1);
+	opacity: 1;
+	/*
 	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
 	transition: opacity 0.2s, transform 0.35s;
+	*/
+	width:160px;
 }
 
 figure.lecturer:hover img {
-	opacity: 0.4;
+	opacity: 1;
 }
 figure.lecturer:hover p {
 	opacity: 1;
@@ -144,10 +163,12 @@ figure.lecturer:hover p {
 }
 
 figure.lecturer:hover p {
+	/*
 	-webkit-transition-delay: 0.05s;
 	transition-delay: 0.05s;
 	-webkit-transition-duration: 0.35s;
 	transition-duration: 0.35s;
+	*/
 }
 /*----Föreläsare-page -------*/
 

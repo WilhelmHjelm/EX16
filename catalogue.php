@@ -16,7 +16,7 @@ get_header(); ?>
 <div class="container">
   <div class="twelve columns aligncenter">
     <h1 class="green-text">Katalog</h1>
-    <p>En text om hur lite Tryckbar är med i katalogen här</p>
+    <p>Här kan du ta del av EX16 katalogen i digitalt format</p>
   </div>
 
   <div class="twelve columns aligncenter">

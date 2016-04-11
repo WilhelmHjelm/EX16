@@ -81,7 +81,7 @@ get_header(); ?>
       );
       $lecturers = new WP_Query( $args );
       if( $lecturers->have_posts() ) {
-        echo '<div class="container lecturers-grid">';
+        echo '<div class="container lecturers-grid aligncenter">';
         while( $lecturers->have_posts() ) {
           $lecturers->the_post();
           ?>
