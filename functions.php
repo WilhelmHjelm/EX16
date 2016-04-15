@@ -200,6 +200,10 @@ function ex16_scripts() {
 			wp_enqueue_script( 'ex16-modernizr-custom', get_template_directory_uri() . '/js/modernizr.custom.js', array(), '20160226' );
 	   }
 
+		 if ( is_archive() ) {
+			 wp_enqueue_script( 'ex16-mixitup', 'http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js', array('jquery'), '20160415', true );
+			}
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
