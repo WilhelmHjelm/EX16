@@ -12,8 +12,14 @@ get_header(); ?>
 	<div id="utstallning" class="container">
 		<div class="utstallning-filter twelve columns">
 			<button class="filter" data-filter="all">Show All</button>
-			<button class="filter" data-filter=".category-3d">3d</button>
-			<button class="filter" data-filter=".category-foto">foto</button>
+			<?php
+			$terms = get_terms( 'utstallning_category' );
+			if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+    foreach ( $terms as $term ) {
+        echo '	<button class="filter" data-filter=".category-' . $term->slug . '">' . $term->name . '</button>';
+    	}
+		}
+		?>
 		</div>
 
 <div id="utstallning-grid">
