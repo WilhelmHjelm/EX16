@@ -5,7 +5,24 @@
   .utstallning-filter {
     margin: 25px 0;
     padding: 0 10px;
-    text-align: right;
+    text-align: center;
+
+    button.filter {
+      background: transparent;
+      padding: 0;
+      margin: 0 0 0 25px;
+      line-height: 1;
+      height: auto;
+      border-radius: 0;
+      opacity: 0.5;
+      border: 0;
+      color: $text-color;
+      font-size: 18px;
+      &.active {
+        opacity: 1;
+      }
+    }
+
   }
 
   .mix{
@@ -36,9 +53,46 @@
       bottom: 10px;
       left: 10px;
       background: #ccc;
-    }
+      overflow: hidden;
+      color: white;
 
-  }
+      img {
+        @include vertical-align(absolute, 50%, 50%);
+        min-width: 100%;
+        min-height: 100%;
+        max-height: 160%;
+        max-width: 160%;
+      }
+
+      .project-title {
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 10;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        height: 50px;
+
+      	&.blue-bg { background: rgba($blue, 7/10); }
+      	&.turquoise-bg { background-color: rgba($turquoise, 7/10); }
+      	&.green-bg { background-color: rgba($green, 7/10); }
+      	&.orange-bg { background-color: rgba($orange, 7/10); }
+
+        span {
+          @include vertical-align(absolute, 50%, 50%);
+          width: 100%;
+          color: white;
+          font-size: 12px;
+          font-weight: bold;
+          text-align: center;
+          padding: 0 10px;
+          box-sizing: border-box;
+        }
+      } /* .project-title */
+
+    } /* a */
+
+  } /* .grid-item */
 
 
-}
+} /* #utstallning */

@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="utstallning" class="container">
 		<div class="utstallning-filter twelve columns">
-			<button class="filter" data-filter="all">Show All</button>
+			<button class="filter" data-filter="all">Visa alla</button>
 			<?php
 			$terms = get_terms( 'utstallning_category' );
 			if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
@@ -28,6 +28,11 @@ get_header(); ?>
 			<?php $i = 0; ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 			<?php $i++; ?>
+			<?php
+			$attachment_id = get_field('primar_bild');
+			$thumb = "medium"; // (thumbnail, medium, large, full or custom size)
+			$thumb_image = wp_get_attachment_image_src( $attachment_id, $thumb );
+			 ?>
 
 				<div class="grid-item mix<?php
 						$term_list = wp_get_post_terms($post->ID, 'utstallning_category', array("fields" => "all"));
@@ -37,7 +42,10 @@ get_header(); ?>
 							}
 						}
 				?>" data-myorder="<?php echo $i; ?>">
-					<a href="<?php echo the_permalink(); ?>"><?php echo the_title(); ?></a>
+					<a href="<?php echo the_permalink(); ?>">
+						<img src="<?php echo $thumb_image[0]; ?>" alt="<?php echo the_title(); ?>">
+						<div class="project-title"><h5><?php echo the_title(); ?></h5></div>
+					</a>
 				</div>
 			<?php endwhile; ?>
 
