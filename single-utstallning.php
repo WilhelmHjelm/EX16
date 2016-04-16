@@ -17,12 +17,23 @@ get_header(); ?>
 
 
 ?>
+<div id="fixed-project-nav">
+	<div class="container">
+		<div class="six columns">
+ 		<?php next_post_link('%link', '<i class="fa fa-caret-left"></i> %title'); ?>
+ 	</div> <!-- .columns -->
+		<div class="six columns alignright">
+		 <?php previous_post_link('%link', '%title <i class="fa fa-caret-right"></i>'); ?>
+	 </div> <!-- .columns -->
+		<a href="<?php echo get_home_url(); ?>/utstallning" class="show-all">
+			<div class="boxes"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+			<span>Visa alla</span>
+		</a>
+	</div>
+</div>
 
-
-<?php the_post_navigation(); ?>
-
-			<div class="container">
-				<article id="utstallning post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<div id="utstallning" class="container">
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header ten columns offset-by-one">
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
@@ -34,7 +45,7 @@ get_header(); ?>
 					<div class="entry-content row">
 						<?php // the_content(); ?>
 						<div class="ten columns offset-by-one">
-						<p><?php the_field('beskrivning'); ?></p>
+						<?php the_field('beskrivning'); ?>
 						</div> <!-- .columns -->
 						<div class="ten columns offset-by-one">
 						<img src="<?php echo $primary_img[0]; ?>">
@@ -49,3 +60,19 @@ get_header(); ?>
 
 		<?php endwhile; // End of the loop. ?>
 <?php get_footer(); ?>
+
+<script>
+		$(document).ready(function() {
+    var s = $("#fixed-project-nav");
+    var pos = s.position();
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+
+        if (windowpos >= pos.top) {
+            s.addClass("stick");
+        } else {
+            s.removeClass("stick");
+        }
+    });
+});
+</script>
