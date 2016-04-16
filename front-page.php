@@ -59,7 +59,7 @@ get_header(); ?>
         <ul class="tab-content" id="content3">
           <li>10:00<br><strong>Utställningen öppnar</strong></li>
           <li>14:00<br><strong>Utställningen stänger</strong></li>
-          <li>19:00<br><strong>Examenssittning</strong><br><span>Hålls på Laxholmen och är examensklassens avslutande sittning.</span></li>
+          <li>19:00<br><strong>Examenssittning <a href="https://www.facebook.com/events/592502144240766/" target="_blank"><i class="fa fa-facebook"></i></a></strong><br><span>Hålls på Laxholmen och är examensklassens avslutande sittning.</span></li>
         </ul>
     </div> <!-- .columns -->
     </div> <!-- .row -->
@@ -73,6 +73,7 @@ get_header(); ?>
     <h2 class="turquoise-text">Föreläsare</h2>
     </div> <!-- .columns -->
   </div>
+  <div class="container">
   <?php
   // Custom post type "forelasare" list
 
@@ -81,7 +82,7 @@ get_header(); ?>
       );
       $lecturers = new WP_Query( $args );
       if( $lecturers->have_posts() ) {
-        echo '<div class="container lecturers-grid aligncenter">';
+        echo '<div class="lecturers-grid">';
         while( $lecturers->have_posts() ) {
           $lecturers->the_post();
           ?>
@@ -104,6 +105,7 @@ get_header(); ?>
       }
 
     ?>
+</div>
 </div>
 </section>
 <section id="company-evening">

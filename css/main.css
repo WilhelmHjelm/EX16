@@ -1903,15 +1903,15 @@ label > .label-body {
 /* line 1, ../scss/components/_lecturers.scss */
 .lecturers-grid {
   position: relative;
-  margin: 0 auto;
   padding: 1em 0 4em;
+  margin-left: 10%;
+  margin-right: 10%;
   max-width: 2000px;
   list-style: none;
-  text-align: center;
 }
 
 /* Common style */
-/* line 11, ../scss/components/_lecturers.scss */
+/* line 12, ../scss/components/_lecturers.scss */
 .lecturers-grid figure {
   position: relative;
   float: left;
@@ -1920,30 +1920,30 @@ label > .label-body {
   min-width: 280px;
   max-width: 440px;
   max-height: 320px;
-  width: 33%;
+  width: 100%;
   text-align: center;
   cursor: pointer;
 }
 @media (min-width: 480px) {
-  /* line 11, ../scss/components/_lecturers.scss */
+  /* line 12, ../scss/components/_lecturers.scss */
   .lecturers-grid figure {
     width: 100%;
   }
 }
 @media (min-width: 680px) {
-  /* line 11, ../scss/components/_lecturers.scss */
+  /* line 12, ../scss/components/_lecturers.scss */
   .lecturers-grid figure {
     width: 100%;
   }
 }
 @media (min-width: 960px) {
-  /* line 11, ../scss/components/_lecturers.scss */
+  /* line 12, ../scss/components/_lecturers.scss */
   .lecturers-grid figure {
     width: 100%;
   }
 }
 
-/* line 37, ../scss/components/_lecturers.scss */
+/* line 38, ../scss/components/_lecturers.scss */
 .lecturers-grid figure img {
   position: relative;
   display: block;
@@ -1952,7 +1952,7 @@ label > .label-body {
   opacity: 1;
 }
 
-/* line 45, ../scss/components/_lecturers.scss */
+/* line 46, ../scss/components/_lecturers.scss */
 .lecturers-grid figure figcaption {
   padding: 3em;
   padding-left: 0.5em;
@@ -1963,13 +1963,13 @@ label > .label-body {
   backface-visibility: hidden;
 }
 
-/* line 56, ../scss/components/_lecturers.scss */
+/* line 57, ../scss/components/_lecturers.scss */
 .lecturers-grid figure figcaption::before,
 .lecturers-grid figure figcaption::after {
   pointer-events: none;
 }
 
-/* line 61, ../scss/components/_lecturers.scss */
+/* line 62, ../scss/components/_lecturers.scss */
 .lecturers-grid figure figcaption,
 .lecturers-grid figure figcaption > a {
   position: absolute;
@@ -1981,7 +1981,7 @@ label > .label-body {
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-/* line 71, ../scss/components/_lecturers.scss */
+/* line 72, ../scss/components/_lecturers.scss */
 .lecturers-grid figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
@@ -1990,25 +1990,25 @@ label > .label-body {
   opacity: 0;
 }
 
-/* line 79, ../scss/components/_lecturers.scss */
+/* line 80, ../scss/components/_lecturers.scss */
 .lecturers-grid figure h2 {
   font-weight: 800;
   font-size: inherit;
 }
 
-/* line 85, ../scss/components/_lecturers.scss */
+/* line 86, ../scss/components/_lecturers.scss */
 .lecturers-grid figure h2,
 .lecturers-grid figure p {
   margin: 0;
 }
 
-/* line 89, ../scss/components/_lecturers.scss */
+/* line 90, ../scss/components/_lecturers.scss */
 .lecturers-grid figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
 
-/* line 94, ../scss/components/_lecturers.scss */
+/* line 95, ../scss/components/_lecturers.scss */
 figure.lecturer img {
   max-width: none;
   width: -webkit-calc(100% + 50px);
@@ -2020,12 +2020,12 @@ figure.lecturer img {
   transform: translate3d(-40px, 0, 0);
 }
 
-/* line 105, ../scss/components/_lecturers.scss */
+/* line 106, ../scss/components/_lecturers.scss */
 figure.lecturer figcaption {
   text-align: left;
 }
 
-/* line 109, ../scss/components/_lecturers.scss */
+/* line 110, ../scss/components/_lecturers.scss */
 figure.lecturer figcaption > div {
   position: absolute;
   bottom: 0;
@@ -2035,7 +2035,7 @@ figure.lecturer figcaption > div {
   height: 50%;
 }
 
-/* line 118, ../scss/components/_lecturers.scss */
+/* line 119, ../scss/components/_lecturers.scss */
 figure.lecturer h2 {
   /*
   -webkit-transform: translate3d(0,40px,0);
@@ -2045,14 +2045,14 @@ figure.lecturer h2 {
   background-size: contain;
 }
 
-/* line 127, ../scss/components/_lecturers.scss */
+/* line 128, ../scss/components/_lecturers.scss */
 figure.lecturer p {
   background-color: black;
   color: white;
   margin-top: 3px;
 }
 
-/* line 133, ../scss/components/_lecturers.scss */
+/* line 134, ../scss/components/_lecturers.scss */
 figure.lecturer h2 {
   /*
   -webkit-transition: -webkit-transform 0.35s;
@@ -2061,7 +2061,7 @@ figure.lecturer h2 {
   padding: 10px;
 }
 
-/* line 141, ../scss/components/_lecturers.scss */
+/* line 142, ../scss/components/_lecturers.scss */
 figure.lecturer p {
   color: white;
   opacity: 1;
@@ -2072,17 +2072,17 @@ figure.lecturer p {
   width: 160px;
 }
 
-/* line 151, ../scss/components/_lecturers.scss */
+/* line 152, ../scss/components/_lecturers.scss */
 figure.lecturer:hover img {
   opacity: 1;
 }
 
-/* line 154, ../scss/components/_lecturers.scss */
+/* line 155, ../scss/components/_lecturers.scss */
 figure.lecturer:hover p {
   opacity: 1;
 }
 
-/* line 160, ../scss/components/_lecturers.scss */
+/* line 161, ../scss/components/_lecturers.scss */
 figure.lecturer:hover img,
 figure.lecturer:hover h2,
 figure.lecturer:hover p {
@@ -2090,7 +2090,7 @@ figure.lecturer:hover p {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 165, ../scss/components/_lecturers.scss */
+/* line 166, ../scss/components/_lecturers.scss */
 figure.lecturer:hover p {
   /*
   -webkit-transition-delay: 0.05s;
@@ -2101,18 +2101,18 @@ figure.lecturer:hover p {
 }
 
 /*----Föreläsare-page -------*/
-/* line 175, ../scss/components/_lecturers.scss */
+/* line 176, ../scss/components/_lecturers.scss */
 i {
   padding-left: 5px;
   padding-right: 2px;
 }
 
-/* line 179, ../scss/components/_lecturers.scss */
+/* line 180, ../scss/components/_lecturers.scss */
 .lecturer-img {
   width: 500px;
 }
 
-/* line 182, ../scss/components/_lecturers.scss */
+/* line 183, ../scss/components/_lecturers.scss */
 .headline-lecturers {
   padding-bottom: 100px;
 }

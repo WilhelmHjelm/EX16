@@ -1,10 +1,11 @@
 .lecturers-grid {
 	position: relative;
-	margin: 0 auto;
 	padding: 1em 0 4em;
-	max-width: 2000px;
+	margin-left:10%;
+	margin-right:10%;
+	max-width:2000px;
 	list-style: none;
-	text-align: center;
+
 }
 
 /* Common style */
@@ -16,7 +17,7 @@
 	min-width: 280px;
 	max-width: 440px;
 	max-height: 320px;
-	width: 33%;
+	width: 100%;
 	text-align: center;
 	cursor: pointer;
 
