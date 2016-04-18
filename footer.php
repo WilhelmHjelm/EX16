@@ -43,6 +43,14 @@
         echo 'Inga sponsorer';
       }
     ?>
+
+			<div class="sponsor">
+				<a href="mailto:spons@ex16.se" class="mailspons">
+					Ta chansen att synas på GDK:s examensdagar!
+					Hör av dig till Amanda på spons@ex16.se
+				</a>
+			</div>
+		</div> <!-- .sponsors -->
 		</div> <!-- .sponsors -->
 	</section>
 
