@@ -73,7 +73,7 @@ get_header(); ?>
     <h2 class="turquoise-text">Föreläsare</h2>
     </div> <!-- .columns -->
   </div>
-  <div class="container">
+  <div class="container lecturers-grid">
   <?php
   // Custom post type "forelasare" list
 
@@ -82,20 +82,23 @@ get_header(); ?>
       );
       $lecturers = new WP_Query( $args );
       if( $lecturers->have_posts() ) {
-        echo '<div class="lecturers-grid">';
+        $i = 2;
         while( $lecturers->have_posts() ) {
           $lecturers->the_post();
+
+          if($i == 1) {$graduateColor = "blue";}
+          if($i == 2) {$graduateColor = "turquoise";}
+          if($i == 3) {$graduateColor = "green";}
+          if($i == 4) {$graduateColor = "orange"; $i = 0;}
+          $i++;
           ?>
-          <figure class="lecturer">
+          <a class="lecturer" href="<?php echo get_page_link(45); ?>#<?php the_title(); ?>">
             <img src="<?php the_field('image'); ?>" alt="<?php the_title();?>">
-              <figcaption>
                 <div>
-                  <h2><?php the_title(); ?></h2>
-                  <p><i class="fa fa-clock-o"></i><?php the_field('time'); ?><i class="fa fa-map-marker"></i><?php the_field('place'); ?></p>
+                  <h5 class="<?php echo $graduateColor; ?>-bg"><?php the_title(); ?></h5><br>
+                  <span><?php the_field('time'); ?> i <?php the_field('place'); ?></span>
                 </div>
-                <a href="<?php echo get_page_link(45); ?>#<?php the_title(); ?>"></a>
-              </figcaption>
-            </figure>
+            </a>
           <?php
         }
       }
@@ -105,7 +108,6 @@ get_header(); ?>
       }
 
     ?>
-</div>
 </div>
 </section>
 <section id="company-evening">
