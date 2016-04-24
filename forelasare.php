@@ -25,25 +25,47 @@ get_header(); ?>
     );
     $forelasare = new WP_Query( $args );
     if( $forelasare->have_posts() ) {
+      $i = 1;
       while( $forelasare->have_posts() ) {
         $forelasare->the_post();
+        if($i == 1) {$graduateColor = "blue";}
+        if($i == 2) {$graduateColor = "turquoise";}
+        if($i == 3) {$graduateColor = "green";}
+        if($i == 4) {$graduateColor = "orange"; $i = 0;}
+        $i++;
         ?>
-        <div class="container">
-          <div class="six columns" id="<?php the_title(); ?>">
-            <img class="lecturer-img" src="<?php the_field('image'); ?>" alt="<?php the_title(); ?>">
+        <div class="container lecturer-container" id="<?php echo $post->post_name;?>">
+          <?php if($i == 2 OR $i == 4) { ?>
+          <div class="five columns offset-by-one">
+            <img src="<?php the_field('image'); ?>" alt="<?php the_title(); ?>">
           </div>
-          <div class="four columns">
-            <h3 class="lecturer-titel"><?php the_title(); ?></h3>
+          <div class="five columns">
+            <h2 class="<?php echo $graduateColor;?>-text"><?php the_title(); ?></h2>
+            <h5><?php the_field('time'); ?> i <?php the_field('place'); ?></h5>
             <p><?php the_content(); ?></p>
-            <p><i class="fa fa-clock-o"></i><?php the_field('time'); ?><i class="fa fa-map-marker"></i><?php the_field('place'); ?></p>
           </div>
+          <?php } else {?>
+            <div class="five columns offset-by-one">
+              <h2 class="<?php echo $graduateColor;?>-text"><?php the_title(); ?></h2>
+              <h5><?php the_field('time'); ?> i <?php the_field('place'); ?></h5>
+              <p><?php the_content(); ?></p>
+
+            </div>
+            <div class="five columns">
+              <img src="<?php the_field('image'); ?>" alt="<?php the_title(); ?>">
+            </div>
+          <?php } ?>
         </div>
         <?php
       }
     }
-    else {
-      echo 'Inga föreläsare?';
-    }
+    else { ?>
+      <div class="container">
+        <div class="twelve columns aligncenter">
+          <p>Föreläsare presenteras inom kort</p>
+        </div>
+      </div>
+    <?php }
   ?>
 
 <?php

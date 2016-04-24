@@ -13,19 +13,18 @@ justify-content: flex-start;
 	box-sizing: border-box;
 	overflow: hidden;
 	margin: 1%;
-	padding-top: 80%;
+	padding-top: 75%;
 	width: 100%;
 	cursor: pointer;
 	height: 0;
 
-
 	@media (min-width: $break-mobile + 200) {
 		flex: 0 0 48%;
-		padding-top: 45%;
+		padding-top: 36%;
 	}
 	@media (min-width: $break-grid) {
 		flex: 0 0 31.3333%;
-		padding-top: 28%;
+		padding-top: 25%;
 	}
 
 }
@@ -37,18 +36,16 @@ justify-content: flex-start;
 
 	img {
 		@include vertical-align(absolute, 50%, 50%);
-		min-width: 102%;
-		min-height: 102%;
-		max-height: 160%;
-		max-width: 160%;
+		max-width: 120%;
+		max-height: 120%;
+		min-width: 100%;
+		min-height: 100%;
 		z-index: 234;
 		@include transition(all);
 	}
 
 	&:hover img {
-			-webkit-transform: translate(-50%, -50%) scale(1.2);
-		  -ms-transform: translate(-50%, -50%) scale(1.2);
-		  transform: translate(-50%, -50%) scale(1.2);
+
 	}
 
 div {
@@ -63,6 +60,8 @@ div {
 		font-weight: bold;
 		padding: 10px;
 		margin: 8px 0;
+		max-width: 95%;
+		font-size: 17px;
 	}
 	span {
 		display: inline-block;
@@ -80,13 +79,21 @@ div {
 
 /*----Föreläsare-page -------*/
 
-i{
-	padding-left:5px;
-	padding-right:2px;
-}
-.lecturer-img{
-	width: 500px;
-}
+
 .headline-lecturers{
 	padding-bottom:100px;
+}
+.lecturer-container {
+		padding: 60px 0;
+
+	h2 {
+		line-height: 1;
+		margin-bottom: 10px;
+	}
+	h5 {
+		margin: 0;
+	}
+	img {
+		padding-top: 10px;
+	}
 }

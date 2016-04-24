@@ -31,10 +31,11 @@ get_header(); ?>
     </div> -->
     <div class="row">
     <div class="twelve columns">
-      <h2 class="green-text">Schema</h2>
+      <h2 class="green-text">Schemat<br> presenteras den 2 maj</h2>
     </div> <!-- .twelve .columns -->
   </div> <!-- .row -->
   <div class="row">
+    <?php /*
     <div class="three columns thursday">
         <h4 class="turquoise-text">Torsdag</h4>
         <ul class="tab-content">
@@ -62,6 +63,7 @@ get_header(); ?>
           <li>19:00<br><strong>Examenssittning <a href="https://www.facebook.com/events/592502144240766/" target="_blank"><i class="fa fa-facebook"></i></a></strong><br><span>Hålls på Laxholmen och är examensklassens avslutande sittning.</span></li>
         </ul>
     </div> <!-- .columns -->
+    */ ?>
     </div> <!-- .row -->
   </div> <!-- .container -->
 
@@ -82,7 +84,7 @@ get_header(); ?>
       );
       $lecturers = new WP_Query( $args );
       if( $lecturers->have_posts() ) {
-        $i = 2;
+        $i = 1;
         while( $lecturers->have_posts() ) {
           $lecturers->the_post();
 
@@ -92,7 +94,7 @@ get_header(); ?>
           if($i == 4) {$graduateColor = "orange"; $i = 0;}
           $i++;
           ?>
-          <a class="lecturer" href="<?php echo get_page_link(45); ?>#<?php the_title(); ?>">
+          <a class="lecturer" href="<?php echo get_page_link(45); ?>#<?php echo $post->post_name;?>">
             <img src="<?php the_field('image'); ?>" alt="<?php the_title();?>">
                 <div>
                   <h5 class="<?php echo $graduateColor; ?>-bg"><?php the_title(); ?></h5><br>
