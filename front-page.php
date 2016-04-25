@@ -94,7 +94,7 @@ get_header(); ?>
           if($i == 4) {$graduateColor = "orange"; $i = 0;}
           $i++;
           ?>
-          <a class="lecturer" href="<?php echo get_page_link(45); ?>#<?php echo $post->post_name;?>">
+          <a class="lecturer" href="/forelasare/#<?php echo $post->post_name;?>">
             <img src="<?php the_field('image'); ?>" alt="<?php the_title();?>">
                 <div>
                   <h5 class="<?php echo $graduateColor; ?>-bg"><?php the_title(); ?></h5><br>
