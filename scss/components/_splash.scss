@@ -54,7 +54,8 @@
   left: 0;
   width: 100%;
   height: 180px;
-  background: url(../img/splash-04.svg) no-repeat left bottom -5px;
+  background: url(../img/element-02.png) no-repeat left bottom -5px;
+  background-size: contain;
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
