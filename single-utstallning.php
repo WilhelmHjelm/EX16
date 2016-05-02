@@ -48,8 +48,22 @@ get_header(); ?>
 						<?php the_field('beskrivning'); ?>
 						</div> <!-- .columns -->
 						<div class="ten columns offset-by-one">
+						<?php if(get_field('bild_1')) { ?><img src="<?php echo the_field('bild_1');?>"><?php } ?>
+						<?php if(get_field('bild_2')) { ?><img src="<?php echo the_field('bild_2');?>"><?php } ?>
+						<?php if(get_field('bild_3')) { ?><img src="<?php echo the_field('bild_3');?>"><?php } ?>
+						<?php if(get_field('bild_4')) { ?><img src="<?php echo the_field('bild_4');?>"><?php } ?>
+						<?php if(get_field('bild_5')) { ?><img src="<?php echo the_field('bild_5');?>"><?php } ?>
+						</div> <!-- .columns -->
+<?php if(get_field('show_thumbnail')) { ?>
+						<div class="ten columns offset-by-one">
 						<img src="<?php echo $primary_img[0]; ?>">
 						</div> <!-- .columns -->
+<?php } ?>
+<?php if(get_field('hemsida')) { ?>
+						<div class="twelve columns">
+						<iframe src="<?php echo the_field('hemsida'); ?>" width="100%" height="800"></iframe>
+						</div> <!-- .columns -->
+<?php } ?>
 					</div><!-- .entry-content .row -->
 
 					<footer class="entry-footer">
