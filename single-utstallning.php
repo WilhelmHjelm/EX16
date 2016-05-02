@@ -36,10 +36,27 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header ten columns offset-by-one">
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+							<?php
+							$post_objects = get_field('deltagare');
 
-						<div class="entry-meta">
-							<?php // ex16_posted_on(); ?>
-						</div><!-- .entry-meta -->
+							if( $post_objects ): ?>
+							<ul class="entry-meta">
+							<?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
+							<?php setup_postdata($post); ?>
+							<?php	// Get graduate image
+								$attachment_id = get_field('bild');
+								$thumb = "medium"; // (thumbnail, medium, large, full or custom size)
+								$thumb_image = wp_get_attachment_image_src( $attachment_id, $thumb );
+							?>
+							<li>
+								<img src="<?php echo $thumb_image[0]; ?>" alt="<?php the_title() ?>">
+								<?php the_title(); ?>
+							</li>
+							<?php endforeach; ?>
+							</ul> <!-- .entry-meta -->
+							<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+							<?php endif;
+							?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content row">
