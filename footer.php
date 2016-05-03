@@ -14,7 +14,8 @@
 	</main><!-- #content -->
 
 
-
+	<?php
+	if ( !is_post_type_archive('utstallning') && !is_singular('utstallning')) : ?>
 	<section id="sponsorer" class="container">
 		<div class="twelve columns">
 			<h5>Samarbetspartners</h5>
@@ -53,7 +54,7 @@
 		</div> <!-- .sponsors -->
 		</div> <!-- .sponsors -->
 	</section>
-
+<?php endif; ?>
 
 	<footer id="colophon" class="site-footer">
 	<div class="container">

@@ -200,6 +200,10 @@ function ex16_scripts() {
 			wp_enqueue_script( 'ex16-modernizr-custom', get_template_directory_uri() . '/js/modernizr.custom.js', array(), '20160226' );
 	   }
 
+		 if ( is_archive() ) {
+			 wp_enqueue_script( 'ex16-mixitup', 'http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js', array('jquery'), '20160415', true );
+			}
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -251,18 +255,37 @@ function custom_post_type() {
 		'has_archive'   => false
 	)
 	);
-	register_post_type( 'portfolio', array(
-		'labels'        => array('name' => __( 'Portfolio', 'ex16'  ), 'singular_name' => __( 'Portfolio', 'ex16'  ) ),
+	register_post_type( 'utstallning', array(
+		'labels'        => array(
+										'name' 					=> __( 'Utställning', 'ex16'  ),
+										'singular_name' => __( 'Utställningsalster', 'ex16'  ),
+										'add_new' => __( 'Nytt alster', 'ex16'  ),
+										'add_new_item' => __( 'Lägg till nytt utställningsalster', 'ex16'  )
+									),
 		'description'   => 'Holds the information about EX16 digital works.',
 		'public'        => true,
 		'menu_position' => 8,
-		'supports'      => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-		'has_archive'   => false
+		'supports'      => array( 'title', 'editor',  'custom-fields' ),
+		'has_archive'   => true,
+		'taxonomies' 		=> array('utstallning_category')
 	)
 	);
 
 }
 add_action( 'init', 'custom_post_type');
+
+function taxonomies_utstallning() {
+  $labels = array(
+    'name'              => _x( 'Kategorier', 'taxonomy general name' ),
+    'singular_name'     => _x( 'Kategori', 'taxonomy singular name' ),
+  );
+  $args = array(
+    'labels' => $labels,
+    'hierarchical' => true,
+  );
+  register_taxonomy( 'utstallning_category', 'exhibition', $args );
+}
+add_action( 'init', 'taxonomies_utstallning', 0 );
 
 /**
  * Implement the Custom Header feature.
