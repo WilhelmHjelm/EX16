@@ -44,7 +44,7 @@ get_header(); ?>
             <li>18:00<br><strong>EX BY NIGHT - Företagskvällen öppnar</strong><br><span>Färgeriet, Kåkenhus</span></li>
             <li>18:00<br><strong>Föreläsning med Mia Lindstam, Gerillabyrån</strong><br><span>K4, Kåkenhus</span></li>
             <li>19:15<br><strong>Lär dig mingla med Demola</strong><br><span>Färgeriet, Kåkenhus</span></li>
-            <li>19:30-21.00<br><strong>Mingel</strong></li>
+            <li>19:30-21.00<br><strong>Utställning och mingel</strong></li>
         </ul>
     </div> <!-- .columns -->
     <div class="three columns friday">
