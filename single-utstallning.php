@@ -49,7 +49,7 @@ get_header(); ?>
 								$thumb_image = wp_get_attachment_image_src( $attachment_id, $thumb );
 							?>
 							<li>
-								<img src="<?php echo $thumb_image[0]; ?>" alt="<?php the_title() ?>">
+								<div class="image" style="background-image: url(<?php echo $thumb_image[0]; ?>);"></div>
 								<?php the_title(); ?>
 							</li>
 							<?php endforeach; ?>

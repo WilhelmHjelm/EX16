@@ -75,22 +75,27 @@
         bottom: 10px;
         left: 10px;
         right: 10px;
-        height: 50px;
-
-      	&.blue-bg { background: rgba($blue, 7/10); }
-      	&.turquoise-bg { background-color: rgba($turquoise, 7/10); }
-      	&.green-bg { background-color: rgba($green, 7/10); }
-      	&.orange-bg { background-color: rgba($orange, 7/10); }
+        color: white;
 
         span {
-          @include vertical-align(absolute, 50%, 50%);
-          width: 100%;
-          color: white;
+          display: inline-block;
+          background: $turquoise;
+          margin: 0 5px 5px 0;
+          padding: 5px 10px;
           font-size: 12px;
           font-weight: bold;
-          text-align: center;
-          padding: 0 10px;
           box-sizing: border-box;
+          float: left;
+          text-transform: uppercase;
+        }
+        h6 {
+          display: inline-block;
+          background: $text-color;
+          padding: 5px 10px;
+          float: left;
+          clear: both;
+          font-weight: bold;
+          margin: 0;
         }
       } /* .project-title */
 
@@ -112,6 +117,33 @@
     font-size: 18px !important;
   }
 }
+
+.entry-meta {
+  list-style: none;
+  margin-top: 10px;
+
+  li {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 36px;
+    padding: 0 20px 0 46px;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    .image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      background: #000 no-repeat center top;
+      background-size: cover;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+    }
+  } /* li */
+} /* .entry-meta */
 
 } /* #utstallning */
 

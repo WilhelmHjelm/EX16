@@ -44,7 +44,16 @@ get_header(); ?>
 				?>" data-myorder="<?php echo $i; ?>">
 					<a href="<?php echo the_permalink(); ?>">
 						<img src="<?php echo $thumb_image[0]; ?>" alt="<?php echo the_title(); ?>">
-						<div class="project-title"><h5><?php echo the_title(); ?></h5></div>
+						<div class="project-title">
+							<?php if($term_list) {
+								foreach($term_list as $term_single) {?>
+									<span class="<?php echo $term_single->slug;?>">
+										<?php echo $term_single->name; ?>
+									</span><?php
+								}
+							} ?>
+							<h6><?php echo the_title(); ?></h6>
+						</div>
 					</a>
 				</div>
 			<?php endwhile; ?>
