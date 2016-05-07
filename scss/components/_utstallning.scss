@@ -25,6 +25,11 @@
       &.active {
         opacity: 1;
       }
+
+      &.webb      { color: $blue; }
+      &.film      { color: $turquoise; }
+      &.tred      { color: $green; }
+      &.animering { color: $orange; }
     }
 
   }
@@ -79,7 +84,7 @@
 
         span {
           display: inline-block;
-          background: $turquoise;
+          background: $text-color;
           margin: 0 5px 5px 0;
           padding: 5px 10px;
           font-size: 12px;
@@ -87,6 +92,10 @@
           box-sizing: border-box;
           float: left;
           text-transform: uppercase;
+          &.webb      { background: $blue; }
+          &.film      { background: $turquoise; }
+          &.tred      { background: $green; }
+          &.animering { background: $orange; }
         }
         h6 {
           display: inline-block;
@@ -115,6 +124,10 @@
   }
   p {
     font-size: 18px !important;
+  }
+  iframe {
+    width: 100%;
+    min-height: 500px;
   }
 }
 

@@ -193,7 +193,7 @@ function ex16_scripts() {
 	}
 
 	wp_enqueue_script( 'ex16-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-	wp_enqueue_script( 'ex16-main', get_template_directory_uri() . '/js/main.js', array(), '20160220', true );
+	wp_enqueue_script( 'ex16-main', get_template_directory_uri() . '/js/main.js', array(), '20160507', true );
 
 		if ( is_page( 'examensklassen' ) ) {
 			wp_enqueue_script( 'ex16-expanding-grid', get_template_directory_uri() . '/js/expanding-grid.js', array(), '20160226', true );

@@ -16,7 +16,7 @@ get_header(); ?>
 			$terms = get_terms( 'utstallning_category' );
 			if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
     foreach ( $terms as $term ) {
-        echo '	<button class="filter" data-filter=".category-' . $term->slug . '">' . $term->name . '</button>';
+        echo '	<button class="filter ' . $term->slug . '" data-filter=".category-' . $term->slug . '">' . $term->name . '</button>';
     	}
 		}
 		?>
