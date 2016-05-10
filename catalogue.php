@@ -16,11 +16,13 @@ get_header(); ?>
 <div class="container">
   <div class="twelve columns aligncenter">
     <h1 class="green-text">Katalog</h1>
-    <p>Här kan du ta del av EX16 katalogen i digitalt format</p>
+    <p>Här kan du läsa och kika i katalogen för examensklassen digitalt. Katalogen går att få tag på under mässdagarna och är gratis för alla som besöker EX16.</p>
   </div>
 
   <div class="twelve columns aligncenter">
-    <div data-configid="14667575/33814781" style="width:100%; height:715px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+
+    <div><object style="width:100%;height:715px" ><param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf?mode=mini&embedBackground=%23002b4a&printButtonEnabled=false&backgroundColor=%23222222&documentId=160510090206-40bf0d756abb6cb01fcf3167beac84e5&embedId=24286588/35508264"><param name="allowfullscreen" value="true"><param name="menu" value="false"><param name="wmode" value="transparent"><embed src="http://static.issuu.com/webembed/viewers/style1/v2/IssuuReader.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" wmode="transparent" style="width:100%;height:715px" flashvars="mode=mini&embedBackground=%23002b4a&printButtonEnabled=false&backgroundColor=%23222222&documentId=121129150428-43664603f1a1468db1e62f907619fe83"></object></div>
+
   </div>
 
 <?php
