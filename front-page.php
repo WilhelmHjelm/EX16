@@ -50,7 +50,7 @@ get_header(); ?>
     <div class="three columns friday">
         <h4 class="green-text">Fredag</h4>
         <ul class="tab-content">
-            <li>09:00<br><strong>Frukostföreläsning med DIK</strong><br><span>Färgeriet, Kåkenhus. Föranmälan behövs. Ytterligare info kommer.</span></li>
+            <li>09:00<br><strong>Frukostföreläsning med DIK</strong><br><span>Färgeriet, Kåkenhus.<br> <a href="http://goo.gl/forms/ITIxVh0MfE" target="_blank">Föranmälan krävs</a>.</span></li>
             <li>10:00-17:00<br><strong>Utställningen är öppen</strong></li>
             <li>10:40<br><strong>Föreläsning med Futurniture</strong><br><span>K4, Kåkenhus</span></li>
             <li>13:15<br><strong>Föreläsning med Crazy Pictures</strong><br><span>K4, Kåkenhus</span></li>
