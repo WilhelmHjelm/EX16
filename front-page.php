@@ -23,6 +23,17 @@ get_header(); ?>
   </div> <!-- .container -->
 </section>
 
+<section id="album">
+  <div class="container">
+    <div class="twelve columns aligncenter">
+      <h2 class="green-text">Såhär såg det ut</h2>
+    </div>
+    <div class="twelve columns aligncenter">
+      <?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
+    </div>
+  </div>
+</section>
+
 <section id="schedule">
   <div id="splash-schedule"></div>
   <div class="container">
