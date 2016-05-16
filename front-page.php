@@ -26,7 +26,7 @@ get_header(); ?>
 <section id="album">
   <div class="container">
     <div class="twelve columns aligncenter">
-      <h2 class="green-text">Såhär såg det ut</h2>
+      <h2 class="green-text">Bilder från EX16</h2>
     </div>
     <div class="twelve columns aligncenter">
       <?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
